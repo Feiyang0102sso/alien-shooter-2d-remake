@@ -2,7 +2,41 @@
   "nominal_tick_ms": 80,
   "animations": [
     {
+      "name": "player_unarmed_idle",
+      "range": [
+        0,
+        0
+      ],
+      "frames": [
+        0
+      ]
+    },
+    {
+      "name": "player_machine_gun_idle",
+      "range": [
+        1,
+        1
+      ],
+      "frames": [
+        1
+      ]
+    },
+    {
+      "name": "player_weapon_idle",
+      "range": [
+        2,
+        2
+      ],
+      "frames": [
+        2
+      ]
+    },
+    {
       "name": "player_unarmed_walk",
+      "range": [
+        3,
+        6
+      ],
       "frames": [
         3,
         4,
@@ -12,6 +46,10 @@
     },
     {
       "name": "player_machine_gun_walk",
+      "range": [
+        7,
+        10
+      ],
       "frames": [
         7,
         8,
@@ -21,6 +59,10 @@
     },
     {
       "name": "player_weapon_walk",
+      "range": [
+        11,
+        14
+      ],
       "frames": [
         11,
         12,
@@ -30,15 +72,27 @@
     },
     {
       "name": "player_unarmed_attack",
+      "range": [
+        15,
+        18
+      ],
       "frames": [
         15,
         16,
         17,
         18
+      ],
+      "fire_frames": [
+        16,
+        18
       ]
     },
     {
       "name": "player_machine_gun_attack",
+      "range": [
+        19,
+        22
+      ],
       "frames": [
         19,
         20
@@ -46,12 +100,20 @@
     },
     {
       "name": "player_flamethrower_attack",
+      "range": [
+        23,
+        26
+      ],
       "frames": [
         23
       ]
     },
     {
       "name": "player_rocket_attack",
+      "range": [
+        27,
+        30
+      ],
       "frames": [
         27,
         28
@@ -59,6 +121,10 @@
     },
     {
       "name": "player_blaster_attack",
+      "range": [
+        31,
+        34
+      ],
       "frames": [
         31,
         32
@@ -66,6 +132,10 @@
     },
     {
       "name": "monster_1_walk",
+      "range": [
+        36,
+        40
+      ],
       "frames": [
         36,
         37,
@@ -75,6 +145,10 @@
     },
     {
       "name": "monster_1_attack",
+      "range": [
+        41,
+        44
+      ],
       "frames": [
         41,
         42,
@@ -83,6 +157,10 @@
     },
     {
       "name": "monster_2_walk",
+      "range": [
+        46,
+        50
+      ],
       "frames": [
         46,
         47,
@@ -93,6 +171,10 @@
     },
     {
       "name": "monster_2_attack",
+      "range": [
+        51,
+        54
+      ],
       "frames": [
         51,
         52,
@@ -102,6 +184,10 @@
     },
     {
       "name": "monster_3_walk",
+      "range": [
+        56,
+        60
+      ],
       "frames": [
         56,
         57,
@@ -112,6 +198,10 @@
     },
     {
       "name": "monster_3_attack",
+      "range": [
+        61,
+        64
+      ],
       "frames": [
         61,
         62,
@@ -120,6 +210,10 @@
     },
     {
       "name": "monster_4_walk",
+      "range": [
+        66,
+        70
+      ],
       "frames": [
         66,
         67,
@@ -130,12 +224,20 @@
     },
     {
       "name": "monster_4_attack",
+      "range": [
+        71,
+        74
+      ],
       "frames": [
         71
       ]
     },
     {
       "name": "monster_5_walk",
+      "range": [
+        76,
+        80
+      ],
       "frames": [
         76,
         77,
@@ -146,6 +248,10 @@
     },
     {
       "name": "monster_5_attack",
+      "range": [
+        81,
+        84
+      ],
       "frames": [
         81
       ]

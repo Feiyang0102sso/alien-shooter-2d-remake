@@ -1,7 +1,7 @@
 /** @file audio_tests.cpp
  * @brief Verify audio tests against runtime and original-game contracts.
  */
-#include "audio.h"
+#include "audio/audio.h"
 #include <algorithm>
 #include <cmath>
 #include <iostream>

@@ -1,7 +1,7 @@
 /** @file platform.cpp
  * @brief Resolve Unicode Windows paths and capture session diagnostics.
  */
-#include "platform.h"
+#include "platform/platform.h"
 #include <Windows.h>
 #include <cstdio>
 #include <io.h>

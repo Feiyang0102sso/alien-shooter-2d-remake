@@ -86,6 +86,7 @@
       "midi_source": "audio/midi/main_menu.mid"
     }
   ],
+  "soundfont": "audio/synth/GeneralUser-GS.sf2",
   "max_active_sounds": 1,
   "interruption": "pause_and_resume",
   "loop_count": 1

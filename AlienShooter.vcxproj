@@ -91,29 +91,43 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\as_java_re\assets.cpp" />
-    <ClInclude Include="src\as_java_re\assets.h" />
-    <ClCompile Include="src\as_java_re\audio.cpp" />
-    <ClInclude Include="src\as_java_re\audio.h" />
-    <ClCompile Include="src\as_java_re\cheat.cpp" />
-    <ClInclude Include="src\as_java_re\cheat.h" />
-    <ClCompile Include="src\as_java_re\config.cpp" />
-    <ClInclude Include="src\as_java_re\config.h" />
-    <ClCompile Include="src\as_java_re\game.cpp" />
-    <ClInclude Include="src\as_java_re\game.h" />
-    <ClCompile Include="src\as_java_re\main.cpp" />
+    <ClCompile Include="src\as_java_re\app\config.cpp" />
+    <ClInclude Include="src\as_java_re\app\config.h" />
+    <ClCompile Include="src\as_java_re\app\main.cpp" />
+    <ClCompile Include="src\as_java_re\audio\audio.cpp" />
+    <ClInclude Include="src\as_java_re\audio\audio.h" />
+    <ClCompile Include="src\as_java_re\audio\midi.cpp" />
+    <ClInclude Include="src\as_java_re\audio\midi.h" />
+    <ClCompile Include="src\as_java_re\core\assets.cpp" />
+    <ClInclude Include="src\as_java_re\core\assets.h" />
+    <ClInclude Include="src\as_java_re\core\constants.h" />
+    <ClCompile Include="src\as_java_re\game\game.cpp" />
+    <ClInclude Include="src\as_java_re\game\game.h" />
+    <ClCompile Include="src\as_java_re\game\save.cpp" />
+    <ClInclude Include="src\as_java_re\game\save.h" />
+    <ClCompile Include="src\as_java_re\platform\platform.cpp" />
+    <ClInclude Include="src\as_java_re\platform\platform.h" />
+    <ClCompile Include="src\as_java_re\platform\windows_entry.cpp" />
+    <ClCompile Include="src\as_java_re\render\pixel.cpp" />
+    <ClInclude Include="src\as_java_re\render\pixel.h" />
+    <ClCompile Include="src\as_java_re\render\renderer.cpp" />
+    <ClInclude Include="src\as_java_re\render\renderer.h" />
+    <ClCompile Include="src\as_java_re\render\ui_renderer.cpp" />
+    <ClCompile Include="src\as_java_re\render\world_renderer.cpp" />
     <ClInclude Include="src\as_java_re\version.h" />
-    <ClCompile Include="src\as_java_re\midi.cpp" />
-    <ClInclude Include="src\as_java_re\midi.h" />
-    <ClCompile Include="src\as_java_re\platform.cpp" />
-    <ClInclude Include="src\as_java_re\platform.h" />
-    <ClCompile Include="src\as_java_re\renderer.cpp" />
-    <ClInclude Include="src\as_java_re\renderer.h" />
-    <ClCompile Include="src\as_java_re\save.cpp" />
-    <ClInclude Include="src\as_java_re\save.h" />
-    <ClCompile Include="src\as_java_re\windows_entry.cpp" />
-    <ClCompile Include="src\as_java_re\world.cpp" />
-    <ClInclude Include="src\as_java_re\world.h" />
+    <ClCompile Include="src\as_java_re\world\cheat.cpp" />
+    <ClInclude Include="src\as_java_re\world\cheat.h" />
+    <ClInclude Include="src\as_java_re\world\geometry.h" />
+    <ClCompile Include="src\as_java_re\world\world.cpp" />
+    <ClInclude Include="src\as_java_re\world\world.h" />
+    <ClCompile Include="src\as_java_re\world\world_actor.cpp" />
+    <ClCompile Include="src\as_java_re\world\world_effects.cpp" />
+    <ClCompile Include="src\as_java_re\world\world_enemy.cpp" />
+    <ClCompile Include="src\as_java_re\world\world_level.cpp" />
+    <ClCompile Include="src\as_java_re\world\world_object.cpp" />
+    <ClCompile Include="src\as_java_re\world\world_player.cpp" />
+    <ClCompile Include="src\as_java_re\world\world_projectile.cpp" />
+    <ClCompile Include="src\as_java_re\world\world_terrain.cpp" />
     <ClCompile Include="src\3rdparty\raylib\src\raudio.c">
       <CompileAs>CompileAsC</CompileAs>
       <WarningLevel>TurnOffAllWarnings</WarningLevel>

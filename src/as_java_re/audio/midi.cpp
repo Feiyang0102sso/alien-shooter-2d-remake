@@ -1,7 +1,7 @@
 /** @file midi.cpp
  * @brief Parse standard MIDI events into deterministic sample timestamps.
  */
-#include "midi.h"
+#include "audio/midi.h"
 #include <fstream>
 #include <stdexcept>
 #include <string>

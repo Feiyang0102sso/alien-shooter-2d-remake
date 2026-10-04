@@ -39,7 +39,7 @@ build.bat Release run
 
 在游戏中连续输入 `chgod`（不区分大小写）开启无敌，并获得全部武器和各武器满弹药。弹药仍按原版规则消耗。再次输入关闭，恢复开启前的武器、弹药和选枪；关闭时中断当前攻击。菜单、暂停和失焦时不接收秘籍。
 
-重开、离开游戏或确认过关时自动关闭，临时装备不会写入关卡起点存档。实现位于 `src/as_java_re/cheat.cpp` 和 `cheat.h`。
+重开、离开游戏或确认过关时自动关闭，临时装备不会写入关卡起点存档。实现位于 `src/as_java_re/world/cheat.cpp` 和 `cheat.h`，秘籍字符串在 `core/constants.h`。
 
 ## 实现与验证
 
@@ -61,7 +61,14 @@ AlienShooter.sln       仅包含主程序的 Visual Studio solution
 AlienShooter.vcxproj   全部源码、C++17 编译链接与资源部署配置
 AlienShooter.vcxproj.filters  VS 源码分组
 AlienShooter.vcxproj.user     VS 调试启动与工作目录
-src/as_java_re/        C++ 游戏代码，统一 .cpp / .h
+src/as_java_re/        C++ 游戏代码，统一 .cpp / .h，按包分目录：
+  core/                常量总表 constants.h、素材加载 assets
+  world/               80ms 离散世界：关卡、地形、角色、玩家、敌人、物件、弹体、特效、秘籍
+  render/              像素图元、精灵/文字、世界与 HUD、菜单/提示框/富文本页
+  audio/               MIDI 解析与 FluidSynth 播放
+  game/                桌面输入、界面流程、存档
+  app/                 入口 main、config.cfg 读取
+  platform/            Windows 路径、日志与入口
 src/3rdparty/          固定版本依赖、音色、DLL 和许可证
 resources/            Windows 图标、版本与 UTF-8 清单
 assets/               正式素材及原 MIDI
@@ -72,9 +79,16 @@ tools/                Python 素材及原字节码验证工具
 docs/                 开发、验证、玩法和阶段总结
 ```
 
-窗口配置读取 EXE 旁的 `config.cfg`，由 `src/as_java_re/config.cpp/.h` 管理，字段名和默认值统一定义在 `config.h` 的常量中。`DefaultScreenX/Y` 为窗口基准尺寸，乘以 `Scalar` 得到初始窗口尺寸；默认 `240×320 × 3 = 720×960`，小屏自动降低倍率，游戏逻辑画布保持 `240×320`。支持 `;` 行尾注释，修改后重启生效。启动时缺少 cfg 会按常量生成默认文件，重新构建不会覆盖已有设置。
+窗口配置读取 EXE 旁的 `config.cfg`，由 `src/as_java_re/app/config.cpp/.h` 管理，字段名和默认值统一定义在 `core/constants.h` 的 `config` 命名空间中。`DefaultScreenX/Y` 为窗口基准尺寸，乘以 `Scalar` 得到初始窗口尺寸；默认 `240×320 × 3 = 720×960`，小屏自动降低倍率，游戏逻辑画布保持 `240×320`。支持 `;` 行尾注释，修改后重启生效。启动时缺少 cfg 会按常量生成默认文件，重新构建不会覆盖已有设置。
 
 存档在 EXE 旁的 `save/progress.json`，日志在 `save/logs/latest.log`，与启动时的工作目录无关。调试参数 `--save-dir` 仍可指定其他目录。旧的 `%LOCALAPPDATA%\AlienShooterRemake` 存档不会自动迁移；需要继续旧进度时，可将旧存档复制到新的 `save/`。完成关卡后保存下一关起点；第一关未过关时 CONTINUE 不可用。损坏主存档可从有效备份恢复。
+
+## 常量与素材数据
+
+- 所有具名常量集中在 `src/as_java_re/core/constants.h`：画布与节拍、原版物件/瓦片/音效编号、教程位、玩法规则、布局坐标、颜色、音频参数、config.cfg 键名和默认值。改数值前先确认对应原版行为确实要变，回归测试按原字节码对照。
+- 素材里已有的数据一律从 `assets/` 读取，不在代码里重复：显示尺寸校验 `config/display.json`；关卡列表、贴图清单、帮助/关于页路径来自 `catalog.json`；动画区间、开火帧来自 `character_animations.json`；蹲姿/护甲/换枪部件来自 `player_poses.json`；阴影、发电机灯光与电弧颜色、震屏衰减来自 `visual_effects.json`；物件拼接、终端门、弹体与 HUD 精灵来自 `object_visuals.json`；界面文字按名字取自 `localization/en/interface.json`。
+- 桌面版文字（键盘键位说明、终端与换枪提示）由素材流水线直接写入运行时素材，游戏不再在运行时替换文本。
+- 程序手绘的特效（发电机电弧、开关激光、倒计时、终端箭头、死亡幕布）仍在渲染代码中实现，几何参数在 `constants.h` 的 `effect_shape` / `layout` 中。
 
 ## 素材流水线
 

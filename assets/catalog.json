@@ -1,5 +1,5 @@
 {
-  "format_version": 2,
+  "format_version": 3,
   "display": "config/display.json",
   "font": "fonts/pixel_green.json",
   "definitions": {
@@ -9,6 +9,7 @@
     "entity_parameters": "definitions/entity_parameters.json",
     "interface": "definitions/interface.json",
     "menu_layouts": "definitions/menu_layouts.json",
+    "object_visuals": "definitions/object_visuals.json",
     "player_poses": "definitions/player_poses.json",
     "projectile_parameters": "definitions/projectile_parameters.json",
     "visual_effects": "definitions/visual_effects.json",
@@ -23,6 +24,12 @@
     "levels/level_06.json",
     "levels/level_07.json",
     "levels/level_08.json"
+  ],
+  "textures": [
+    "textures/characters.png",
+    "textures/interface.png",
+    "textures/world.png",
+    "fonts/pixel_green.png"
   ],
   "audio": "audio/sounds.json",
   "language": {

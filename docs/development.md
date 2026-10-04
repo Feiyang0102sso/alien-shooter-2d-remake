@@ -12,7 +12,7 @@ build.bat Release run
 
 根目录只有一个 `AlienShooter.vcxproj`，直接编译全部游戏 CPP 和 raylib 的八个 C 文件。C++17、工具集、警告、链接库、输出路径和资源复制均在此文件配置；没有静态库项目、测试项目或额外属性/目标文件。`.vcxproj.filters` 管理源码分组，`.vcxproj.user` 设置可执行文件及调试工作目录，均与 `.sln` 同级。`build.bat` 只定位 Visual Studio 并调用 MSBuild，不下载依赖或生成项目。
 
-`src/as_java_re/` 保存游戏包，所有自有头文件使用 `.h`。每个 C++ 文件含英文 `@file` / `@brief`，已有行为注释保留含义并译为英文。第三方代码保持上游文件名及版权声明，例如 `nlohmann/json.hpp`。
+`src/as_java_re/` 保存游戏代码，按 core / world / render / audio / game / app / platform 分包，包含路径一律写成相对 `src/as_java_re/` 的形式（如 `#include "world/world.h"`）。所有自有头文件使用 `.h`。每个 C++ 文件含英文 `@file` / `@brief`，已有行为注释保留含义并译为英文。第三方代码保持上游文件名及版权声明，例如 `nlohmann/json.hpp`。
 
 `src/3rdparty/` 包含固定版本源码、头文件、导入库、DLL、SoundFont 与许可证，来源及上游哈希见 [第三方说明](third-party-notices.md)。Raylib 从该目录源码编译；FluidSynth 使用原官方二进制。VS 2026 使用 v145，VS 2022 使用 v143，当前验证环境为 VS 2026。
 
@@ -22,19 +22,31 @@ build.bat Release run
 
 ## 模块与原版对应
 
+路径相对 `src/as_java_re/`。
+
 | 文件 | 职责 | 原版依据 |
 | --- | --- | --- |
-| `src/as_java_re/assets.*` | 正式 PNG/JSON/MIDI 索引与强类型参数 | 素材流水线，e.h() 的资源及参数加载 |
-| `src/as_java_re/world.*` | 80ms 离散世界，整数坐标、敌人、机关、弹体、地形变化 | e.f() 更新；e.l() 对象/敌人；e.m() 弹体；e.s() 输入 |
-| `src/as_java_re/renderer.*` | 原画布、组合部件、动态瓦片、HUD、菜单、文字页和过渡 | e.paint()；d 的位图字库、菜单及富文本绘制 |
-| `src/as_java_re/midi.*` | Format 0 MIDI 解析、tempo 转采样位置 | 原始 17 个 SMF 文件，960 PPQN |
-| `src/as_java_re/audio.*` | 单活动曲目，独立合成器保存中断状态 | c.a()/b() 的 MMAPI 播放控制语义 |
-| `src/as_java_re/game.*` | 桌面输入快照、界面状态、提示等待、关卡衔接 | e 的启动、主菜单、暂停、关卡和失败流程 |
-| `src/as_java_re/cheat.*` | CHGOD 连续输入、无敌及临时装备恢复 | 用户指定的桌面秘籍扩展 |
-| `src/as_java_re/save.*` | JSON 存档、有效备份、临时文件提交 | 原版选项与最高关卡起点存档，使用 Windows 文件格式替代 RMS |
-| `src/as_java_re/platform.*`、`windows_entry.cpp` | Unicode 路径、日志和 Windows 入口 | 桌面适配，不改变玩法 |
-| `src/as_java_re/main.cpp` | 参数、窗口、240×320 渲染目标与整数倍显示 | 原 240×320 画布 |
-| `src/as_java_re/config.*` | EXE 旁的 cfg、字段名与默认值常量、窗口标题和初始尺寸 | 桌面配置 |
+| `core/constants.h` | 全部具名常量：画布与节拍、原版物件/瓦片/音效编号、教程位、玩法规则、布局、颜色、音频、config.cfg 键名与默认值 | e.java 中写死的规则数值 |
+| `core/assets.*` | 正式 PNG/JSON/MIDI 索引与强类型参数；数组大小按数据决定 | 素材流水线，e.h() 的资源及参数加载 |
+| `world/world.*`、`geometry.h` | 世界时钟、随机流、消息、镜头与单步顺序；端点矩形相交 | e.f() 更新 |
+| `world/world_level.cpp` | 关卡记录展开为物件、敌人和碰撞 | e.h() 关卡初始化 |
+| `world/world_terrain.cpp` | 尸体装饰、墙洞/地板补丁、灯光瓦片切换 | 地形装饰与灯光 |
+| `world/world_actor.cpp` | 动画步进、通用移动、重力与落地伤害 | 角色移动 |
+| `world/world_player.cpp`、`world_enemy.cpp` | 玩家武器/输入/受伤；敌人生成、受伤和行为 | e.s() 输入；e.l() 敌人 |
+| `world/world_object.cpp` | 拾取物、平台、刷怪源、终端、可破坏物 | e.l() 对象 |
+| `world/world_projectile.cpp`、`world_effects.cpp` | 弹体与命中；绘制期动画、闪屏、死亡序列 | e.m() 弹体；paint 内状态更新 |
+| `world/cheat.*` | CHGOD 连续输入、无敌及临时装备恢复 | 用户指定的桌面秘籍扩展 |
+| `render/pixel.*` | MIDP 风格整数线、边框、三角、椭圆阴影 | MIDP Graphics |
+| `render/renderer.*` | 贴图加载、精灵、部件、瓦片和位图文字 | d 的位图字库 |
+| `render/world_renderer.cpp` | 地形、组合角色、物件拼接、弹体、HUD、死亡幕布 | e.paint() |
+| `render/ui_renderer.cpp` | 菜单、声音询问、提示框、富文本页 | d 的菜单及富文本绘制 |
+| `audio/midi.*` | Format 0 MIDI 解析、tempo 转采样位置 | 原始 17 个 SMF 文件，960 PPQN |
+| `audio/audio.*` | 单活动曲目，独立合成器保存中断状态 | c.a()/b() 的 MMAPI 播放控制语义 |
+| `game/game.*` | 桌面输入快照、界面状态、提示等待、关卡衔接 | e 的启动、主菜单、暂停、关卡和失败流程 |
+| `game/save.*` | JSON 存档、有效备份、临时文件提交 | 原版选项与最高关卡起点存档，使用 Windows 文件格式替代 RMS |
+| `platform/platform.*`、`windows_entry.cpp` | Unicode 路径、日志和 Windows 入口 | 桌面适配，不改变玩法 |
+| `app/main.cpp` | 参数、窗口、240×320 渲染目标与整数倍显示 | 原 240×320 画布 |
+| `app/config.*` | EXE 旁的 cfg 读取、窗口标题和初始尺寸 | 桌面配置 |
 
 没有通用 ECS 或额外玩法框架。World 只依赖 Assets，不依赖窗口和音频；Renderer 读取世界，Game 消费世界产生的声音编号与消息。敌人数组、物件和弹体保留可直接对应原数组的字段，便于对照。
 

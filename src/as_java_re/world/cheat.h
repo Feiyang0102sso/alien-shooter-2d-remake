@@ -2,6 +2,7 @@
  * @brief Toggle CHGOD without persisting temporary equipment.
  */
 #pragma once
+#include "core/constants.h"
 #include <array>
 #include <cstddef>
 
@@ -19,8 +20,8 @@ private:
     void enable(World& world, const Assets& assets);
     bool enabled_ = false;
     std::size_t matched_ = 0;
-    std::array<bool, 5> previousOwned_{};
-    std::array<int, 5> previousAmmo_{};
+    std::array<bool, rules::WeaponCount> previousOwned_{};
+    std::array<int, rules::WeaponCount> previousAmmo_{};
     int previousWeapon_ = 0;
 };
 }

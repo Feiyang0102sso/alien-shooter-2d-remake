@@ -1,7 +1,7 @@
 /** @file render_snapshot.cpp
  * @brief Verify render snapshot against runtime and original-game contracts.
  */
-#include "renderer.h"
+#include "render/renderer.h"
 #include "reference_scenarios.h"
 #include <filesystem>
 #include <iostream>
@@ -41,11 +41,12 @@ int main(int argc, char** argv) {
             BeginTextureMode(target); renderer.world(world);
             if (deathScenario) { renderer.deathWipe(world); }
             if (messageScenario) {
-                const int row = std::stoi(scenario.substr(7));
+                // Scenario format: message:<key>[@age], keys from localization interface messages.
                 float age = 1000.0f;
                 const auto separator = scenario.find('@');
+                const std::string key = scenario.substr(8, separator - 8);
                 if (separator != std::string::npos) { age = std::stof(scenario.substr(separator + 1)); }
-                renderer.message(assets.text.at(row), row == 12, age);
+                renderer.message(assets.text.message(key), key == alien::message_key::LevelFailed, age);
             }
             EndTextureMode();
             auto screenshot = LoadImageFromTexture(target.texture); ImageFlipVertical(&screenshot);

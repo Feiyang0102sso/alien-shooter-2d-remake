@@ -1,7 +1,7 @@
 /** @file config.cpp
  * @brief Read key=value settings with whitespace and semicolon comments.
  */
-#include "config.h"
+#include "app/config.h"
 #include <charconv>
 #include <fstream>
 #include <iostream>

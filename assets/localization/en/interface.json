@@ -1,120 +1,93 @@
 {
   "language": "en",
-  "rows": [
-    [
-      "ENABLE",
-      "SOUND?",
-      "YES",
-      "NO",
-      "LEVEL ",
-      "RESTARTING...",
-      "PLEASE WAIT...",
-      "EXIT"
-    ],
-    [
-      "SELECT",
-      "BACK",
-      "NEW GAME",
-      "CONTINUE",
-      "SELECT LEVEL",
-      "SETTINGS",
-      "HELP",
-      "ABOUT",
-      "EXIT",
-      "MENU",
-      "SELECT LEVEL",
-      "DIFFICULTY",
-      "EASY",
-      "NORMAL",
-      "HARD",
-      "SOUND ON",
-      "SOUND OFF",
-      "VIBRATION ON",
-      "VIBRATION OFF",
-      "LEVEL 1",
-      "LEVEL 2",
-      "LEVEL 3",
-      "LEVEL 4",
-      "LEVEL 5",
-      "LEVEL 6",
-      "LEVEL 7",
-      "LEVEL 8",
-      "BACK"
-    ],
-    [
-      "",
-      "",
-      "CONTINUE",
-      "RESTART",
-      "MENU",
-      "EXIT",
-      "",
-      "",
-      "",
-      ""
-    ],
-    [
-      "TERMINAL ",
-      "  -ACTIVATED-",
-      "GENERATOR:",
-      "  -RUNNING-",
-      "SECTOR EXIT:",
-      "  -OPEN-"
-    ],
-    [
+  "labels": {
+    "sound_prompt_enable": "ENABLE",
+    "sound_prompt_question": "SOUND?",
+    "yes": "YES",
+    "no": "NO",
+    "level_prefix": "LEVEL ",
+    "restarting": "RESTARTING...",
+    "please_wait": "PLEASE WAIT...",
+    "terminal_exit": "EXIT",
+    "select": "SELECT",
+    "back": "BACK",
+    "new_game": "NEW GAME",
+    "continue": "CONTINUE",
+    "select_level": "SELECT LEVEL",
+    "settings": "SETTINGS",
+    "help": "HELP",
+    "about": "ABOUT",
+    "exit": "EXIT",
+    "menu": "MENU",
+    "difficulty": "DIFFICULTY",
+    "easy": "EASY",
+    "normal": "NORMAL",
+    "hard": "HARD",
+    "sound_on": "SOUND ON",
+    "sound_off": "SOUND OFF",
+    "vibration_on": "VIBRATION ON",
+    "vibration_off": "VIBRATION OFF",
+    "restart": "RESTART",
+    "terminal_prefix": "TERMINAL ",
+    "terminal_activated": "  -ACTIVATED-",
+    "generator": "GENERATOR:",
+    "generator_running": "  -RUNNING-",
+    "sector_exit": "SECTOR EXIT:",
+    "sector_exit_open": "  -OPEN-"
+  },
+  "messages": {
+    "find_dynamite_place": [
       "FIND",
       "A PLACE",
       "TO PLANT",
       "THE DYNAMITE"
     ],
-    [
-      "PRESS",
-      "\"DOWN\" OR \"8\"",
+    "terminal_travel": [
+      "PRESS S",
       "TO TRAVEL",
       "THROUGH THE TERMINAL"
     ],
-    [
-      "PRESS \"0\"",
+    "switch_weapon": [
+      "Q / E OR 1-5",
       "TO SWITCH",
-      "YOUR CURRENT",
-      "WEAPON"
+      "YOUR CURRENT WEAPON"
     ],
-    [
+    "ammo_picked_up": [
       "YOU PICKED UP",
       "AMMO",
       "FOR YOUR WEAPON"
     ],
-    [
+    "plant_dynamite": [
       "PLANT",
       "DYNAMITE",
       "TO DESTROY",
       "THE SOURCE"
     ],
-    [
+    "light_armor": [
       "ARMOR",
       "REDUCES",
       "INCOMING",
       "DAMAGE"
     ],
-    [
+    "heavy_armor": [
       "ARMOR AND HELMET",
       "REDUCE",
       "INCOMING",
       "DAMAGE"
     ],
-    [
+    "area_cleared": [
       "AREA CLEARED!",
       "PROCEED",
       "TO THE EXIT"
     ],
-    [
+    "level_failed": [
       "",
       "YOU LOST!",
       "START THE LEVEL",
       "AGAIN...",
       ""
     ],
-    [
+    "level_complete": [
       "",
       "",
       "LEVEL",
@@ -122,17 +95,17 @@
       "",
       ""
     ],
-    [
+    "exit_unavailable": [
       "",
       "AREA NOT CLEARED!",
       "EXIT UNAVAILABLE!",
       ""
     ],
-    [
+    "game_complete": [
       "",
       " ::CONGRATULATIONS!::",
       "::GAME COMPLETE!::",
       ""
     ]
-  ]
+  }
 }

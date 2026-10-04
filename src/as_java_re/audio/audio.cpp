@@ -1,7 +1,7 @@
 /** @file audio.cpp
  * @brief Schedule original MIDI playback and retain interrupted synthesizer state.
  */
-#include "audio.h"
+#include "audio/audio.h"
 #include <algorithm>
 #include <iostream>
 #include <stdexcept>
@@ -15,19 +15,20 @@ void audioCallback(void* buffer, unsigned int frames) {
 }
 
 Audio::Audio(const Assets& assets, bool deviceOutput, const std::filesystem::path& soundfont) {
-    for (int id = 0; id < 17; ++id) {
+    voices_.resize(assets.midiPaths.size());
+    for (std::size_t id = 0; id < voices_.size(); ++id) {
         voices_[id].sequence = MidiSequence::load(assets.root() / assets.midiPaths[id]);
     }
     auto fontPath = soundfont;
-    if (fontPath.empty()) { fontPath = assets.root() / "audio/synth/GeneralUser-GS.sf2"; }
+    if (fontPath.empty()) { fontPath = assets.root() / assets.soundfontPath; }
     if (!std::filesystem::exists(fontPath)) { throw std::runtime_error("Missing runtime SoundFont."); }
     settings_.reset(new_fluid_settings());
     if (!settings_) { throw std::runtime_error("Cannot create FluidSynth settings."); }
     fluid_settings_setnum(settings_.get(), "synth.sample-rate", AudioSampleRate);
-    fluid_settings_setnum(settings_.get(), "synth.gain", 0.2);
+    fluid_settings_setnum(settings_.get(), "synth.gain", audio_settings::Gain);
     fluid_settings_setint(settings_.get(), "synth.reverb.active", 0);
     fluid_settings_setint(settings_.get(), "synth.chorus.active", 0);
-    fluid_settings_setint(settings_.get(), "synth.polyphony", 256);
+    fluid_settings_setint(settings_.get(), "synth.polyphony", audio_settings::Polyphony);
     fluid_settings_setstr(settings_.get(), "synth.midi-bank-select", "gm");
     // Prepare all tracks at startup; gameplay and real-time callbacks never load the SoundFont.
     for (auto& voice : voices_) {
@@ -42,8 +43,8 @@ Audio::Audio(const Assets& assets, bool deviceOutput, const std::filesystem::pat
     if (!IsAudioDeviceReady()) {
         throw std::runtime_error("Audio device unavailable.");
     }
-    SetAudioStreamBufferSizeDefault(512);
-    stream_ = LoadAudioStream(AudioSampleRate, 32, 2);
+    SetAudioStreamBufferSizeDefault(audio_settings::StreamBufferFrames);
+    stream_ = LoadAudioStream(AudioSampleRate, audio_settings::SampleBits, audio_settings::ChannelCount);
     if (!IsAudioStreamValid(stream_)) {
         CloseAudioDevice();
         throw std::runtime_error("Cannot create MIDI output stream.");
@@ -107,7 +108,8 @@ void Audio::dispatch(Voice& voice, const MidiEvent& event) {
 
 void Audio::render(float* samples, unsigned int frames) {
     std::lock_guard<std::mutex> lock(mutex_);
-    std::fill(samples, samples + frames * 2, 0.0f);
+    const int channels = audio_settings::ChannelCount;
+    std::fill(samples, samples + frames * channels, 0.0f);
     if (!enabled_ || paused_ || active_ < 0) { return; }
     Voice& voice = voices_[active_];
     unsigned int written = 0;
@@ -121,8 +123,8 @@ void Audio::render(float* samples, unsigned int frames) {
             count = std::min(count, voice.sequence.events[voice.event].sample - voice.position);
         }
         // Write interleaved stereo; release tails may finish without extending MIDI EOT.
-        fluid_synth_write_float(voice.synth.get(), static_cast<int>(count), samples + written * 2, 0, 2,
-                               samples + written * 2, 1, 2);
+        fluid_synth_write_float(voice.synth.get(), static_cast<int>(count), samples + written * channels, 0, channels,
+                               samples + written * channels, 1, channels);
         voice.position += count;
         written += static_cast<unsigned int>(count);
     }

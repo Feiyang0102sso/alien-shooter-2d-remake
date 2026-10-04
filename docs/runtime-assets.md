@@ -14,19 +14,21 @@
 | `fonts/pixel_green.png`、`.json` | 原绿色位图字库、100 个字形及排版参数 |
 | `definitions/character_parts.json` | 155 个部件编号、左右朝向裁切区域及绘制偏移 |
 | `definitions/character_frames.json` | 85 个组合帧，每帧保留原来的八个部件槽位 |
-| `definitions/character_animations.json` | 动画帧序列及标称时间步长 |
+| `definitions/character_animations.json` | 动画：`range` 为原版闭区间（运行时按编号步进并跳过空帧），`frames` 为区间内非空帧，`fire_frames` 为手枪开火帧；含玩家三种待机帧 |
 | `definitions/player_poses.json` | 换武器、护甲及蹲姿的部件替换规则 |
 | `definitions/world_tiles.json` | 主题、瓦片编号、偏移和组合瓦片关系 |
 | `definitions/interface.json` | 界面图片名称与帮助图标编号 |
 | `definitions/entity_parameters.json` | 原 d0 对象参数表 |
 | `definitions/projectile_parameters.json` | 原 d1 弹体参数表 |
-| `definitions/menu_layouts.json` | 原 dm 菜单参数表 |
-| `definitions/visual_effects.json` | 发电机灯光、电弧颜色、阴影、震屏参数 |
+| `definitions/menu_layouts.json` | 原 dm 菜单参数表；列含义未核实，运行时未使用 |
+| `definitions/visual_effects.json` | 发电机灯光、电弧颜色、阴影颜色与尺寸、震屏衰减 |
+| `definitions/object_visuals.json` | 物件的精灵拼接层、阴影、终端门、弹体精灵公式、HUD 与怪物武器部件编号 |
 | `levels/level_01.json` 至 `level_08.json` | 关卡基础瓦片、碰撞高度、玩家起点和对象生成记录 |
-| `localization/en/` | interface.json 界面二维文本表、about.txt 与 help.txt 可读富文本 |
-| `audio/ogg/`、`audio/midi/`、`audio/sounds.json` | 17 个运行时 OGG、17 个原始 MIDI 母版及声音编号映射 |
+| `localization/en/` | interface.json 按名字索引的 `labels`（单条文字）与 `messages`（多行提示框），about.txt 与 help.txt 可读富文本；均为桌面版文字 |
+| `audio/ogg/`、`audio/midi/`、`audio/sounds.json` | 17 个运行时 OGG、17 个原始 MIDI 母版、声音编号映射及运行时音色路径 `soundfont` |
 | `audio/synth/` | 按本次 MIDI 裁剪的 GeneralUser-GS.sf2 及 LICENSE.txt |
-| `config/display.json` | 240×320 逻辑尺寸、默认 720×960 窗口和最近邻缩放 |
+| `config/display.json` | 240×320 逻辑尺寸（游戏启动时与代码常量核对）、默认 720×960 窗口和最近邻缩放 |
+| `catalog.json` | 格式版本 3：定义文件、关卡列表、渲染器加载的贴图清单 `textures`、音频与语言入口 |
 
 音频 `0.mid` 至 `15.mid` 改为 `sound_00.mid` 至 `sound_15.mid`，`mm.mid` 改为 `main_menu.mid`，字节不变。其余声音编号的完整用途尚未核实，不凭猜测命名成枪声或关卡音乐。
 
@@ -41,10 +43,12 @@
 - 参数表保留原数组顺序；`shared_parameters_with` 保留原版共享行关系。尚未完全核实的参数列没有强行改名。
 - 动画的 80ms 是标称步长；原版实际切帧受游戏状态控制。程序绘图参数也不能替代电弧随机折线、机关状态及倒计时等运行时代码。
 - 位图字体沿用英文小写映射到大写的规则；文本中的图标编号对应 `interface.json`。
+- `object_visuals.json` 的每层为 `tile` 或 `part` 编号，可选 `x`/`y` 偏移、`anchor`（`top` 为当前位置，`baseline` 为生成时基线，浮动拾取物用它固定阴影）、`frame`（`variant` 或 `visual_frame`，编号加 `step` 乘该值）及 `states`（仅在这些对象状态绘制）。弹体精灵编号为 `part + life × life_step + variant × variant_step`，`facing` 决定是否镜像。电弧、激光、倒计时和终端箭头由渲染代码手绘。
+- 界面文字不再按行列号读取：`labels` 和 `messages` 的键名由流水线 `publish_assets.py` 中的 `INTERFACE_LABELS` / `INTERFACE_MESSAGES` 从原文本表映射；桌面版提示 `DESKTOP_MESSAGES` 与帮助页键位 `DESKTOP_HELP_CONTROLS` 同样在流水线中写入，替换目标缺失时流水线报错。
 
 ## 文本格式
 
-`catalog.json` 使用格式版本 2；`language.page_format` 为 `rich-text-v1`，`about` 和 `help` 指向 UTF-8 文本。第一行是独立标题，第一个 LF 后才是正文。读取时不要 trim 或忽略空行，正文末尾 LF 也有布局意义。
+`catalog.json` 使用格式版本 3；`language.page_format` 为 `rich-text-v1`，`about` 和 `help` 指向 UTF-8 文本。第一行是独立标题，第一个 LF 后才是正文。读取时不要 trim 或忽略空行，正文末尾 LF 也有布局意义。
 
 ```text
 Help

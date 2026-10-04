@@ -1,7 +1,7 @@
 /** @file game_playthrough.cpp
  * @brief Verify game playthrough against runtime and original-game contracts.
  */
-#include "game.h"
+#include "game/game.h"
 #include <fstream>
 #include <iostream>
 #include <stdexcept>

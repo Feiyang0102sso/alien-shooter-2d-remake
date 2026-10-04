@@ -1,7 +1,7 @@
 /** @file game_flow_tests.cpp
  * @brief Verify game flow tests against runtime and original-game contracts.
  */
-#include "game.h"
+#include "game/game.h"
 #include <fstream>
 #include <iostream>
 #include <stdexcept>

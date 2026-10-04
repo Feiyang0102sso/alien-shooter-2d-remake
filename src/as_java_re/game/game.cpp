@@ -1,32 +1,19 @@
 /** @file game.cpp
  * @brief Coordinate desktop input, original screens, level progression, and saves.
  */
-#include "game.h"
+#include "game/game.h"
 #include <algorithm>
 #include <cmath>
 #include <fstream>
 #include <iostream>
 
 namespace alien {
-namespace {
-void replaceText(std::string& contents, const std::string& from, const std::string& to) {
-    const auto position = contents.find(from);
-    if (position != std::string::npos) { contents.replace(position, from.size(), to); }
-}
-}
 Game::Game(const Assets& assets, std::filesystem::path saveDirectory, bool silent, std::uint64_t seed)
     : assets_(assets), renderer_(assets), world_(assets), saveStore_(assets, std::move(saveDirectory)) {
     world_.seedRandom(seed);
-    help_ = assets_.readText("localization/en/help.txt");
-    about_ = assets_.readText("localization/en/about.txt");
-    // Replace loaded control labels while preserving the original body text and icons.
-    replaceText(help_, "LEFT (4) - Move left", "A - Move left");
-    replaceText(help_, "RIGHT (6) - Move right", "D - Move right");
-    replaceText(help_, "UP (2) - Jump", "W - Jump / Stand up");
-    replaceText(help_, "DOWN (8) - Look down", "S - Crouch / Look down / Terminal");
-    replaceText(help_, "(0) - Switch weapon", "Q / E - Switch weapon\n1-4 - Select gun\n5 - Pistol");
-    replaceText(help_, "SOFT1 (5) - Fire", "LEFT MOUSE - Fire");
-    replaceText(help_, "SOFT2 (#) - Open menu", "ESC - Open menu");
+    // The asset pipeline already writes desktop control labels into the help page.
+    help_ = assets_.helpText;
+    about_ = assets_.aboutText;
     progress_ = saveStore_.load();
     difficulty_ = progress_.difficulty; sound_ = progress_.sound;
     if (progress_.unlocked > 0) { mainSelection_ = 1; }
@@ -61,6 +48,10 @@ void Game::save() {
         std::cerr << "Save failed: " << error.what() << '\n';
     }
 }
+const std::vector<std::string>& Game::completionMessage() const {
+    if (world_.level.id == assets_.levelCount()) { return assets_.text.message(message_key::GameComplete); }
+    return assets_.text.message(message_key::LevelComplete);
+}
 
 void Game::showScreen(Screen screen) {
     world_.cheat.resetInput();
@@ -77,30 +68,35 @@ void Game::showScreen(Screen screen) {
     menuTime_ = 0; selectionTime_ = 0;
     soundPromptTime_ = 0;
     if (audio_) { audio_->pause(false); }
-    if (screen == Screen::Main && audio_) { audio_->play(16); }
-    if (screen == Screen::Pause && audio_) { audio_->play(11); }
+    if (screen == Screen::Main && audio_) { audio_->play(sound::MainMenuMusic); }
+    if (screen == Screen::Pause && audio_) { audio_->play(sound::LevelMusic); }
     buildMenu();
 }
 void Game::buildMenu() {
+    const auto& text = assets_.text;
     items_.clear(); enabled_.clear(); title_.clear();
     switch (screen_) {
     case Screen::Main:
-        items_ = {"NEW GAME", "CONTINUE", "SELECT LEVEL", "SETTINGS", "HELP", "ABOUT", "EXIT"};
+        items_ = {text.label("new_game"), text.label("continue"), text.label("select_level"), text.label("settings"),
+                  text.label("help"), text.label("about"), text.label("exit")};
         enabled_ = {true, progress_.unlocked > 0, progress_.unlocked > 0, true, true, true, true}; selection_ = mainSelection_; break;
-    case Screen::Difficulty: title_ = "NEW GAME"; items_ = {"EASY", "NORMAL", "HARD"}; selection_ = difficulty_; break;
+    case Screen::Difficulty:
+        title_ = text.label("new_game"); items_ = {text.label("easy"), text.label("normal"), text.label("hard")}; selection_ = difficulty_; break;
     case Screen::Levels:
-        title_ = "SELECT LEVEL";
-        for (int level = 1; level <= progress_.unlocked; ++level) { items_.push_back("LEVEL " + std::to_string(level)); }
+        title_ = text.label("select_level");
+        for (int level = 1; level <= progress_.unlocked; ++level) { items_.push_back(text.label("level_prefix") + std::to_string(level)); }
         break;
     case Screen::Settings:
-        title_ = "SETTINGS";
-        if (sound_) { items_.push_back("SOUND ON"); }
-        else { items_.push_back("SOUND OFF"); }
-        items_.push_back("VIBRATION OFF"); enabled_ = {true, false};
+        title_ = text.label("settings");
+        if (sound_) { items_.push_back(text.label("sound_on")); }
+        else { items_.push_back(text.label("sound_off")); }
+        // Vibration has no desktop equivalent and stays disabled.
+        items_.push_back(text.label("vibration_off")); enabled_ = {true, false};
         break;
     case Screen::Pause:
-        items_ = {"CONTINUE", "SOUND OFF", "VIBRATION OFF", "RESTART", "MENU", "EXIT"};
-        if (sound_) { items_[1] = "SOUND ON"; }
+        items_ = {text.label("continue"), text.label("sound_off"), text.label("vibration_off"), text.label("restart"),
+                  text.label("menu"), text.label("exit")};
+        if (sound_) { items_[1] = text.label("sound_on"); }
         enabled_ = {true, true, false, true, true, true}; break;
     default: break;
     }
@@ -110,7 +106,7 @@ void Game::startLevel(int level, bool carry) {
     if (!carry) { checkpoint_ = Inventory{}; }
     world_.load(level, difficulty_, &checkpoint_);
     showScreen(Screen::Playing);
-    if (audio_) { audio_->play(11); }
+    if (audio_) { audio_->play(sound::LevelMusic); }
 }
 void Game::choose() {
     if (items_.empty() || !enabled_[selection_]) { return; }
@@ -163,14 +159,15 @@ void Game::menuInput(const Controls& controls) {
     if (controls.leftClick) {
         const auto mouse = controls.mouse;
         if (mouse.x < 0 || mouse.x >= ScreenWidth || mouse.y < 0 || mouse.y >= ScreenHeight) { return; }
-        if (mouse.y >= 309) {
-            if (mouse.x < 60) { choose(); }
-            if (mouse.x > 185) { back(); }
+        // Clicks on the soft-key bar act as SELECT (left) and BACK (right).
+        if (mouse.y >= layout::SoftKeyClickY) {
+            if (mouse.x < layout::SoftKeyLeftClickWidth) { choose(); }
+            if (mouse.x > layout::SoftKeyRightClickX) { back(); }
             return;
         }
-        const auto layout = menuLayout(static_cast<int>(items_.size()), !title_.empty(), screen_ == Screen::Pause);
-        const int item = static_cast<int>(mouse.y - layout.firstItem) / 12;
-        if (mouse.x >= layout.left && mouse.x < layout.left + layout.width && mouse.y >= layout.firstItem
+        const auto box = menuLayout(static_cast<int>(items_.size()), !title_.empty(), screen_ == Screen::Pause);
+        const int item = static_cast<int>(mouse.y - box.firstItem) / layout::MenuItemHeight;
+        if (mouse.x >= box.left && mouse.x < box.left + box.width && mouse.y >= box.firstItem
             && item >= 0 && item < static_cast<int>(items_.size())) {
             selection_ = item; choose();
         }
@@ -201,12 +198,13 @@ void Game::update(float elapsed, Vector2 mouse, bool focused) {
     controls.player.jump = controls.up;
     if (IsKeyPressed(KEY_Q)) { controls.player.cycleWeapon = -1; }
     if (IsKeyPressed(KEY_E)) { controls.player.cycleWeapon = 1; }
+    // Keys 1-4 select the four guns; 5 selects the pistol.
     for (int key = KEY_ONE; key <= KEY_FOUR; ++key) {
         if (IsKeyPressed(key)) {
             controls.player.weapon = key - KEY_ONE + 1;
         }
     }
-    if (IsKeyPressed(KEY_FIVE)) { controls.player.weapon = 0; }
+    if (IsKeyPressed(KEY_FIVE)) { controls.player.weapon = rules::Pistol; }
     update(elapsed, controls, focused);
 }
 
@@ -232,61 +230,59 @@ Input Game::takePlayerInput(bool heldFire) {
 }
 void Game::update(float elapsed, const Controls& controls, bool focused) {
     const bool confirm = controls.confirm || controls.leftClick;
-    if (!items_.empty()) { menuTime_ += std::min(elapsed, 0.25f); selectionTime_ += elapsed; }
+    if (!items_.empty()) { menuTime_ += std::min(elapsed, MaxFrameSeconds); selectionTime_ += elapsed; }
     if (screen_ == Screen::Intro) {
         introTime_ += elapsed;
-        if (introTime_ >= 5.0f || confirm) { showScreen(Screen::SoundPrompt); }
+        if (introTime_ >= flow::IntroSeconds || confirm) { showScreen(Screen::SoundPrompt); }
         return;
     }
     if (screen_ == Screen::SoundPrompt) {
         soundPromptTime_ += elapsed;
         bool accept = controls.confirm || controls.yes;
         bool decline = controls.no || controls.cancel || controls.rightClick;
-        if (controls.leftClick && controls.mouse.y >= 302 && controls.mouse.y < ScreenHeight) {
-            accept = controls.mouse.x >= 0 && controls.mouse.x < 60;
-            decline = controls.mouse.x >= 180 && controls.mouse.x < ScreenWidth;
+        if (controls.leftClick && controls.mouse.y >= layout::PromptClickY && controls.mouse.y < ScreenHeight) {
+            accept = controls.mouse.x >= 0 && controls.mouse.x < layout::SoftKeyLeftClickWidth;
+            decline = controls.mouse.x >= layout::PromptRightClickX && controls.mouse.x < ScreenWidth;
         }
         if (accept) { setSound(true); save(); showScreen(Screen::Main); }
         else if (decline) { setSound(false); save(); showScreen(Screen::Main); }
         return;
     }
     if (screen_ == Screen::Help || screen_ == Screen::About) {
-        if (controls.cancel || controls.rightClick || (controls.leftClick && controls.mouse.y >= 302)) { back(); return; }
-        int movement = -static_cast<int>(controls.wheel * 28);
-        if (controls.player.down) { scrollRemainder_ += elapsed * 100; }
-        if (controls.scrollUp) { scrollRemainder_ -= elapsed * 100; }
+        if (controls.cancel || controls.rightClick || (controls.leftClick && controls.mouse.y >= layout::PromptClickY)) { back(); return; }
+        int movement = -static_cast<int>(controls.wheel * flow::PageWheelStep);
+        if (controls.player.down) { scrollRemainder_ += elapsed * flow::PageScrollPerSecond; }
+        if (controls.scrollUp) { scrollRemainder_ -= elapsed * flow::PageScrollPerSecond; }
         const int continuous = static_cast<int>(scrollRemainder_);
         movement += continuous; scrollRemainder_ -= continuous;
-        if (controls.pageDown) { movement += 240; }
-        if (controls.pageUp) { movement -= 240; }
+        if (controls.pageDown) { movement += flow::PageJump; }
+        if (controls.pageUp) { movement -= flow::PageJump; }
         scroll_ = std::clamp(scroll_ + movement, 0, maxScroll_); return;
     }
     if (screen_ == Screen::Dying) {
-        accumulator_ += std::min(elapsed, 0.25f);
-        float interval = 0.08f;
-        if (world_.deathWipeActive) { interval = 0.1f; }
+        accumulator_ += std::min(elapsed, MaxFrameSeconds);
+        float interval = DeathParticleStepSeconds;
+        if (world_.deathWipeActive) { interval = DeathWipeStepSeconds; }
         while (accumulator_ >= interval) {
             accumulator_ -= interval;
             const bool finished = world_.advanceDeathEffect();
             playWorldSounds();
             if (finished) { showScreen(Screen::Failed); break; }
-            if (world_.deathWipeActive) { interval = 0.1f; }
+            if (world_.deathWipeActive) { interval = DeathWipeStepSeconds; }
         }
         return;
     }
     if (screen_ == Screen::Failed) {
         messageTime_ += elapsed;
-        if (confirm && messageTime_ >= messageDuration(assets_.text[12])) { startLevel(world_.level.id, true); }
+        if (confirm && messageTime_ >= messageDuration(assets_.text.message(message_key::LevelFailed))) { startLevel(world_.level.id, true); }
         else if (controls.cancel) { showScreen(Screen::Main); }
         return;
     }
     if (screen_ == Screen::Completed) {
         messageTime_ += elapsed;
-        int row = 13;
-        if (world_.level.id == 8) { row = 15; }
-        if (confirm && messageTime_ >= messageDuration(assets_.text[row])) {
+        if (confirm && messageTime_ >= messageDuration(completionMessage())) {
             world_.cheat.disable(world_);
-            if (world_.level.id < 8) {
+            if (world_.level.id < assets_.levelCount()) {
                 checkpoint_ = world_.inventory; progress_.checkpoint = checkpoint_;
                 progress_.difficulty = difficulty_; progress_.unlocked = std::max(progress_.unlocked, world_.level.id + 1);
                 save(); startLevel(world_.level.id + 1, true);
@@ -300,9 +296,9 @@ void Game::update(float elapsed, const Controls& controls, bool focused) {
     for (unsigned char character : controls.textInput) { world_.cheat.input(character, world_, assets_); }
     if (world_.inCameraTransit()) {
         queuePlayerInput(controls);
-        accumulator_ += std::min(elapsed, 0.25f);
-        while (accumulator_ >= 0.05f) {
-            accumulator_ -= 0.05f;
+        accumulator_ += std::min(elapsed, MaxFrameSeconds);
+        while (accumulator_ >= CameraTransitStepSeconds) {
+            accumulator_ -= CameraTransitStepSeconds;
             if (world_.advanceCameraTransition(controls.player.down)) {
                 world_.tick(takePlayerInput(controls.player.fire));
                 playWorldSounds();
@@ -322,10 +318,10 @@ void Game::update(float elapsed, const Controls& controls, bool focused) {
     }
     queuePlayerInput(controls);
     if (controls.debug) { collisionDebug_ = !collisionDebug_; }
-    accumulator_ += std::min(elapsed, 0.25f);
-    while (accumulator_ >= 0.08f) {
+    accumulator_ += std::min(elapsed, MaxFrameSeconds);
+    while (accumulator_ >= TickSeconds) {
         world_.tick(takePlayerInput(controls.player.fire));
-        accumulator_ -= 0.08f;
+        accumulator_ -= TickSeconds;
         playWorldSounds();
         if (world_.dead) { world_.beginDeathEffect(); showScreen(Screen::Dying); break; }
         if (world_.complete) {
@@ -345,31 +341,28 @@ void Game::update(float elapsed, const Controls& controls, bool focused) {
     }
 }
 void Game::draw() {
-    const int menuPhase = static_cast<int>(menuTime_ / 0.03f) * 4;
+    const int menuPhase = static_cast<int>(menuTime_ / flow::MenuAnimationStepSeconds) * flow::MenuPhasePerStep;
     int spread = 0;
-    if (selectionTime_ < 0.3f) {
-        int halfWidth = 81;
-        if (screen_ == Screen::Pause) { halfWidth = 45; }
-        spread = halfWidth - static_cast<int>(selectionTime_ / 0.03f) * (halfWidth / 10);
+    if (selectionTime_ < flow::SelectionSpreadSeconds) {
+        int halfWidth = layout::MenuSpreadHalfWidth;
+        if (screen_ == Screen::Pause) { halfWidth = layout::PauseSpreadHalfWidth; }
+        spread = halfWidth - static_cast<int>(selectionTime_ / flow::MenuAnimationStepSeconds) * (halfWidth / flow::SelectionSpreadSteps);
     }
     switch (screen_) {
     case Screen::Intro:
         ClearBackground(WHITE);
-        if (introTime_ < 3.0f) { renderer_.image("publisher_logo", 0, 0); }
-        else { ClearBackground(BLACK); renderer_.image("intro_logo", 67, 131); }
+        if (introTime_ < flow::PublisherLogoSeconds) { renderer_.image("publisher_logo", 0, 0); }
+        else { ClearBackground(BLACK); renderer_.image("intro_logo", layout::IntroLogoX, layout::IntroLogoY); }
         break;
     case Screen::SoundPrompt:
         // The original loop shows a blank screen for 200ms, then the prompt for 1000ms.
-        renderer_.soundPrompt(std::fmod(soundPromptTime_, 1.2f) >= 0.2f); break;
+        renderer_.soundPrompt(std::fmod(soundPromptTime_, flow::SoundPromptCycleSeconds) >= flow::SoundPromptBlankSeconds); break;
     case Screen::Playing: case Screen::Pause: case Screen::Dying: case Screen::Failed: case Screen::Completed:
         renderer_.world(world_, collisionDebug_, screen_ != Screen::Pause);
         if (screen_ == Screen::Dying || screen_ == Screen::Failed) { renderer_.deathWipe(world_); }
         if (screen_ == Screen::Pause) { renderer_.menu(title_, items_, selection_, enabled_, true, menuPhase, spread); }
-        if (screen_ == Screen::Failed) { renderer_.message(assets_.text[12], true, messageTime_); }
-        if (screen_ == Screen::Completed) {
-            int row = 13; if (world_.level.id == 8) { row = 15; }
-            renderer_.message(assets_.text[row], false, messageTime_);
-        }
+        if (screen_ == Screen::Failed) { renderer_.message(assets_.text.message(message_key::LevelFailed), true, messageTime_); }
+        if (screen_ == Screen::Completed) { renderer_.message(completionMessage(), false, messageTime_); }
         if (screen_ == Screen::Playing && !world_.message.empty()) { renderer_.message(world_.message, false, messageTime_); }
         break;
     case Screen::Help: maxScroll_ = renderer_.richPage(help_, scroll_); break;

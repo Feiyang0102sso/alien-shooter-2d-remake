@@ -1,9 +1,9 @@
 /** @file main.cpp
  * @brief Run the desktop window and fixed-resolution game canvas.
  */
-#include "game.h"
-#include "config.h"
-#include "platform.h"
+#include "game/game.h"
+#include "app/config.h"
+#include "platform/platform.h"
 #include "version.h"
 #include <algorithm>
 #include <chrono>
@@ -36,7 +36,7 @@ Options parseOptions(int argc, char** argv) {
         else if (option == "--seed") { options.seed = std::stoull(value); }
         else { throw std::runtime_error("Unknown argument: " + option); }
     }
-    if (options.level < 0 || options.level > 8) { throw std::runtime_error("Level must be 1-8."); }
+    if (options.level < 0) { throw std::runtime_error("Level must be positive."); }
     return options;
 }
 }
@@ -53,6 +53,9 @@ int main(int argc, char** argv) {
         const auto config = alien::loadConfig(executable / alien::config::FileName);
         alien::Assets assets(options.assets);
         assets.load();
+        if (options.level > assets.levelCount()) {
+            throw std::runtime_error("Level must be 1-" + std::to_string(assets.levelCount()) + ".");
+        }
         unsigned int flags = FLAG_WINDOW_RESIZABLE | FLAG_VSYNC_HINT;
         if (options.hidden) { flags |= FLAG_WINDOW_HIDDEN; }
         SetConfigFlags(flags);
@@ -62,16 +65,15 @@ int main(int argc, char** argv) {
         SetWindowMinSize(alien::ScreenWidth, alien::ScreenHeight);
         const int monitor = GetCurrentMonitor();
         // Keep the initial window within the monitor while preserving integer scaling.
-        constexpr int WindowMargin = 80;
-        const int fittingScaleX = (GetMonitorWidth(monitor) - WindowMargin) / config.defaultScreenX;
-        const int fittingScaleY = (GetMonitorHeight(monitor) - WindowMargin) / config.defaultScreenY;
+        const int fittingScaleX = (GetMonitorWidth(monitor) - alien::config::WindowMargin) / config.defaultScreenX;
+        const int fittingScaleY = (GetMonitorHeight(monitor) - alien::config::WindowMargin) / config.defaultScreenY;
         const int initialScale = std::max(1, std::min({config.scalar, fittingScaleX, fittingScaleY}));
         const int windowWidth = std::max(alien::ScreenWidth, config.defaultScreenX * initialScale);
         const int windowHeight = std::max(alien::ScreenHeight, config.defaultScreenY * initialScale);
         SetWindowSize(windowWidth, windowHeight);
         std::cout << "Window configured: " << config.title << ", " << windowWidth << 'x' << windowHeight
                   << ", scalar=" << initialScale << '\n';
-        SetTargetFPS(60);
+        SetTargetFPS(alien::config::TargetFps);
         auto target = LoadRenderTexture(alien::ScreenWidth, alien::ScreenHeight);
         SetTextureFilter(target.texture, TEXTURE_FILTER_POINT);
         {

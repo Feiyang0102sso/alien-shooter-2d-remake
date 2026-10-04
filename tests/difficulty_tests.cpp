@@ -1,7 +1,7 @@
 /** @file difficulty_tests.cpp
  * @brief Verify difficulty tests against runtime and original-game contracts.
  */
-#include "world.h"
+#include "world/world.h"
 #include <fstream>
 #include <iostream>
 #include <stdexcept>

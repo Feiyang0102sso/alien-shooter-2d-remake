@@ -1,7 +1,7 @@
 /** @file ui_snapshots.cpp
  * @brief Verify ui snapshots against runtime and original-game contracts.
  */
-#include "renderer.h"
+#include "render/renderer.h"
 #include <filesystem>
 #include <iostream>
 

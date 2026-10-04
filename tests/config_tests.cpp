@@ -1,9 +1,9 @@
 /** @file config_tests.cpp
  * @brief Verify editable CFG files and executable-relative save storage.
  */
-#include "config.h"
-#include "platform.h"
-#include "save.h"
+#include "app/config.h"
+#include "platform/platform.h"
+#include "game/save.h"
 #include <chrono>
 #include <fstream>
 #include <iostream>

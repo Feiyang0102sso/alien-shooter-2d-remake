@@ -2,15 +2,15 @@
  * @brief Draw original sprites, terrain, menus, text, and effects.
  */
 #pragma once
-#include "assets.h"
-#include "world.h"
+#include "core/assets.h"
+#include "world/world.h"
 #include <raylib.h>
 #include <map>
 
 namespace alien {
 inline constexpr Color PixelGreen{0, 255, 0, 255};
 struct MenuLayout {
-    int left = 4, top = 82, width = 162, height = 224, firstItem = 0;
+    int left = layout::MenuLeft, top = layout::MenuTop, width = layout::MenuWidth, height = layout::MenuHeight, firstItem = 0;
 };
 MenuLayout menuLayout(int count, bool hasTitle, bool overlay);
 float messageDuration(const std::vector<std::string>& lines);
@@ -35,6 +35,11 @@ public:
     int richPage(const std::string& contents, int scroll) const;
 private:
     void object(const Object& object, const World& world) const;
+    void objectLayers(const ObjectVisual& visual, const Object& object, int theme, int x, int y, int baseline) const;
+    void generatorEffects(const Object& object, const World& world, int x, int y) const;
+    void switchLasers(const Object& object, int x, int y) const;
+    void terminalEffects(const Object& object, int theme, int x, int y) const;
+    void projectile(const Projectile& projectile, const World& world) const;
     void hud(const World& world, bool showHealth) const;
     const Assets& assets_;
     std::map<std::string, Texture2D> textures_;

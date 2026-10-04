@@ -2,13 +2,12 @@
  * @brief Parse standard MIDI events into deterministic sample timestamps.
  */
 #pragma once
+#include "core/constants.h"
 #include <cstdint>
 #include <filesystem>
 #include <vector>
 
 namespace alien {
-inline constexpr int AudioSampleRate = 44100;
-
 // Convert SMF time directly to sample positions and preserve same-tick file order.
 struct MidiEvent {
     std::uint64_t sample = 0;

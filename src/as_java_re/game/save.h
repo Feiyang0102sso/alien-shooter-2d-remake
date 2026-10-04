@@ -2,12 +2,12 @@
  * @brief Persist level-start checkpoints with atomic replacement and backup recovery.
  */
 #pragma once
-#include "world.h"
+#include "world/world.h"
 
 namespace alien {
 struct Progress {
     int unlocked = 0;
-    int difficulty = 1;
+    int difficulty = rules::DefaultDifficulty;
     bool sound = true;
     Inventory checkpoint;
 };

@@ -2,8 +2,8 @@
  * @brief Schedule original MIDI playback and retain interrupted synthesizer state.
  */
 #pragma once
-#include "assets.h"
-#include "midi.h"
+#include "core/assets.h"
+#include "audio/midi.h"
 #include <fluidsynth.h>
 #include <raylib.h>
 #include <memory>
@@ -33,7 +33,7 @@ private:
     void dispatch(Voice& voice, const MidiEvent& event);
     // Settings outlive synthesizers because members are destroyed in reverse declaration order.
     std::unique_ptr<fluid_settings_t, decltype(&delete_fluid_settings)> settings_{nullptr, delete_fluid_settings};
-    std::array<Voice, 17> voices_;
+    std::vector<Voice> voices_;
     AudioStream stream_{};
     mutable std::mutex mutex_;
     int active_ = -1;

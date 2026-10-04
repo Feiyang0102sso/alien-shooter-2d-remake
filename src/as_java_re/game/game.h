@@ -2,9 +2,9 @@
  * @brief Coordinate desktop input, original screens, level progression, and saves.
  */
 #pragma once
-#include "audio.h"
-#include "renderer.h"
-#include "save.h"
+#include "audio/audio.h"
+#include "render/renderer.h"
+#include "game/save.h"
 #include <memory>
 
 namespace alien {
@@ -25,7 +25,7 @@ struct Controls {
 
 class Game {
 public:
-    Game(const Assets& assets, std::filesystem::path saveDirectory, bool silent, std::uint64_t seed = 12345);
+    Game(const Assets& assets, std::filesystem::path saveDirectory, bool silent, std::uint64_t seed = DefaultRandomSeed);
     void update(float elapsed, Vector2 mouse, bool focused);
     void update(float elapsed, const Controls& controls, bool focused);
     void draw();
@@ -45,6 +45,7 @@ private:
     void playWorldSounds();
     void queuePlayerInput(const Controls& controls);
     Input takePlayerInput(bool heldFire);
+    const std::vector<std::string>& completionMessage() const;
     const Assets& assets_;
     Renderer renderer_;
     std::unique_ptr<Audio> audio_;
@@ -59,7 +60,7 @@ private:
     Input pending_;
     float accumulator_ = 0, introTime_ = 0, messageTime_ = 0, scrollRemainder_ = 0;
     float menuTime_ = 0, selectionTime_ = 1, soundPromptTime_ = 0;
-    int selection_ = 0, mainSelection_ = 0, difficulty_ = 1, scroll_ = 0, maxScroll_ = 0;
+    int selection_ = 0, mainSelection_ = 0, difficulty_ = rules::DefaultDifficulty, scroll_ = 0, maxScroll_ = 0;
     bool exit_ = false, sound_ = true, collisionDebug_ = false;
 };
 }

@@ -1,8 +1,8 @@
 /** @file world_trace.cpp
  * @brief Verify world trace against runtime and original-game contracts.
  */
-#include "assets.h"
-#include "world.h"
+#include "core/assets.h"
+#include "world/world.h"
 #include "reference_snapshot.h"
 #include "reference_scenarios.h"
 #include <fstream>

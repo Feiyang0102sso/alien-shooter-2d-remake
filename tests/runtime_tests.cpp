@@ -1,9 +1,9 @@
 /** @file runtime_tests.cpp
  * @brief Verify runtime tests against runtime and original-game contracts.
  */
-#include "assets.h"
-#include "midi.h"
-#include "world.h"
+#include "core/assets.h"
+#include "audio/midi.h"
+#include "world/world.h"
 #include <iostream>
 #include <fstream>
 #include <stdexcept>

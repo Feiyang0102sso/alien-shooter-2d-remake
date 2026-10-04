@@ -1,7 +1,7 @@
 /** @file page_snapshots.cpp
  * @brief Verify page snapshots against runtime and original-game contracts.
  */
-#include "game.h"
+#include "game/game.h"
 #include <filesystem>
 #include <iostream>
 

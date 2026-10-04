@@ -2,7 +2,7 @@
  * @brief Serialize original-compatible world states for regression comparisons.
  */
 #pragma once
-#include "world.h"
+#include "world/world.h"
 
 inline alien::Json projectileSnapshot(const alien::World& world) {
     alien::Json shots = alien::Json::array();

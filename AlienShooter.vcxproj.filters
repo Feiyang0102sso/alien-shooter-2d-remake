@@ -1,8 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="as_java_re\app">
+      <UniqueIdentifier>{AC17F383-B503-5CAE-84EB-56AF98BCDE8B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="as_java_re\audio">
+      <UniqueIdentifier>{3FE0D969-E12A-506D-A7B9-F6845DAB75CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="as_java_re\core">
+      <UniqueIdentifier>{D1FC846A-B270-5BAE-ADD2-2461FE039CA8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="as_java_re\game">
+      <UniqueIdentifier>{CEE9ABCC-E97D-502D-9836-FDC2FDEE3F69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="as_java_re\platform">
+      <UniqueIdentifier>{5AFF13F4-7B92-5180-B2CF-15C4A6DC10EA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="as_java_re\render">
+      <UniqueIdentifier>{C5E45680-E1C0-5833-82D0-BA5C639FD782}</UniqueIdentifier>
+    </Filter>
     <Filter Include="as_java_re">
-      <UniqueIdentifier>{9399F605-DFD2-5707-981F-FDCD89E55DE2}</UniqueIdentifier>
+      <UniqueIdentifier>{7DE0C97A-D076-532D-93A2-8EE8C266781F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="as_java_re\world">
+      <UniqueIdentifier>{366FAEFF-40FF-5035-A7FE-10BA70232F8F}</UniqueIdentifier>
     </Filter>
     <Filter Include="3rdparty">
       <UniqueIdentifier>{999A089D-1242-5865-8E00-E5B1F473FE81}</UniqueIdentifier>
@@ -15,75 +36,117 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\as_java_re\assets.cpp">
-      <Filter>as_java_re</Filter>
+    <ClCompile Include="src\as_java_re\app\config.cpp">
+      <Filter>as_java_re\app</Filter>
     </ClCompile>
-    <ClInclude Include="src\as_java_re\assets.h">
-      <Filter>as_java_re</Filter>
+    <ClInclude Include="src\as_java_re\app\config.h">
+      <Filter>as_java_re\app</Filter>
     </ClInclude>
-    <ClCompile Include="src\as_java_re\audio.cpp">
-      <Filter>as_java_re</Filter>
+    <ClCompile Include="src\as_java_re\app\main.cpp">
+      <Filter>as_java_re\app</Filter>
     </ClCompile>
-    <ClInclude Include="src\as_java_re\audio.h">
-      <Filter>as_java_re</Filter>
-    </ClInclude>
-    <ClCompile Include="src\as_java_re\cheat.cpp">
-      <Filter>as_java_re</Filter>
+    <ClCompile Include="src\as_java_re\audio\audio.cpp">
+      <Filter>as_java_re\audio</Filter>
     </ClCompile>
-    <ClInclude Include="src\as_java_re\cheat.h">
-      <Filter>as_java_re</Filter>
+    <ClInclude Include="src\as_java_re\audio\audio.h">
+      <Filter>as_java_re\audio</Filter>
     </ClInclude>
-    <ClCompile Include="src\as_java_re\config.cpp">
-      <Filter>as_java_re</Filter>
+    <ClCompile Include="src\as_java_re\audio\midi.cpp">
+      <Filter>as_java_re\audio</Filter>
     </ClCompile>
-    <ClInclude Include="src\as_java_re\config.h">
-      <Filter>as_java_re</Filter>
+    <ClInclude Include="src\as_java_re\audio\midi.h">
+      <Filter>as_java_re\audio</Filter>
     </ClInclude>
-    <ClCompile Include="src\as_java_re\game.cpp">
-      <Filter>as_java_re</Filter>
+    <ClCompile Include="src\as_java_re\core\assets.cpp">
+      <Filter>as_java_re\core</Filter>
     </ClCompile>
-    <ClInclude Include="src\as_java_re\game.h">
-      <Filter>as_java_re</Filter>
+    <ClInclude Include="src\as_java_re\core\assets.h">
+      <Filter>as_java_re\core</Filter>
     </ClInclude>
-    <ClCompile Include="src\as_java_re\main.cpp">
-      <Filter>as_java_re</Filter>
+    <ClInclude Include="src\as_java_re\core\constants.h">
+      <Filter>as_java_re\core</Filter>
+    </ClInclude>
+    <ClCompile Include="src\as_java_re\game\game.cpp">
+      <Filter>as_java_re\game</Filter>
+    </ClCompile>
+    <ClInclude Include="src\as_java_re\game\game.h">
+      <Filter>as_java_re\game</Filter>
+    </ClInclude>
+    <ClCompile Include="src\as_java_re\game\save.cpp">
+      <Filter>as_java_re\game</Filter>
+    </ClCompile>
+    <ClInclude Include="src\as_java_re\game\save.h">
+      <Filter>as_java_re\game</Filter>
+    </ClInclude>
+    <ClCompile Include="src\as_java_re\platform\platform.cpp">
+      <Filter>as_java_re\platform</Filter>
+    </ClCompile>
+    <ClInclude Include="src\as_java_re\platform\platform.h">
+      <Filter>as_java_re\platform</Filter>
+    </ClInclude>
+    <ClCompile Include="src\as_java_re\platform\windows_entry.cpp">
+      <Filter>as_java_re\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\as_java_re\render\pixel.cpp">
+      <Filter>as_java_re\render</Filter>
+    </ClCompile>
+    <ClInclude Include="src\as_java_re\render\pixel.h">
+      <Filter>as_java_re\render</Filter>
+    </ClInclude>
+    <ClCompile Include="src\as_java_re\render\renderer.cpp">
+      <Filter>as_java_re\render</Filter>
+    </ClCompile>
+    <ClInclude Include="src\as_java_re\render\renderer.h">
+      <Filter>as_java_re\render</Filter>
+    </ClInclude>
+    <ClCompile Include="src\as_java_re\render\ui_renderer.cpp">
+      <Filter>as_java_re\render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\as_java_re\render\world_renderer.cpp">
+      <Filter>as_java_re\render</Filter>
     </ClCompile>
     <ClInclude Include="src\as_java_re\version.h">
       <Filter>as_java_re</Filter>
     </ClInclude>
-    <ClCompile Include="src\as_java_re\midi.cpp">
-      <Filter>as_java_re</Filter>
+    <ClCompile Include="src\as_java_re\world\cheat.cpp">
+      <Filter>as_java_re\world</Filter>
     </ClCompile>
-    <ClInclude Include="src\as_java_re\midi.h">
-      <Filter>as_java_re</Filter>
+    <ClInclude Include="src\as_java_re\world\cheat.h">
+      <Filter>as_java_re\world</Filter>
     </ClInclude>
-    <ClCompile Include="src\as_java_re\platform.cpp">
-      <Filter>as_java_re</Filter>
-    </ClCompile>
-    <ClInclude Include="src\as_java_re\platform.h">
-      <Filter>as_java_re</Filter>
+    <ClInclude Include="src\as_java_re\world\geometry.h">
+      <Filter>as_java_re\world</Filter>
     </ClInclude>
-    <ClCompile Include="src\as_java_re\renderer.cpp">
-      <Filter>as_java_re</Filter>
+    <ClCompile Include="src\as_java_re\world\world.cpp">
+      <Filter>as_java_re\world</Filter>
     </ClCompile>
-    <ClInclude Include="src\as_java_re\renderer.h">
-      <Filter>as_java_re</Filter>
+    <ClInclude Include="src\as_java_re\world\world.h">
+      <Filter>as_java_re\world</Filter>
     </ClInclude>
-    <ClCompile Include="src\as_java_re\save.cpp">
-      <Filter>as_java_re</Filter>
+    <ClCompile Include="src\as_java_re\world\world_actor.cpp">
+      <Filter>as_java_re\world</Filter>
     </ClCompile>
-    <ClInclude Include="src\as_java_re\save.h">
-      <Filter>as_java_re</Filter>
-    </ClInclude>
-    <ClCompile Include="src\as_java_re\windows_entry.cpp">
-      <Filter>as_java_re</Filter>
+    <ClCompile Include="src\as_java_re\world\world_effects.cpp">
+      <Filter>as_java_re\world</Filter>
     </ClCompile>
-    <ClCompile Include="src\as_java_re\world.cpp">
-      <Filter>as_java_re</Filter>
+    <ClCompile Include="src\as_java_re\world\world_enemy.cpp">
+      <Filter>as_java_re\world</Filter>
     </ClCompile>
-    <ClInclude Include="src\as_java_re\world.h">
-      <Filter>as_java_re</Filter>
-    </ClInclude>
+    <ClCompile Include="src\as_java_re\world\world_level.cpp">
+      <Filter>as_java_re\world</Filter>
+    </ClCompile>
+    <ClCompile Include="src\as_java_re\world\world_object.cpp">
+      <Filter>as_java_re\world</Filter>
+    </ClCompile>
+    <ClCompile Include="src\as_java_re\world\world_player.cpp">
+      <Filter>as_java_re\world</Filter>
+    </ClCompile>
+    <ClCompile Include="src\as_java_re\world\world_projectile.cpp">
+      <Filter>as_java_re\world</Filter>
+    </ClCompile>
+    <ClCompile Include="src\as_java_re\world\world_terrain.cpp">
+      <Filter>as_java_re\world</Filter>
+    </ClCompile>
     <ClCompile Include="src\3rdparty\raylib\src\raudio.c">
       <Filter>3rdparty\raylib</Filter>
     </ClCompile>

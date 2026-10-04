@@ -1,7 +1,7 @@
 /** @file playthrough_render.cpp
  * @brief Verify playthrough render against runtime and original-game contracts.
  */
-#include "renderer.h"
+#include "render/renderer.h"
 #include <filesystem>
 #include <fstream>
 #include <iostream>

@@ -7,7 +7,9 @@ from PIL import Image, ImageDraw
 
 from .asset_common import OUTPUT, SOURCE, PREVIEW_SCALE, compose_parts, contact_sheet, save_image, save_json
 
+# Inclusive original frame ranges; the runtime advances numerically and skips empty frames inside them.
 ANIMATION_RANGES = {
+    "player_unarmed_idle": (0, 0), "player_machine_gun_idle": (1, 1), "player_weapon_idle": (2, 2),
     "player_unarmed_walk": (3, 6), "player_machine_gun_walk": (7, 10),
     "player_weapon_walk": (11, 14), "player_unarmed_attack": (15, 18),
     "player_machine_gun_attack": (19, 22), "player_flamethrower_attack": (23, 26),
@@ -18,6 +20,8 @@ ANIMATION_RANGES = {
     "monster_4_walk": (66, 70), "monster_4_attack": (71, 74),
     "monster_5_walk": (76, 80), "monster_5_attack": (81, 84),
 }
+# The pistol fires on these attack frames; other attacks fire when their animation ends.
+ANIMATION_FIRE_FRAMES = {"player_unarmed_attack": [16, 18]}
 EFFECT_SPRITES = {
     "bullet": [53], "flame_projectile": [55, 54], "energy_projectile": [56],
     "explosion": [75, 76, 77], "rocket": [58, 59, 60],
@@ -67,7 +71,10 @@ def extract_animations(frames, sprites):
             for frame_id in frame_ids:
                 entries.append(frames[frame_id][direction])
             save_animation(entries, OUTPUT / "animations" / f"{name}_{direction}.gif")
-        records.append({"name": name, "frame_ids": frame_ids, "source_range": list(bounds), "source": "e.java:4425-4483", "preview_frame_ms": 80})
+        record = {"name": name, "frame_ids": frame_ids, "source_range": list(bounds), "source": "e.java:4425-4483", "preview_frame_ms": 80}
+        if name in ANIMATION_FIRE_FRAMES:
+            record["fire_frames"] = ANIMATION_FIRE_FRAMES[name]
+        records.append(record)
     # Export variants of standing and walking frames modified by the original m(int).
     weapon_components = {2: [29, 30], 3: [25, 0], 4: [26, 27]}
     variants = []

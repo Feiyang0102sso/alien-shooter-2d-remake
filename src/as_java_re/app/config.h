@@ -2,23 +2,12 @@
  * @brief Define the settings loaded from the executable's config.cfg.
  */
 #pragma once
+#include "core/constants.h"
 #include <filesystem>
 #include <string>
 
 namespace alien {
-namespace config {
-// Keep file names, CFG keys, and defaults together for future changes.
-inline constexpr char FileName[] = "config.cfg";
-inline constexpr char TitleKey[] = "Title";
-inline constexpr char ScreenXKey[] = "DefaultScreenX";
-inline constexpr char ScreenYKey[] = "DefaultScreenY";
-inline constexpr char ScalarKey[] = "Scalar";
-
-inline constexpr char DefaultTitle[] = "Alien Shooter 2D";
-inline constexpr int DefaultScreenX = 240;
-inline constexpr int DefaultScreenY = 320;
-inline constexpr int DefaultScalar = 3;
-}
+// File name, CFG keys, and defaults live in core/constants.h (namespace config).
 
 struct Config {
     std::string title = config::DefaultTitle;

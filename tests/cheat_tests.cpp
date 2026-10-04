@@ -1,7 +1,7 @@
 /** @file cheat_tests.cpp
  * @brief Verify CHGOD input, damage immunity, revocation, and save isolation.
  */
-#include "game.h"
+#include "game/game.h"
 #include <iostream>
 #include <stdexcept>
 

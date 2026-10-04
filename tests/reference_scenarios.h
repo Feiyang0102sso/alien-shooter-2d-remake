@@ -2,7 +2,7 @@
  * @brief Arrange controlled scenes shared with the original bytecode adapter.
  */
 #pragma once
-#include "world.h"
+#include "world/world.h"
 #include <stdexcept>
 
 // Match Java adapter scene injection without implementing or replacing gameplay mechanisms.

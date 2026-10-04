@@ -23,13 +23,15 @@ You will gain access to advanced weapons and equipment:
 <img:14> - Money
 
 <align:center>* CONTROLS *
-<align:left>LEFT (4) - Move left
-RIGHT (6) - Move right
-UP (2) - Jump
-DOWN (8) - Look down
-(0) - Switch weapon
-SOFT1 (5) - Fire
-SOFT2 (#) - Open menu
+<align:left>A - Move left
+D - Move right
+W - Jump / Stand up
+S - Crouch / Look down / Terminal
+Q / E - Switch weapon
+1-4 - Select gun
+5 - Pistol
+LEFT MOUSE - Fire
+ESC - Open menu
 
 <align:center>* SCORE *
 <align:left>Earn points by killing monsters. The score depends on the monster type.
