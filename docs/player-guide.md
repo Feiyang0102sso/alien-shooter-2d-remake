@@ -4,7 +4,7 @@
 
 ## 启动
 
-双击同目录的 `AlienShooter.exe`。请保留旁边的 `assets/` 和 DLL；不要只复制一个 exe。无需安装 Python、Java 或 Visual Studio。
+双击同目录的 `AlienShooter.exe`。请保留旁边的 `assets/` 和 DLL；不要只复制一个 exe。默认系统已安装 x64 MSVC 运行库，游戏目录不附带该运行库。无需安装 Python、Java 或 Visual Studio。
 
 开场后出现声音询问，按 **Y / Enter** 开启，按 **N / Esc** 关闭，也可点击左右下角 YES / NO。在菜单中用 W/S 或方向键选择，Enter 确认；鼠标左键也可点击菜单项。
 

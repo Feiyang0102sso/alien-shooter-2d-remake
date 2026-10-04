@@ -2,7 +2,7 @@
 
 基于 NET Lizard 的 Java ME 版 Alien Shooter，使用前期提取的原关卡、部件图集、位图字库和 MIDI 重建 Windows 游戏。当前已实现八关运行时、五类敌人、五种武器、原版机关与菜单、暂停、失败重试和关卡起点存档。
 
-**运行：** 构建后打开 `bin/Release/AlienShooter.exe`。同目录包含素材、MIDI、音色、DLL 和许可证，运行不依赖 Python、Java 或原游戏包。
+**运行：** 构建后打开 `bin/Release/AlienShooter.exe`。同目录包含素材、MIDI、音色和音频依赖 DLL；默认用户已安装 x64 MSVC 运行库，运行不依赖 Python、Java 或原游戏包。
 
 **Visual Studio：** 直接打开根目录 `AlienShooter.sln`，选择 x64 Debug / Release。solution 只有 `AlienShooter` 一个主程序项目；同级提供 `.vcxproj`、`.vcxproj.filters` 和 `.vcxproj.user`，不使用 CMake 或生成步骤。
 

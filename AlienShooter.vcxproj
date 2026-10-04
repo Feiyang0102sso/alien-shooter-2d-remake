@@ -176,7 +176,6 @@
   <Target Name="CopyRuntime" AfterTargets="Build">
     <ItemGroup>
       <RuntimeDll Include="$(ProjectRoot)src\3rdparty\fluidsynth\bin\*.dll" />
-      <RuntimeDll Include="$(VCInstallDir)Redist\MSVC\$(VCToolsVersion)\x64\Microsoft.VC*.CRT\*.dll" Condition="'$(Configuration)' == 'Release'" />
     </ItemGroup>
     <Copy SourceFiles="@(RuntimeDll)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
   </Target>
@@ -184,16 +183,10 @@
     <ItemGroup>
       <GameAsset Include="$(ProjectRoot)assets\**\*" Exclude="$(ProjectRoot)assets\audio\ogg\**\*" />
       <SynthAsset Include="$(ProjectRoot)src\3rdparty\generaluser\GeneralUser-GS.sf2;$(ProjectRoot)src\3rdparty\generaluser\LICENSE.txt" />
-      <LicenseFile Include="$(ProjectRoot)src\3rdparty\licenses\*" />
-      <GameDocument Include="$(ProjectRoot)docs\player-guide.md;$(ProjectRoot)docs\third-party-notices.md" />
-      <RaylibNotice Include="$(ProjectRoot)src\3rdparty\raylib\src\external\*.h;$(ProjectRoot)src\3rdparty\raylib\src\external\*.c" />
+      <GameDocument Include="$(ProjectRoot)docs\player-guide.md" />
     </ItemGroup>
     <Copy SourceFiles="@(GameAsset)" DestinationFiles="@(GameAsset-&gt;'$(OutDir)assets\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
     <Copy SourceFiles="@(SynthAsset)" DestinationFolder="$(OutDir)assets\audio\synth" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="@(LicenseFile)" DestinationFolder="$(OutDir)licenses" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="@(RaylibNotice)" DestinationFolder="$(OutDir)licenses\raylib-external-source" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="$(ProjectRoot)src\3rdparty\raylib\LICENSE" DestinationFiles="$(OutDir)licenses\raylib.txt" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="$(ProjectRoot)src\3rdparty\raylib\src\external\glfw\LICENSE.md" DestinationFiles="$(OutDir)licenses\GLFW.txt" SkipUnchangedFiles="true" />
     <Copy SourceFiles="@(GameDocument)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
   </Target>
 </Project>
