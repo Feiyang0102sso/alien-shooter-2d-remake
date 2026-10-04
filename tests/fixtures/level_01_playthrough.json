@@ -1,0 +1,694 @@
+{
+  "level": 1,
+  "actions": [
+    {
+      "ticks": 34,
+      "right": true,
+      "note": "第一开关和第一组终端"
+    },
+    {
+      "ticks": 5,
+      "left": true
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 14
+    },
+    {
+      "ticks": 1,
+      "right": true
+    },
+    {
+      "ticks": 80,
+      "fire": true
+    },
+    {
+      "ticks": 32,
+      "right": true
+    },
+    {
+      "ticks": 60,
+      "fire": true
+    },
+    {
+      "ticks": 8,
+      "right": true
+    },
+    {
+      "ticks": 1,
+      "left": true
+    },
+    {
+      "ticks": 65,
+      "fire": true
+    },
+    {
+      "ticks": 11,
+      "left": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 100,
+      "fire": true
+    },
+    {
+      "ticks": 24,
+      "left": true
+    },
+    {
+      "ticks": 65,
+      "fire": true
+    },
+    {
+      "ticks": 5,
+      "left": true
+    },
+    {
+      "ticks": 10
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 50,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "right": true
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 50,
+      "fire": true
+    },
+    {
+      "ticks": 25,
+      "right": true,
+      "note": "取得炸药和机枪"
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 80,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "right": true
+    },
+    {
+      "ticks": 1,
+      "jump": true
+    },
+    {
+      "ticks": 11
+    },
+    {
+      "ticks": 4,
+      "right": true
+    },
+    {
+      "ticks": 1,
+      "jump": true
+    },
+    {
+      "ticks": 10
+    },
+    {
+      "ticks": 3,
+      "right": true
+    },
+    {
+      "ticks": 6
+    },
+    {
+      "ticks": 1,
+      "left": true
+    },
+    {
+      "ticks": 1,
+      "jump": true
+    },
+    {
+      "ticks": 10
+    },
+    {
+      "ticks": 7,
+      "left": true
+    },
+    {
+      "ticks": 4,
+      "left": true
+    },
+    {
+      "ticks": 11
+    },
+    {
+      "ticks": 35,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "right": true
+    },
+    {
+      "ticks": 35,
+      "fire": true
+    },
+    {
+      "ticks": 15,
+      "right": true,
+      "note": "前往生成器并放置炸药"
+    },
+    {
+      "ticks": 1,
+      "jump": true
+    },
+    {
+      "ticks": 10
+    },
+    {
+      "ticks": 11,
+      "right": true
+    },
+    {
+      "ticks": 55,
+      "fire": true
+    },
+    {
+      "ticks": 22,
+      "right": true
+    },
+    {
+      "ticks": 55,
+      "fire": true
+    },
+    {
+      "ticks": 14,
+      "right": true
+    },
+    {
+      "ticks": 19,
+      "left": true
+    },
+    {
+      "ticks": 1,
+      "right": true
+    },
+    {
+      "ticks": 80
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 21,
+      "left": true
+    },
+    {
+      "ticks": 12,
+      "fire": true
+    },
+    {
+      "ticks": 10
+    },
+    {
+      "ticks": 1,
+      "jump": true
+    },
+    {
+      "ticks": 10
+    },
+    {
+      "ticks": 20,
+      "left": true
+    },
+    {
+      "ticks": 14,
+      "fire": true
+    },
+    {
+      "ticks": 7
+    },
+    {
+      "ticks": 5,
+      "left": true
+    },
+    {
+      "ticks": 1,
+      "jump": true
+    },
+    {
+      "ticks": 11
+    },
+    {
+      "ticks": 17,
+      "left": true
+    },
+    {
+      "ticks": 13,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 4,
+      "left": true,
+      "note": "打开第二组终端"
+    },
+    {
+      "ticks": 58,
+      "right": true
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 15
+    },
+    {
+      "ticks": 1,
+      "left": true
+    },
+    {
+      "ticks": 12,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "right": true
+    },
+    {
+      "ticks": 1,
+      "jump": true
+    },
+    {
+      "ticks": 10
+    },
+    {
+      "ticks": 13,
+      "right": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 15
+    },
+    {
+      "ticks": 3,
+      "right": true,
+      "note": "传送至右上区域"
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 9
+    },
+    {
+      "ticks": 1
+    },
+    {
+      "ticks": 1,
+      "right": true
+    },
+    {
+      "ticks": 2
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 40,
+      "note": "传送返回后保存机枪弹药"
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "left": true
+    },
+    {
+      "ticks": 2
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 40,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "left": true,
+      "weapon": 0,
+      "note": "切回手枪，保留十发机枪弹药供底层使用"
+    },
+    {
+      "ticks": 17,
+      "left": true
+    },
+    {
+      "ticks": 30
+    },
+    {
+      "ticks": 2,
+      "left": true
+    },
+    {
+      "ticks": 12
+    },
+    {
+      "ticks": 5,
+      "right": true
+    },
+    {
+      "ticks": 2
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 100,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "left": true
+    },
+    {
+      "ticks": 90,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 9,
+      "left": true
+    },
+    {
+      "ticks": 1,
+      "jump": true
+    },
+    {
+      "ticks": 15
+    },
+    {
+      "ticks": 4,
+      "left": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "weapon": 0
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 50,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 2,
+      "jump": true
+    },
+    {
+      "ticks": 12
+    },
+    {
+      "ticks": 8,
+      "left": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 50,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 2,
+      "jump": true
+    },
+    {
+      "ticks": 12
+    },
+    {
+      "ticks": 7,
+      "left": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 50,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "right": true
+    },
+    {
+      "ticks": 7,
+      "right": true
+    },
+    {
+      "ticks": 1,
+      "jump": true
+    },
+    {
+      "ticks": 12
+    },
+    {
+      "ticks": 7,
+      "right": true
+    },
+    {
+      "ticks": 1,
+      "jump": true
+    },
+    {
+      "ticks": 12
+    },
+    {
+      "ticks": 7,
+      "right": true
+    },
+    {
+      "ticks": 2,
+      "right": true
+    },
+    {
+      "ticks": 18
+    },
+    {
+      "ticks": 9,
+      "right": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 100,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 16,
+      "right": true,
+      "note": "等待升降台，避免从高层直接坠落"
+    },
+    {
+      "ticks": 12
+    },
+    {
+      "ticks": 6,
+      "right": true
+    },
+    {
+      "ticks": 20
+    },
+    {
+      "ticks": 4,
+      "right": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 15
+    },
+    {
+      "ticks": 7,
+      "left": true
+    },
+    {
+      "ticks": 2
+    },
+    {
+      "ticks": 1,
+      "right": true,
+      "weapon": 1
+    },
+    {
+      "ticks": 42,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 160,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 13,
+      "right": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 160,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 22,
+      "right": true,
+      "note": "消灭最后敌人并进入出口"
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 160,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 22,
+      "right": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 12,
+      "right": true
+    }
+  ],
+  "seed": 12345,
+  "require_complete": true,
+  "description": "第一关原字节码与 C++ 共同通过的正常输入路线；提示等待和镜头阶段由测试器处理，不注入角色状态。",
+  "expected": {
+    "ticks": 3020,
+    "health": 25,
+    "score": 135,
+    "enemies": 0,
+    "sources": 0
+  }
+}

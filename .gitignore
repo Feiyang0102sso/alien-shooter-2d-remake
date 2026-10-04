@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+build/
+tools/output/
+tools/.pipeline-*/
+bin/
+dist/
+.vs/
+*.user
+!AlienShooter.vcxproj.user
+logs/
+save/

@@ -1,0 +1,5621 @@
+{
+  "source": "Original class files with deterministic clock adapter",
+  "sha256": {
+    "a.class": "5bb802dd92a426a24cf5829cc7c195621a361527de96d83f785d1fa4bdc3f5cb",
+    "d.class": "953b690d06c2e7ad5a54159ea44aeb05f554d03b1aaba0334243652e275e0926",
+    "e.class": "f49263f1edb56fe7217d8d542b0198733fd70264aea9b3b04512f565c3078192"
+  },
+  "level": 1,
+  "scenarios": {
+    "walk": [
+      {
+        "x": 133,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 143,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          101,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          111,
+          384
+        ]
+      },
+      {
+        "x": 163,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 173,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          131,
+          384
+        ]
+      },
+      {
+        "x": 183,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          141,
+          384
+        ]
+      },
+      {
+        "x": 193,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          151,
+          384
+        ]
+      },
+      {
+        "x": 203,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          161,
+          384
+        ]
+      },
+      {
+        "x": 213,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          171,
+          384
+        ]
+      },
+      {
+        "x": 223,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          181,
+          384
+        ]
+      },
+      {
+        "x": 233,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          191,
+          384
+        ]
+      },
+      {
+        "x": 243,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          201,
+          384
+        ]
+      },
+      {
+        "x": 253,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          211,
+          384
+        ]
+      },
+      {
+        "x": 263,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          221,
+          384
+        ]
+      },
+      {
+        "x": 273,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          231,
+          384
+        ]
+      },
+      {
+        "x": 283,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          241,
+          384
+        ]
+      },
+      {
+        "x": 293,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          251,
+          384
+        ]
+      },
+      {
+        "x": 303,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          261,
+          384
+        ]
+      },
+      {
+        "x": 313,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          271,
+          384
+        ]
+      },
+      {
+        "x": 323,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          281,
+          384
+        ]
+      },
+      {
+        "x": 333,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          291,
+          384
+        ]
+      },
+      {
+        "x": 343,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          301,
+          384
+        ]
+      },
+      {
+        "x": 353,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          311,
+          384
+        ]
+      },
+      {
+        "x": 363,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          321,
+          384
+        ]
+      },
+      {
+        "x": 373,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          331,
+          384
+        ]
+      },
+      {
+        "x": 383,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          341,
+          384
+        ]
+      },
+      {
+        "x": 393,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          351,
+          384
+        ]
+      },
+      {
+        "x": 403,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          361,
+          384
+        ]
+      },
+      {
+        "x": 413,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          371,
+          384
+        ]
+      },
+      {
+        "x": 423,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          381,
+          384
+        ]
+      },
+      {
+        "x": 433,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          391,
+          384
+        ]
+      },
+      {
+        "x": 443,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          401,
+          384
+        ]
+      },
+      {
+        "x": 453,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          411,
+          384
+        ]
+      },
+      {
+        "x": 463,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          421,
+          384
+        ]
+      },
+      {
+        "x": 473,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          431,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          441,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      },
+      {
+        "x": 483,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          451,
+          384
+        ]
+      }
+    ],
+    "jump": [
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 8,
+        "ground": -1,
+        "state": 3,
+        "frame": 3,
+        "air": 1,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 128,
+        "y": 528,
+        "vy": 6,
+        "ground": -1,
+        "state": 3,
+        "frame": 3,
+        "air": 1,
+        "crouch": 0,
+        "camera": [
+          96,
+          384
+        ]
+      },
+      {
+        "x": 133,
+        "y": 532,
+        "vy": 0,
+        "ground": -1,
+        "state": 3,
+        "frame": 3,
+        "air": 1,
+        "crouch": 0,
+        "camera": [
+          101,
+          384
+        ]
+      },
+      {
+        "x": 138,
+        "y": 532,
+        "vy": -2,
+        "ground": -1,
+        "state": 3,
+        "frame": 3,
+        "air": 1,
+        "crouch": 0,
+        "camera": [
+          106,
+          384
+        ]
+      },
+      {
+        "x": 143,
+        "y": 530,
+        "vy": -4,
+        "ground": -1,
+        "state": 3,
+        "frame": 3,
+        "air": 1,
+        "crouch": 0,
+        "camera": [
+          111,
+          384
+        ]
+      },
+      {
+        "x": 148,
+        "y": 526,
+        "vy": -6,
+        "ground": -1,
+        "state": 3,
+        "frame": 3,
+        "air": 1,
+        "crouch": 0,
+        "camera": [
+          116,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      }
+    ],
+    "turn": [
+      {
+        "x": 133,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 143,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          101,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          111,
+          384
+        ]
+      },
+      {
+        "x": 163,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 173,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          131,
+          384
+        ]
+      },
+      {
+        "x": 173,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          141,
+          384
+        ]
+      },
+      {
+        "x": 163,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          121,
+          384
+        ]
+      },
+      {
+        "x": 153,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          101,
+          384
+        ]
+      },
+      {
+        "x": 143,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          81,
+          384
+        ]
+      },
+      {
+        "x": 133,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          61,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          41,
+          384
+        ]
+      },
+      {
+        "x": 113,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          21,
+          384
+        ]
+      },
+      {
+        "x": 103,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          1,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 6,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 3,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 4,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      },
+      {
+        "x": 93,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 1,
+        "frame": 5,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          0,
+          384
+        ]
+      }
+    ],
+    "crouch": [
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          364
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          344
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          324
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          304
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          284
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          264
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 8,
+        "camera": [
+          91,
+          248
+        ]
+      }
+    ],
+    "fire": [
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 15,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 16,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 17,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 18,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 15,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 16,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 17,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 18,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 15,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 16,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 17,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 18,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 15,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 16,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 17,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 18,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 15,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 16,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 17,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 18,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 15,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 16,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 17,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 18,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 15,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 16,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 17,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 18,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 15,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 16,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 17,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 18,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 15,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 16,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 17,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 18,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 15,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 16,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 17,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 18,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 15,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 16,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 17,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 18,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 0,
+        "frame": 0,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 15,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 16,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      },
+      {
+        "x": 123,
+        "y": 520,
+        "vy": 0,
+        "ground": 520,
+        "state": 2,
+        "frame": 17,
+        "air": 0,
+        "crouch": 0,
+        "camera": [
+          91,
+          384
+        ]
+      }
+    ]
+  }
+}

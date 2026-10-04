@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7A1C8DD1-40A6-54EC-91E2-B8913C9767FE}</ProjectGuid>
+    <RootNamespace>AlienShooter</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' &gt;= '18.0'">v145</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' &lt; '18.0'">v143</PlatformToolset>
+    <UseDebugLibraries Condition="'$(Configuration)' == 'Debug'">true</UseDebugLibraries>
+    <UseDebugLibraries Condition="'$(Configuration)' == 'Release'">false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <ProjectRoot>$(MSBuildProjectDirectory)\</ProjectRoot>
+    <!-- RC needs comma-separated numbers; all display strings come directly from version.h. -->
+    <VersionHeaderText>$([System.IO.File]::ReadAllText('$(ProjectRoot)src\as_java_re\version.h'))</VersionHeaderText>
+    <ApplicationVersion>$([System.Text.RegularExpressions.Regex]::Match('$(VersionHeaderText)', '(?m)^#define ALIEN_VERSION_STRING\s+"([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+)"').Groups[1].Value)</ApplicationVersion>
+    <ResourceVersion>$(ApplicationVersion.Replace('.', ','))</ResourceVersion>
+    <OutDir>$(ProjectRoot)bin\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectRoot)build\obj\$(Configuration)\$(MSBuildProjectName)\</IntDir>
+    <TargetName>$(MSBuildProjectName)</TargetName>
+    <LocalDebuggerWorkingDirectory>$(OutDir)</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LinkIncremental Condition="'$(Configuration)' == 'Debug'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)' == 'Release'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NOMINMAX;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectRoot)src\as_java_re;$(ProjectRoot)src\3rdparty\json\include;$(ProjectRoot)src\3rdparty\raylib\src;$(ProjectRoot)src\3rdparty\fluidsynth\include;$(ProjectRoot)src\3rdparty\raylib\src\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectRoot)src\3rdparty\fluidsynth\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libfluidsynth-3.lib;winmm.lib;opengl32.lib;gdi32.lib;shell32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)' == 'Debug'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)' == 'Release'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <SubSystem Condition="'$(Configuration)' == 'Release'">Windows</SubSystem>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>$(IntDir)AlienShooter.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(ProjectRoot)resources;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>ALIEN_VERSION_NUMBERS=$(ResourceVersion);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\as_java_re\assets.cpp" />
+    <ClInclude Include="src\as_java_re\assets.h" />
+    <ClCompile Include="src\as_java_re\audio.cpp" />
+    <ClInclude Include="src\as_java_re\audio.h" />
+    <ClCompile Include="src\as_java_re\cheat.cpp" />
+    <ClInclude Include="src\as_java_re\cheat.h" />
+    <ClCompile Include="src\as_java_re\game.cpp" />
+    <ClInclude Include="src\as_java_re\game.h" />
+    <ClCompile Include="src\as_java_re\main.cpp" />
+    <ClInclude Include="src\as_java_re\version.h" />
+    <ClCompile Include="src\as_java_re\midi.cpp" />
+    <ClInclude Include="src\as_java_re\midi.h" />
+    <ClCompile Include="src\as_java_re\platform.cpp" />
+    <ClInclude Include="src\as_java_re\platform.h" />
+    <ClCompile Include="src\as_java_re\renderer.cpp" />
+    <ClInclude Include="src\as_java_re\renderer.h" />
+    <ClCompile Include="src\as_java_re\save.cpp" />
+    <ClInclude Include="src\as_java_re\save.h" />
+    <ClCompile Include="src\as_java_re\windows_entry.cpp" />
+    <ClCompile Include="src\as_java_re\world.cpp" />
+    <ClInclude Include="src\as_java_re\world.h" />
+    <ClCompile Include="src\3rdparty\raylib\src\raudio.c">
+      <CompileAs>CompileAsC</CompileAs>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\raylib\src\rcore.c">
+      <CompileAs>CompileAsC</CompileAs>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\raylib\src\rglfw.c">
+      <CompileAs>CompileAsC</CompileAs>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\raylib\src\rmodels.c">
+      <CompileAs>CompileAsC</CompileAs>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\raylib\src\rshapes.c">
+      <CompileAs>CompileAsC</CompileAs>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\raylib\src\rtext.c">
+      <CompileAs>CompileAsC</CompileAs>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\raylib\src\rtextures.c">
+      <CompileAs>CompileAsC</CompileAs>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\raylib\src\utils.c">
+      <CompileAs>CompileAsC</CompileAs>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClInclude Include="src\3rdparty\raylib\src\raylib.h" />
+    <ClInclude Include="src\3rdparty\raylib\src\raymath.h" />
+    <ClInclude Include="src\3rdparty\raylib\src\rlgl.h" />
+    <ClInclude Include="src\3rdparty\fluidsynth\include\fluidsynth.h" />
+    <ClInclude Include="src\3rdparty\json\include\nlohmann\json.hpp" />
+    <ResourceCompile Include="resources\AlienShooter.rc" />
+    <None Include="resources\AlienShooter.ico" />
+    <None Include="resources\AlienShooter.manifest" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)Microsoft.Cpp.targets" />
+  <!-- Generate the manifest before compilation so both IDE and command-line builds share version.h. -->
+  <Target Name="GenerateVersionManifest" BeforeTargets="PrepareForBuild"
+          Inputs="$(ProjectRoot)src\as_java_re\version.h;$(ProjectRoot)resources\AlienShooter.manifest;$(MSBuildProjectFullPath)"
+          Outputs="$(IntDir)AlienShooter.manifest">
+    <MakeDir Directories="$(IntDir)" />
+    <Copy SourceFiles="$(ProjectRoot)resources\AlienShooter.manifest" DestinationFiles="$(IntDir)AlienShooter.manifest" />
+    <XmlPoke XmlInputPath="$(IntDir)AlienShooter.manifest"
+             Query="/*[local-name()='assembly']/*[local-name()='assemblyIdentity']/@version"
+             Value="$(ApplicationVersion)" />
+    <Message Importance="high" Text="Application version: $(ApplicationVersion)" />
+  </Target>
+  <Target Name="CopyRuntime" AfterTargets="Build">
+    <ItemGroup>
+      <RuntimeDll Include="$(ProjectRoot)src\3rdparty\fluidsynth\bin\*.dll" />
+      <RuntimeDll Include="$(VCInstallDir)Redist\MSVC\$(VCToolsVersion)\x64\Microsoft.VC*.CRT\*.dll" Condition="'$(Configuration)' == 'Release'" />
+    </ItemGroup>
+    <Copy SourceFiles="@(RuntimeDll)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
+  </Target>
+  <Target Name="CopyGameAssets" AfterTargets="CopyRuntime">
+    <ItemGroup>
+      <GameAsset Include="$(ProjectRoot)assets\**\*" Exclude="$(ProjectRoot)assets\audio\ogg\**\*" />
+      <SynthAsset Include="$(ProjectRoot)src\3rdparty\generaluser\GeneralUser-GS.sf2;$(ProjectRoot)src\3rdparty\generaluser\LICENSE.txt" />
+      <LicenseFile Include="$(ProjectRoot)src\3rdparty\licenses\*" />
+      <GameDocument Include="$(ProjectRoot)docs\player-guide.md;$(ProjectRoot)docs\third-party-notices.md" />
+      <RaylibNotice Include="$(ProjectRoot)src\3rdparty\raylib\src\external\*.h;$(ProjectRoot)src\3rdparty\raylib\src\external\*.c" />
+    </ItemGroup>
+    <Copy SourceFiles="@(GameAsset)" DestinationFiles="@(GameAsset-&gt;'$(OutDir)assets\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(SynthAsset)" DestinationFolder="$(OutDir)assets\audio\synth" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(LicenseFile)" DestinationFolder="$(OutDir)licenses" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(RaylibNotice)" DestinationFolder="$(OutDir)licenses\raylib-external-source" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(ProjectRoot)src\3rdparty\raylib\LICENSE" DestinationFiles="$(OutDir)licenses\raylib.txt" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(ProjectRoot)src\3rdparty\raylib\src\external\glfw\LICENSE.md" DestinationFiles="$(OutDir)licenses\GLFW.txt" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(GameDocument)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
+  </Target>
+</Project>

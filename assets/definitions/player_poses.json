@@ -1,0 +1,246 @@
+{
+  "weapon_frames": [
+    {
+      "weapon_id": 2,
+      "frame_id": 2,
+      "part_slots": [
+        31,
+        20,
+        5,
+        0,
+        29,
+        30,
+        19,
+        0
+      ]
+    },
+    {
+      "weapon_id": 2,
+      "frame_id": 11,
+      "part_slots": [
+        1,
+        15,
+        20,
+        5,
+        0,
+        29,
+        30,
+        19
+      ]
+    },
+    {
+      "weapon_id": 2,
+      "frame_id": 12,
+      "part_slots": [
+        2,
+        16,
+        20,
+        5,
+        0,
+        29,
+        30,
+        19
+      ]
+    },
+    {
+      "weapon_id": 2,
+      "frame_id": 13,
+      "part_slots": [
+        3,
+        17,
+        20,
+        5,
+        0,
+        29,
+        30,
+        19
+      ]
+    },
+    {
+      "weapon_id": 2,
+      "frame_id": 14,
+      "part_slots": [
+        4,
+        18,
+        20,
+        5,
+        0,
+        29,
+        30,
+        19
+      ]
+    },
+    {
+      "weapon_id": 3,
+      "frame_id": 2,
+      "part_slots": [
+        31,
+        20,
+        5,
+        0,
+        25,
+        0,
+        19,
+        0
+      ]
+    },
+    {
+      "weapon_id": 3,
+      "frame_id": 11,
+      "part_slots": [
+        1,
+        15,
+        20,
+        5,
+        0,
+        25,
+        0,
+        19
+      ]
+    },
+    {
+      "weapon_id": 3,
+      "frame_id": 12,
+      "part_slots": [
+        2,
+        16,
+        20,
+        5,
+        0,
+        25,
+        0,
+        19
+      ]
+    },
+    {
+      "weapon_id": 3,
+      "frame_id": 13,
+      "part_slots": [
+        3,
+        17,
+        20,
+        5,
+        0,
+        25,
+        0,
+        19
+      ]
+    },
+    {
+      "weapon_id": 3,
+      "frame_id": 14,
+      "part_slots": [
+        4,
+        18,
+        20,
+        5,
+        0,
+        25,
+        0,
+        19
+      ]
+    },
+    {
+      "weapon_id": 4,
+      "frame_id": 2,
+      "part_slots": [
+        31,
+        20,
+        5,
+        0,
+        26,
+        27,
+        19,
+        0
+      ]
+    },
+    {
+      "weapon_id": 4,
+      "frame_id": 11,
+      "part_slots": [
+        1,
+        15,
+        20,
+        5,
+        0,
+        26,
+        27,
+        19
+      ]
+    },
+    {
+      "weapon_id": 4,
+      "frame_id": 12,
+      "part_slots": [
+        2,
+        16,
+        20,
+        5,
+        0,
+        26,
+        27,
+        19
+      ]
+    },
+    {
+      "weapon_id": 4,
+      "frame_id": 13,
+      "part_slots": [
+        3,
+        17,
+        20,
+        5,
+        0,
+        26,
+        27,
+        19
+      ]
+    },
+    {
+      "weapon_id": 4,
+      "frame_id": 14,
+      "part_slots": [
+        4,
+        18,
+        20,
+        5,
+        0,
+        26,
+        27,
+        19
+      ]
+    }
+  ],
+  "crouch": {
+    "frame_ids": [
+      0,
+      1,
+      2,
+      15,
+      16,
+      17,
+      18
+    ],
+    "slot": 0,
+    "standing_part": 31,
+    "crouching_part": 35,
+    "height_delta": -8
+  },
+  "armor": {
+    "frame_range": [
+      0,
+      34
+    ],
+    "find_part": 5,
+    "search_slots": [
+      1,
+      2,
+      3
+    ],
+    "replace_next_slot": true,
+    "armor_parts": {
+      "1": 33,
+      "2": 34
+    }
+  }
+}

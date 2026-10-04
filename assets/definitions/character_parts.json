@@ -1,0 +1,3976 @@
+{
+  "parts": [
+    {
+      "id": 0,
+      "directions": {}
+    },
+    {
+      "id": 1,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            586,
+            32,
+            18,
+            25
+          ],
+          "offset": [
+            -5,
+            -26
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            1,
+            1,
+            18,
+            25
+          ],
+          "offset": [
+            -13,
+            -26
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            605,
+            32,
+            8,
+            26
+          ],
+          "offset": [
+            -4,
+            -26
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            20,
+            1,
+            8,
+            26
+          ],
+          "offset": [
+            -4,
+            -26
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            614,
+            32,
+            8,
+            19
+          ],
+          "offset": [
+            -4,
+            -26
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            29,
+            1,
+            8,
+            19
+          ],
+          "offset": [
+            -4,
+            -26
+          ]
+        }
+      }
+    },
+    {
+      "id": 4,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            623,
+            32,
+            9,
+            26
+          ],
+          "offset": [
+            -4,
+            -26
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            38,
+            1,
+            9,
+            26
+          ],
+          "offset": [
+            -5,
+            -26
+          ]
+        }
+      }
+    },
+    {
+      "id": 5,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            633,
+            32,
+            10,
+            20
+          ],
+          "offset": [
+            -8,
+            -43
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            48,
+            1,
+            10,
+            20
+          ],
+          "offset": [
+            -2,
+            -43
+          ]
+        }
+      }
+    },
+    {
+      "id": 6,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            644,
+            32,
+            21,
+            9
+          ],
+          "offset": [
+            0,
+            -38
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            59,
+            1,
+            21,
+            9
+          ],
+          "offset": [
+            -21,
+            -38
+          ]
+        }
+      }
+    },
+    {
+      "id": 7,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            666,
+            32,
+            22,
+            10
+          ],
+          "offset": [
+            -1,
+            -40
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            81,
+            1,
+            22,
+            10
+          ],
+          "offset": [
+            -21,
+            -40
+          ]
+        }
+      }
+    },
+    {
+      "id": 8,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            689,
+            32,
+            22,
+            12
+          ],
+          "offset": [
+            -2,
+            -42
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            104,
+            1,
+            22,
+            12
+          ],
+          "offset": [
+            -20,
+            -42
+          ]
+        }
+      }
+    },
+    {
+      "id": 9,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            712,
+            32,
+            22,
+            10
+          ],
+          "offset": [
+            -2,
+            -40
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            127,
+            1,
+            22,
+            10
+          ],
+          "offset": [
+            -20,
+            -40
+          ]
+        }
+      }
+    },
+    {
+      "id": 10,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            735,
+            32,
+            21,
+            15
+          ],
+          "offset": [
+            -1,
+            -45
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            150,
+            1,
+            21,
+            15
+          ],
+          "offset": [
+            -20,
+            -45
+          ]
+        }
+      }
+    },
+    {
+      "id": 11,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            757,
+            32,
+            4,
+            7
+          ],
+          "offset": [
+            -3,
+            -41
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            172,
+            1,
+            4,
+            7
+          ],
+          "offset": [
+            -1,
+            -41
+          ]
+        }
+      }
+    },
+    {
+      "id": 12,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            762,
+            32,
+            8,
+            20
+          ],
+          "offset": [
+            -4,
+            -43
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            177,
+            1,
+            8,
+            20
+          ],
+          "offset": [
+            -4,
+            -43
+          ]
+        }
+      }
+    },
+    {
+      "id": 13,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            771,
+            32,
+            10,
+            20
+          ],
+          "offset": [
+            -7,
+            -43
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            186,
+            1,
+            10,
+            20
+          ],
+          "offset": [
+            -3,
+            -43
+          ]
+        }
+      }
+    },
+    {
+      "id": 14,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            782,
+            32,
+            9,
+            21
+          ],
+          "offset": [
+            -8,
+            -43
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            197,
+            1,
+            9,
+            21
+          ],
+          "offset": [
+            -1,
+            -43
+          ]
+        }
+      }
+    },
+    {
+      "id": 15,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            792,
+            32,
+            12,
+            10
+          ],
+          "offset": [
+            -17,
+            -14
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            207,
+            1,
+            12,
+            10
+          ],
+          "offset": [
+            5,
+            -14
+          ]
+        }
+      }
+    },
+    {
+      "id": 16,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            805,
+            32,
+            10,
+            11
+          ],
+          "offset": [
+            -14,
+            -14
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            220,
+            1,
+            10,
+            11
+          ],
+          "offset": [
+            4,
+            -14
+          ]
+        }
+      }
+    },
+    {
+      "id": 17,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            816,
+            32,
+            9,
+            11
+          ],
+          "offset": [
+            -13,
+            -13
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            231,
+            1,
+            9,
+            11
+          ],
+          "offset": [
+            4,
+            -13
+          ]
+        }
+      }
+    },
+    {
+      "id": 18,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            826,
+            32,
+            11,
+            12
+          ],
+          "offset": [
+            -15,
+            -15
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            241,
+            1,
+            11,
+            12
+          ],
+          "offset": [
+            4,
+            -15
+          ]
+        }
+      }
+    },
+    {
+      "id": 19,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            838,
+            32,
+            10,
+            14
+          ],
+          "offset": [
+            -11,
+            -38
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            253,
+            1,
+            10,
+            14
+          ],
+          "offset": [
+            1,
+            -38
+          ]
+        }
+      }
+    },
+    {
+      "id": 20,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            849,
+            32,
+            6,
+            9
+          ],
+          "offset": [
+            0,
+            -37
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            264,
+            1,
+            6,
+            9
+          ],
+          "offset": [
+            -6,
+            -37
+          ]
+        }
+      }
+    },
+    {
+      "id": 21,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            856,
+            32,
+            19,
+            16
+          ],
+          "offset": [
+            -11,
+            -28
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            271,
+            1,
+            19,
+            16
+          ],
+          "offset": [
+            -8,
+            -28
+          ]
+        }
+      }
+    },
+    {
+      "id": 22,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            876,
+            32,
+            15,
+            7
+          ],
+          "offset": [
+            8,
+            -28
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            291,
+            1,
+            15,
+            7
+          ],
+          "offset": [
+            -23,
+            -28
+          ]
+        }
+      }
+    },
+    {
+      "id": 23,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            892,
+            32,
+            15,
+            7
+          ],
+          "offset": [
+            8,
+            -28
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            307,
+            1,
+            15,
+            7
+          ],
+          "offset": [
+            -23,
+            -28
+          ]
+        }
+      }
+    },
+    {
+      "id": 24,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            849,
+            32,
+            6,
+            9
+          ],
+          "offset": [
+            0,
+            -36
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            264,
+            1,
+            6,
+            9
+          ],
+          "offset": [
+            -6,
+            -36
+          ]
+        }
+      }
+    },
+    {
+      "id": 25,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            908,
+            32,
+            27,
+            11
+          ],
+          "offset": [
+            -13,
+            -29
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            323,
+            1,
+            27,
+            11
+          ],
+          "offset": [
+            -14,
+            -29
+          ]
+        }
+      }
+    },
+    {
+      "id": 26,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            936,
+            32,
+            24,
+            12
+          ],
+          "offset": [
+            -9,
+            -29
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            351,
+            1,
+            24,
+            12
+          ],
+          "offset": [
+            -15,
+            -29
+          ]
+        }
+      }
+    },
+    {
+      "id": 27,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            961,
+            32,
+            10,
+            8
+          ],
+          "offset": [
+            12,
+            -29
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            376,
+            1,
+            10,
+            8
+          ],
+          "offset": [
+            -22,
+            -29
+          ]
+        }
+      }
+    },
+    {
+      "id": 28,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            961,
+            32,
+            10,
+            8
+          ],
+          "offset": [
+            11,
+            -29
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            376,
+            1,
+            10,
+            8
+          ],
+          "offset": [
+            -21,
+            -29
+          ]
+        }
+      }
+    },
+    {
+      "id": 29,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            972,
+            32,
+            23,
+            9
+          ],
+          "offset": [
+            -5,
+            -32
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            387,
+            1,
+            23,
+            9
+          ],
+          "offset": [
+            -18,
+            -32
+          ]
+        }
+      }
+    },
+    {
+      "id": 30,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            996,
+            32,
+            5,
+            14
+          ],
+          "offset": [
+            -10,
+            -39
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            411,
+            1,
+            5,
+            14
+          ],
+          "offset": [
+            5,
+            -39
+          ]
+        }
+      }
+    },
+    {
+      "id": 31,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            1002,
+            32,
+            10,
+            26
+          ],
+          "offset": [
+            -6,
+            -26
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            417,
+            1,
+            10,
+            26
+          ],
+          "offset": [
+            -4,
+            -26
+          ]
+        }
+      }
+    },
+    {
+      "id": 32,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            908,
+            32,
+            27,
+            11
+          ],
+          "offset": [
+            -14,
+            -29
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            323,
+            1,
+            27,
+            11
+          ],
+          "offset": [
+            -13,
+            -29
+          ]
+        }
+      }
+    },
+    {
+      "id": 33,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            1013,
+            32,
+            10,
+            13
+          ],
+          "offset": [
+            -8,
+            -38
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            428,
+            1,
+            10,
+            13
+          ],
+          "offset": [
+            -2,
+            -38
+          ]
+        }
+      }
+    },
+    {
+      "id": 34,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            1,
+            66,
+            11,
+            19
+          ],
+          "offset": [
+            -8,
+            -44
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            439,
+            1,
+            11,
+            19
+          ],
+          "offset": [
+            -3,
+            -44
+          ]
+        }
+      }
+    },
+    {
+      "id": 35,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            13,
+            66,
+            29,
+            16
+          ],
+          "offset": [
+            -18,
+            -24
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            451,
+            1,
+            29,
+            16
+          ],
+          "offset": [
+            -11,
+            -24
+          ]
+        }
+      }
+    },
+    {
+      "id": 36,
+      "directions": {}
+    },
+    {
+      "id": 37,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            43,
+            66,
+            20,
+            12
+          ],
+          "offset": [
+            -15,
+            -21
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            481,
+            1,
+            20,
+            12
+          ],
+          "offset": [
+            -5,
+            -21
+          ]
+        }
+      }
+    },
+    {
+      "id": 38,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            64,
+            66,
+            14,
+            19
+          ],
+          "offset": [
+            -1,
+            -24
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            502,
+            1,
+            14,
+            19
+          ],
+          "offset": [
+            -13,
+            -24
+          ]
+        }
+      }
+    },
+    {
+      "id": 39,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            79,
+            66,
+            17,
+            19
+          ],
+          "offset": [
+            -12,
+            -17
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            517,
+            1,
+            17,
+            19
+          ],
+          "offset": [
+            -5,
+            -17
+          ]
+        }
+      }
+    },
+    {
+      "id": 40,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            97,
+            66,
+            23,
+            18
+          ],
+          "offset": [
+            -14,
+            -18
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            535,
+            1,
+            23,
+            18
+          ],
+          "offset": [
+            -9,
+            -18
+          ]
+        }
+      }
+    },
+    {
+      "id": 41,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            121,
+            66,
+            24,
+            17
+          ],
+          "offset": [
+            -14,
+            -17
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            559,
+            1,
+            24,
+            17
+          ],
+          "offset": [
+            -10,
+            -17
+          ]
+        }
+      }
+    },
+    {
+      "id": 42,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            146,
+            66,
+            19,
+            18
+          ],
+          "offset": [
+            -13,
+            -18
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            584,
+            1,
+            19,
+            18
+          ],
+          "offset": [
+            -6,
+            -18
+          ]
+        }
+      }
+    },
+    {
+      "id": 43,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            166,
+            66,
+            19,
+            17
+          ],
+          "offset": [
+            -4,
+            -24
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            604,
+            1,
+            19,
+            17
+          ],
+          "offset": [
+            -15,
+            -24
+          ]
+        }
+      }
+    },
+    {
+      "id": 44,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            186,
+            66,
+            21,
+            15
+          ],
+          "offset": [
+            16,
+            -38
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            624,
+            1,
+            21,
+            15
+          ],
+          "offset": [
+            -37,
+            -38
+          ]
+        }
+      }
+    },
+    {
+      "id": 45,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            208,
+            66,
+            20,
+            30
+          ],
+          "offset": [
+            -1,
+            -30
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            646,
+            1,
+            20,
+            30
+          ],
+          "offset": [
+            -19,
+            -30
+          ]
+        }
+      }
+    },
+    {
+      "id": 46,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            64,
+            66,
+            14,
+            19
+          ],
+          "offset": [
+            -2,
+            -25
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            502,
+            1,
+            14,
+            19
+          ],
+          "offset": [
+            -12,
+            -25
+          ]
+        }
+      }
+    },
+    {
+      "id": 47,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            64,
+            66,
+            14,
+            19
+          ],
+          "offset": [
+            0,
+            -25
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            502,
+            1,
+            14,
+            19
+          ],
+          "offset": [
+            -14,
+            -25
+          ]
+        }
+      }
+    },
+    {
+      "id": 48,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            166,
+            66,
+            19,
+            17
+          ],
+          "offset": [
+            3,
+            -30
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            604,
+            1,
+            19,
+            17
+          ],
+          "offset": [
+            -22,
+            -30
+          ]
+        }
+      }
+    },
+    {
+      "id": 49,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            43,
+            66,
+            20,
+            12
+          ],
+          "offset": [
+            -9,
+            -26
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            481,
+            1,
+            20,
+            12
+          ],
+          "offset": [
+            -11,
+            -26
+          ]
+        }
+      }
+    },
+    {
+      "id": 50,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            43,
+            66,
+            20,
+            12
+          ],
+          "offset": [
+            5,
+            -34
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            481,
+            1,
+            20,
+            12
+          ],
+          "offset": [
+            -25,
+            -34
+          ]
+        }
+      }
+    },
+    {
+      "id": 51,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            79,
+            66,
+            17,
+            19
+          ],
+          "offset": [
+            -9,
+            -21
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            517,
+            1,
+            17,
+            19
+          ],
+          "offset": [
+            -8,
+            -21
+          ]
+        }
+      }
+    },
+    {
+      "id": 52,
+      "directions": {}
+    },
+    {
+      "id": 53,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            229,
+            66,
+            8,
+            2
+          ],
+          "offset": [
+            -8,
+            -1
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            667,
+            1,
+            8,
+            2
+          ],
+          "offset": [
+            0,
+            -1
+          ]
+        }
+      }
+    },
+    {
+      "id": 54,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            238,
+            66,
+            22,
+            10
+          ],
+          "offset": [
+            -17,
+            -5
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            676,
+            1,
+            22,
+            10
+          ],
+          "offset": [
+            -5,
+            -5
+          ]
+        }
+      }
+    },
+    {
+      "id": 55,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            261,
+            66,
+            22,
+            10
+          ],
+          "offset": [
+            -17,
+            -5
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            699,
+            1,
+            22,
+            10
+          ],
+          "offset": [
+            -5,
+            -5
+          ]
+        }
+      }
+    },
+    {
+      "id": 56,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            284,
+            66,
+            16,
+            7
+          ],
+          "offset": [
+            -13,
+            -3
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            722,
+            1,
+            16,
+            7
+          ],
+          "offset": [
+            -3,
+            -3
+          ]
+        }
+      }
+    },
+    {
+      "id": 57,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            301,
+            66,
+            17,
+            18
+          ],
+          "offset": [
+            20,
+            -34
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            739,
+            1,
+            17,
+            18
+          ],
+          "offset": [
+            -37,
+            -34
+          ]
+        }
+      }
+    },
+    {
+      "id": 58,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            319,
+            66,
+            7,
+            9
+          ],
+          "offset": [
+            0,
+            -5
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            757,
+            1,
+            7,
+            9
+          ],
+          "offset": [
+            -7,
+            -5
+          ]
+        }
+      }
+    },
+    {
+      "id": 59,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            327,
+            66,
+            10,
+            10
+          ],
+          "offset": [
+            0,
+            -7
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            765,
+            1,
+            10,
+            10
+          ],
+          "offset": [
+            -10,
+            -7
+          ]
+        }
+      }
+    },
+    {
+      "id": 60,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            338,
+            66,
+            10,
+            11
+          ],
+          "offset": [
+            0,
+            -6
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            776,
+            1,
+            10,
+            11
+          ],
+          "offset": [
+            -10,
+            -6
+          ]
+        }
+      }
+    },
+    {
+      "id": 61,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            349,
+            66,
+            13,
+            15
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            787,
+            1,
+            13,
+            15
+          ],
+          "offset": [
+            -13,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "id": 62,
+      "directions": {}
+    },
+    {
+      "id": 63,
+      "directions": {}
+    },
+    {
+      "id": 64,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            363,
+            66,
+            16,
+            21
+          ],
+          "offset": [
+            0,
+            5
+          ]
+        }
+      }
+    },
+    {
+      "id": 65,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            380,
+            66,
+            20,
+            11
+          ],
+          "offset": [
+            -4,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": 66,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            401,
+            66,
+            9,
+            9
+          ],
+          "offset": [
+            -4,
+            -5
+          ]
+        }
+      }
+    },
+    {
+      "id": 67,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            411,
+            66,
+            6,
+            10
+          ],
+          "offset": [
+            -3,
+            -5
+          ]
+        }
+      }
+    },
+    {
+      "id": 68,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            418,
+            66,
+            12,
+            7
+          ],
+          "offset": [
+            -6,
+            -4
+          ]
+        }
+      }
+    },
+    {
+      "id": 69,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            431,
+            66,
+            8,
+            4
+          ],
+          "offset": [
+            -4,
+            -2
+          ]
+        }
+      }
+    },
+    {
+      "id": 70,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            440,
+            66,
+            11,
+            3
+          ],
+          "offset": [
+            -5,
+            -2
+          ]
+        }
+      }
+    },
+    {
+      "id": 71,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            452,
+            66,
+            7,
+            5
+          ],
+          "offset": [
+            -4,
+            -3
+          ]
+        }
+      }
+    },
+    {
+      "id": 72,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            460,
+            66,
+            4,
+            3
+          ],
+          "offset": [
+            -2,
+            -2
+          ]
+        }
+      }
+    },
+    {
+      "id": 73,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            465,
+            66,
+            5,
+            4
+          ],
+          "offset": [
+            -2,
+            -2
+          ]
+        }
+      }
+    },
+    {
+      "id": 74,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            471,
+            66,
+            4,
+            4
+          ],
+          "offset": [
+            -2,
+            -2
+          ]
+        }
+      }
+    },
+    {
+      "id": 75,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            476,
+            66,
+            13,
+            12
+          ],
+          "offset": [
+            -6,
+            -6
+          ]
+        }
+      }
+    },
+    {
+      "id": 76,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            490,
+            66,
+            19,
+            17
+          ],
+          "offset": [
+            -9,
+            -8
+          ]
+        }
+      }
+    },
+    {
+      "id": 77,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            510,
+            66,
+            30,
+            25
+          ],
+          "offset": [
+            -15,
+            -12
+          ]
+        }
+      }
+    },
+    {
+      "id": 78,
+      "directions": {}
+    },
+    {
+      "id": 79,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            541,
+            66,
+            8,
+            8
+          ],
+          "offset": [
+            -4,
+            -4
+          ]
+        }
+      }
+    },
+    {
+      "id": 80,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            550,
+            66,
+            11,
+            11
+          ],
+          "offset": [
+            -5,
+            -5
+          ]
+        }
+      }
+    },
+    {
+      "id": 81,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            562,
+            66,
+            17,
+            16
+          ],
+          "offset": [
+            -8,
+            -8
+          ]
+        }
+      }
+    },
+    {
+      "id": 82,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            580,
+            66,
+            19,
+            17
+          ],
+          "offset": [
+            -9,
+            -8
+          ]
+        }
+      }
+    },
+    {
+      "id": 83,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            600,
+            66,
+            9,
+            7
+          ],
+          "offset": [
+            -4,
+            -4
+          ]
+        }
+      }
+    },
+    {
+      "id": 84,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            610,
+            66,
+            6,
+            7
+          ],
+          "offset": [
+            -3,
+            -4
+          ]
+        }
+      }
+    },
+    {
+      "id": 85,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            617,
+            66,
+            8,
+            6
+          ],
+          "offset": [
+            -4,
+            -3
+          ]
+        }
+      }
+    },
+    {
+      "id": 86,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            626,
+            66,
+            6,
+            5
+          ],
+          "offset": [
+            -3,
+            -3
+          ]
+        }
+      }
+    },
+    {
+      "id": 87,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            633,
+            66,
+            6,
+            5
+          ],
+          "offset": [
+            -3,
+            -3
+          ]
+        }
+      }
+    },
+    {
+      "id": 88,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            633,
+            66,
+            6,
+            5
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "id": 89,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            640,
+            66,
+            23,
+            12
+          ],
+          "offset": [
+            -10,
+            -16
+          ]
+        }
+      }
+    },
+    {
+      "id": 90,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            664,
+            66,
+            24,
+            14
+          ],
+          "offset": [
+            -10,
+            -18
+          ]
+        }
+      }
+    },
+    {
+      "id": 91,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            689,
+            66,
+            10,
+            11
+          ],
+          "offset": [
+            0,
+            -32
+          ]
+        }
+      }
+    },
+    {
+      "id": 92,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            700,
+            66,
+            10,
+            11
+          ],
+          "offset": [
+            0,
+            -32
+          ]
+        }
+      }
+    },
+    {
+      "id": 93,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            711,
+            66,
+            8,
+            11
+          ],
+          "offset": [
+            1,
+            -32
+          ]
+        }
+      }
+    },
+    {
+      "id": 94,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            720,
+            66,
+            5,
+            10
+          ],
+          "offset": [
+            3,
+            -32
+          ]
+        }
+      }
+    },
+    {
+      "id": 95,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            726,
+            66,
+            9,
+            11
+          ],
+          "offset": [
+            1,
+            -32
+          ]
+        }
+      }
+    },
+    {
+      "id": 96,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            736,
+            66,
+            12,
+            11
+          ],
+          "offset": [
+            0,
+            -28
+          ]
+        }
+      }
+    },
+    {
+      "id": 97,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            749,
+            66,
+            12,
+            16
+          ],
+          "offset": [
+            0,
+            -34
+          ]
+        }
+      }
+    },
+    {
+      "id": 98,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            996,
+            32,
+            5,
+            14
+          ],
+          "offset": [
+            3,
+            -33
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            411,
+            1,
+            5,
+            14
+          ],
+          "offset": [
+            -8,
+            -33
+          ]
+        }
+      }
+    },
+    {
+      "id": 99,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            762,
+            66,
+            13,
+            16
+          ],
+          "offset": [
+            0,
+            -34
+          ]
+        }
+      }
+    },
+    {
+      "id": 100,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            776,
+            66,
+            15,
+            16
+          ],
+          "offset": [
+            0,
+            -34
+          ]
+        }
+      }
+    },
+    {
+      "id": 101,
+      "directions": {}
+    },
+    {
+      "id": 102,
+      "directions": {}
+    },
+    {
+      "id": 103,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            792,
+            66,
+            29,
+            16
+          ],
+          "offset": [
+            -14,
+            -17
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            801,
+            1,
+            29,
+            16
+          ],
+          "offset": [
+            -15,
+            -17
+          ]
+        }
+      }
+    },
+    {
+      "id": 104,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            822,
+            66,
+            26,
+            26
+          ],
+          "offset": [
+            -7,
+            -37
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            831,
+            1,
+            26,
+            26
+          ],
+          "offset": [
+            -19,
+            -37
+          ]
+        }
+      }
+    },
+    {
+      "id": 105,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            849,
+            66,
+            21,
+            24
+          ],
+          "offset": [
+            -4,
+            -37
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            858,
+            1,
+            21,
+            24
+          ],
+          "offset": [
+            -17,
+            -37
+          ]
+        }
+      }
+    },
+    {
+      "id": 106,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            871,
+            66,
+            20,
+            20
+          ],
+          "offset": [
+            -9,
+            -20
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            880,
+            1,
+            20,
+            20
+          ],
+          "offset": [
+            -11,
+            -20
+          ]
+        }
+      }
+    },
+    {
+      "id": 107,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            892,
+            66,
+            18,
+            22
+          ],
+          "offset": [
+            -3,
+            -36
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            901,
+            1,
+            18,
+            22
+          ],
+          "offset": [
+            -15,
+            -36
+          ]
+        }
+      }
+    },
+    {
+      "id": 108,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            911,
+            66,
+            34,
+            20
+          ],
+          "offset": [
+            -18,
+            -20
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            920,
+            1,
+            34,
+            20
+          ],
+          "offset": [
+            -16,
+            -20
+          ]
+        }
+      }
+    },
+    {
+      "id": 109,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            946,
+            66,
+            25,
+            26
+          ],
+          "offset": [
+            -13,
+            -25
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            955,
+            1,
+            25,
+            26
+          ],
+          "offset": [
+            -12,
+            -25
+          ]
+        }
+      }
+    },
+    {
+      "id": 110,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            972,
+            66,
+            21,
+            19
+          ],
+          "offset": [
+            -4,
+            -34
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            981,
+            1,
+            21,
+            19
+          ],
+          "offset": [
+            -17,
+            -34
+          ]
+        }
+      }
+    },
+    {
+      "id": 111,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            994,
+            66,
+            25,
+            20
+          ],
+          "offset": [
+            -9,
+            -34
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            1,
+            32,
+            25,
+            20
+          ],
+          "offset": [
+            -16,
+            -34
+          ]
+        }
+      }
+    },
+    {
+      "id": 112,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            1,
+            97,
+            28,
+            22
+          ],
+          "offset": [
+            -13,
+            -22
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            27,
+            32,
+            28,
+            22
+          ],
+          "offset": [
+            -15,
+            -22
+          ]
+        }
+      }
+    },
+    {
+      "id": 113,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            30,
+            97,
+            24,
+            26
+          ],
+          "offset": [
+            -7,
+            -44
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            56,
+            32,
+            24,
+            26
+          ],
+          "offset": [
+            -17,
+            -44
+          ]
+        }
+      }
+    },
+    {
+      "id": 114,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            55,
+            97,
+            20,
+            15
+          ],
+          "offset": [
+            -22,
+            -18
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            81,
+            32,
+            20,
+            15
+          ],
+          "offset": [
+            2,
+            -18
+          ]
+        }
+      }
+    },
+    {
+      "id": 115,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            30,
+            97,
+            24,
+            26
+          ],
+          "offset": [
+            -7,
+            -45
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            56,
+            32,
+            24,
+            26
+          ],
+          "offset": [
+            -17,
+            -45
+          ]
+        }
+      }
+    },
+    {
+      "id": 116,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            55,
+            97,
+            20,
+            15
+          ],
+          "offset": [
+            -22,
+            -19
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            81,
+            32,
+            20,
+            15
+          ],
+          "offset": [
+            2,
+            -19
+          ]
+        }
+      }
+    },
+    {
+      "id": 117,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            30,
+            97,
+            24,
+            26
+          ],
+          "offset": [
+            -8,
+            -44
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            56,
+            32,
+            24,
+            26
+          ],
+          "offset": [
+            -16,
+            -44
+          ]
+        }
+      }
+    },
+    {
+      "id": 118,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            55,
+            97,
+            20,
+            15
+          ],
+          "offset": [
+            -23,
+            -18
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            81,
+            32,
+            20,
+            15
+          ],
+          "offset": [
+            3,
+            -18
+          ]
+        }
+      }
+    },
+    {
+      "id": 119,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            30,
+            97,
+            24,
+            26
+          ],
+          "offset": [
+            -8,
+            -43
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            56,
+            32,
+            24,
+            26
+          ],
+          "offset": [
+            -16,
+            -43
+          ]
+        }
+      }
+    },
+    {
+      "id": 120,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            55,
+            97,
+            20,
+            15
+          ],
+          "offset": [
+            -23,
+            -17
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            81,
+            32,
+            20,
+            15
+          ],
+          "offset": [
+            3,
+            -17
+          ]
+        }
+      }
+    },
+    {
+      "id": 121,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            30,
+            97,
+            24,
+            26
+          ],
+          "offset": [
+            -9,
+            -43
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            56,
+            32,
+            24,
+            26
+          ],
+          "offset": [
+            -15,
+            -43
+          ]
+        }
+      }
+    },
+    {
+      "id": 122,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            55,
+            97,
+            20,
+            15
+          ],
+          "offset": [
+            -24,
+            -17
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            81,
+            32,
+            20,
+            15
+          ],
+          "offset": [
+            4,
+            -17
+          ]
+        }
+      }
+    },
+    {
+      "id": 123,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            76,
+            97,
+            26,
+            25
+          ],
+          "offset": [
+            -9,
+            -37
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            102,
+            32,
+            26,
+            25
+          ],
+          "offset": [
+            -17,
+            -37
+          ]
+        }
+      }
+    },
+    {
+      "id": 124,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            76,
+            97,
+            26,
+            25
+          ],
+          "offset": [
+            -9,
+            -38
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            102,
+            32,
+            26,
+            25
+          ],
+          "offset": [
+            -17,
+            -38
+          ]
+        }
+      }
+    },
+    {
+      "id": 125,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            76,
+            97,
+            26,
+            25
+          ],
+          "offset": [
+            -10,
+            -37
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            102,
+            32,
+            26,
+            25
+          ],
+          "offset": [
+            -16,
+            -37
+          ]
+        }
+      }
+    },
+    {
+      "id": 126,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            76,
+            97,
+            26,
+            25
+          ],
+          "offset": [
+            -10,
+            -36
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            102,
+            32,
+            26,
+            25
+          ],
+          "offset": [
+            -16,
+            -36
+          ]
+        }
+      }
+    },
+    {
+      "id": 127,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            76,
+            97,
+            26,
+            25
+          ],
+          "offset": [
+            -11,
+            -36
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            102,
+            32,
+            26,
+            25
+          ],
+          "offset": [
+            -15,
+            -36
+          ]
+        }
+      }
+    },
+    {
+      "id": 128,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            822,
+            66,
+            26,
+            26
+          ],
+          "offset": [
+            -6,
+            -36
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            831,
+            1,
+            26,
+            26
+          ],
+          "offset": [
+            -20,
+            -36
+          ]
+        }
+      }
+    },
+    {
+      "id": 129,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            103,
+            97,
+            19,
+            20
+          ],
+          "offset": [
+            0,
+            -34
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            129,
+            32,
+            19,
+            20
+          ],
+          "offset": [
+            -19,
+            -34
+          ]
+        }
+      }
+    },
+    {
+      "id": 130,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            123,
+            97,
+            30,
+            20
+          ],
+          "offset": [
+            2,
+            -33
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            149,
+            32,
+            30,
+            20
+          ],
+          "offset": [
+            -32,
+            -33
+          ]
+        }
+      }
+    },
+    {
+      "id": 131,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            154,
+            97,
+            22,
+            22
+          ],
+          "offset": [
+            0,
+            -32
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            180,
+            32,
+            22,
+            22
+          ],
+          "offset": [
+            -22,
+            -32
+          ]
+        }
+      }
+    },
+    {
+      "id": 132,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            30,
+            97,
+            24,
+            26
+          ],
+          "offset": [
+            -6,
+            -43
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            56,
+            32,
+            24,
+            26
+          ],
+          "offset": [
+            -18,
+            -43
+          ]
+        }
+      }
+    },
+    {
+      "id": 133,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            55,
+            97,
+            20,
+            15
+          ],
+          "offset": [
+            -21,
+            -17
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            81,
+            32,
+            20,
+            15
+          ],
+          "offset": [
+            1,
+            -17
+          ]
+        }
+      }
+    },
+    {
+      "id": 134,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            30,
+            97,
+            24,
+            26
+          ],
+          "offset": [
+            -6,
+            -42
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            56,
+            32,
+            24,
+            26
+          ],
+          "offset": [
+            -18,
+            -42
+          ]
+        }
+      }
+    },
+    {
+      "id": 135,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            55,
+            97,
+            20,
+            15
+          ],
+          "offset": [
+            -21,
+            -16
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            81,
+            32,
+            20,
+            15
+          ],
+          "offset": [
+            1,
+            -16
+          ]
+        }
+      }
+    },
+    {
+      "id": 136,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            76,
+            97,
+            26,
+            25
+          ],
+          "offset": [
+            -10,
+            -37
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            102,
+            32,
+            26,
+            25
+          ],
+          "offset": [
+            -16,
+            -37
+          ]
+        }
+      }
+    },
+    {
+      "id": 137,
+      "directions": {}
+    },
+    {
+      "id": 138,
+      "directions": {}
+    },
+    {
+      "id": 139,
+      "directions": {}
+    },
+    {
+      "id": 140,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            177,
+            97,
+            40,
+            22
+          ],
+          "offset": [
+            -22,
+            -38
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            203,
+            32,
+            40,
+            22
+          ],
+          "offset": [
+            -18,
+            -38
+          ]
+        }
+      }
+    },
+    {
+      "id": 141,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            218,
+            97,
+            42,
+            33
+          ],
+          "offset": [
+            -24,
+            -30
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            244,
+            32,
+            42,
+            33
+          ],
+          "offset": [
+            -18,
+            -30
+          ]
+        }
+      }
+    },
+    {
+      "id": 142,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            261,
+            97,
+            42,
+            32
+          ],
+          "offset": [
+            -22,
+            -29
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            287,
+            32,
+            42,
+            32
+          ],
+          "offset": [
+            -20,
+            -29
+          ]
+        }
+      }
+    },
+    {
+      "id": 143,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            304,
+            97,
+            44,
+            31
+          ],
+          "offset": [
+            -21,
+            -29
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            330,
+            32,
+            44,
+            31
+          ],
+          "offset": [
+            -23,
+            -29
+          ]
+        }
+      }
+    },
+    {
+      "id": 144,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            349,
+            97,
+            43,
+            31
+          ],
+          "offset": [
+            -22,
+            -29
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            375,
+            32,
+            43,
+            31
+          ],
+          "offset": [
+            -21,
+            -29
+          ]
+        }
+      }
+    },
+    {
+      "id": 145,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            393,
+            97,
+            14,
+            22
+          ],
+          "offset": [
+            13,
+            -32
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            419,
+            32,
+            14,
+            22
+          ],
+          "offset": [
+            -27,
+            -32
+          ]
+        }
+      }
+    },
+    {
+      "id": 146,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            408,
+            97,
+            14,
+            21
+          ],
+          "offset": [
+            13,
+            -32
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            434,
+            32,
+            14,
+            21
+          ],
+          "offset": [
+            -27,
+            -32
+          ]
+        }
+      }
+    },
+    {
+      "id": 147,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            408,
+            97,
+            14,
+            21
+          ],
+          "offset": [
+            13,
+            -32
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            434,
+            32,
+            14,
+            21
+          ],
+          "offset": [
+            -27,
+            -32
+          ]
+        }
+      }
+    },
+    {
+      "id": 148,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            423,
+            97,
+            39,
+            32
+          ],
+          "offset": [
+            -22,
+            -29
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            449,
+            32,
+            39,
+            32
+          ],
+          "offset": [
+            -17,
+            -29
+          ]
+        }
+      }
+    },
+    {
+      "id": 149,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            463,
+            97,
+            25,
+            19
+          ],
+          "offset": [
+            -8,
+            -46
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            489,
+            32,
+            25,
+            19
+          ],
+          "offset": [
+            -17,
+            -46
+          ]
+        }
+      }
+    },
+    {
+      "id": 150,
+      "directions": {}
+    },
+    {
+      "id": 151,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            489,
+            97,
+            32,
+            20
+          ],
+          "offset": [
+            -14,
+            -43
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            515,
+            32,
+            32,
+            20
+          ],
+          "offset": [
+            -18,
+            -43
+          ]
+        }
+      }
+    },
+    {
+      "id": 152,
+      "directions": {
+        "right": {
+          "texture": "textures/characters.png",
+          "region": [
+            522,
+            97,
+            37,
+            27
+          ],
+          "offset": [
+            -19,
+            -44
+          ]
+        },
+        "left": {
+          "texture": "textures/characters.png",
+          "region": [
+            548,
+            32,
+            37,
+            27
+          ],
+          "offset": [
+            -18,
+            -44
+          ]
+        }
+      }
+    },
+    {
+      "id": 153,
+      "directions": {}
+    },
+    {
+      "id": 154,
+      "directions": {}
+    }
+  ]
+}

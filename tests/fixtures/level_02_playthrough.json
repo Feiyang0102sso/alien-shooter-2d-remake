@@ -1,0 +1,611 @@
+{
+  "level": 2,
+  "actions": [
+    {
+      "ticks": 1,
+      "down": true,
+      "note": "清理起点附近敌人"
+    },
+    {
+      "ticks": 160,
+      "fire": true
+    },
+    {
+      "ticks": 13,
+      "right": true
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "right": true,
+      "note": "跳过低管道，穿过底层"
+    },
+    {
+      "ticks": 12,
+      "right": true
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "right": true
+    },
+    {
+      "ticks": 14,
+      "right": true
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "right": true
+    },
+    {
+      "ticks": 14,
+      "right": true
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "right": true
+    },
+    {
+      "ticks": 14,
+      "right": true
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 100,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 100,
+      "fire": true
+    },
+    {
+      "ticks": 8,
+      "left": true
+    },
+    {
+      "ticks": 1,
+      "right": true
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "right": true
+    },
+    {
+      "ticks": 17,
+      "right": true
+    },
+    {
+      "ticks": 50,
+      "fire": true
+    },
+    {
+      "ticks": 16,
+      "right": true
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "right": true
+    },
+    {
+      "ticks": 15,
+      "right": true
+    },
+    {
+      "ticks": 8
+    },
+    {
+      "ticks": 5,
+      "right": true,
+      "note": "恢复供电"
+    },
+    {
+      "ticks": 2
+    },
+    {
+      "ticks": 1,
+      "left": true
+    },
+    {
+      "ticks": 5,
+      "left": true
+    },
+    {
+      "ticks": 55,
+      "note": "等待右侧升降台并进入上层"
+    },
+    {
+      "ticks": 35
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "left": true
+    },
+    {
+      "ticks": 12,
+      "left": true
+    },
+    {
+      "ticks": 15,
+      "fire": true,
+      "note": "清理高处障碍，利用医疗包补血"
+    },
+    {
+      "ticks": 12,
+      "left": true
+    },
+    {
+      "ticks": 10,
+      "left": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 50,
+      "fire": true
+    },
+    {
+      "ticks": 25,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "right": true
+    },
+    {
+      "ticks": 1
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 35,
+      "fire": true
+    },
+    {
+      "ticks": 3,
+      "left": true,
+      "note": "跨越上层缺口，前往左侧炸药"
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "left": true
+    },
+    {
+      "ticks": 18,
+      "left": true
+    },
+    {
+      "ticks": 10,
+      "left": true
+    },
+    {
+      "ticks": 24,
+      "left": true,
+      "note": "拾取第一份炸药并清理左侧敌人"
+    },
+    {
+      "ticks": 1,
+      "right": true
+    },
+    {
+      "ticks": 90,
+      "fire": true
+    },
+    {
+      "ticks": 6,
+      "right": true,
+      "note": "搭乘左侧升降台，取得上层医疗包"
+    },
+    {
+      "ticks": 35
+    },
+    {
+      "ticks": 1,
+      "jump": true
+    },
+    {
+      "ticks": 12
+    },
+    {
+      "ticks": 14
+    },
+    {
+      "ticks": 1,
+      "left": true
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "left": true
+    },
+    {
+      "ticks": 6,
+      "left": true
+    },
+    {
+      "ticks": 10
+    },
+    {
+      "ticks": 12,
+      "right": true,
+      "note": "返回中部，清理中层敌人"
+    },
+    {
+      "ticks": 8
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "right": true
+    },
+    {
+      "ticks": 12,
+      "right": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "right": true
+    },
+    {
+      "ticks": 18,
+      "right": true
+    },
+    {
+      "ticks": 10
+    },
+    {
+      "ticks": 7,
+      "right": true
+    },
+    {
+      "ticks": 12
+    },
+    {
+      "ticks": 1,
+      "left": true
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 80,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 3,
+      "left": true
+    },
+    {
+      "ticks": 1,
+      "right": true
+    },
+    {
+      "ticks": 1
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 40,
+      "fire": true
+    },
+    {
+      "ticks": 60,
+      "fire": true
+    },
+    {
+      "ticks": 18,
+      "right": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "right": true,
+      "note": "越过中层箱子，搭乘底层升降台"
+    },
+    {
+      "ticks": 12,
+      "right": true
+    },
+    {
+      "ticks": 10
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "right": true
+    },
+    {
+      "ticks": 6,
+      "right": true
+    },
+    {
+      "ticks": 12
+    },
+    {
+      "ticks": 7,
+      "left": true
+    },
+    {
+      "ticks": 1,
+      "right": true,
+      "note": "跳向第一台生成器放置炸药"
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "right": true
+    },
+    {
+      "ticks": 18,
+      "right": true
+    },
+    {
+      "ticks": 1,
+      "left": true
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "left": true
+    },
+    {
+      "ticks": 18,
+      "left": true
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "left": true,
+      "note": "越过箱子撤离并清除底层剩余敌人"
+    },
+    {
+      "ticks": 14,
+      "left": true
+    },
+    {
+      "ticks": 1,
+      "right": true
+    },
+    {
+      "ticks": 100,
+      "fire": true
+    },
+    {
+      "ticks": 12,
+      "right": true,
+      "note": "再次搭乘右侧升降台"
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "right": true
+    },
+    {
+      "ticks": 15,
+      "right": true
+    },
+    {
+      "ticks": 20
+    },
+    {
+      "ticks": 40
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "right": true
+    },
+    {
+      "ticks": 14,
+      "right": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 5,
+      "note": "进入右上层，拾取第二份炸药与医疗包"
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "right": true
+    },
+    {
+      "ticks": 11,
+      "right": true
+    },
+    {
+      "ticks": 60,
+      "fire": true
+    },
+    {
+      "ticks": 12,
+      "right": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 13,
+      "left": true
+    },
+    {
+      "ticks": 12
+    },
+    {
+      "ticks": 1,
+      "right": true,
+      "note": "利用箱子掩护清理右侧敌人"
+    },
+    {
+      "ticks": 120,
+      "fire": true
+    },
+    {
+      "ticks": 5
+    },
+    {
+      "ticks": 1,
+      "down": true
+    },
+    {
+      "ticks": 100,
+      "fire": true
+    },
+    {
+      "ticks": 5,
+      "note": "放置第二份炸药并连续跳跃撤离"
+    },
+    {
+      "ticks": 1,
+      "right": true
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "right": true
+    },
+    {
+      "ticks": 15,
+      "right": true
+    },
+    {
+      "ticks": 5,
+      "right": true
+    },
+    {
+      "ticks": 1,
+      "left": true
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "left": true
+    },
+    {
+      "ticks": 18,
+      "left": true
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "left": true
+    },
+    {
+      "ticks": 12,
+      "left": true
+    },
+    {
+      "ticks": 65,
+      "note": "等待爆破及平台同步，跳回中部"
+    },
+    {
+      "ticks": 7
+    },
+    {
+      "ticks": 2,
+      "left": true
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "left": true
+    },
+    {
+      "ticks": 10,
+      "left": true
+    },
+    {
+      "ticks": 12
+    },
+    {
+      "ticks": 5,
+      "note": "经上层返回出口"
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "left": true
+    },
+    {
+      "ticks": 12,
+      "left": true
+    },
+    {
+      "ticks": 14,
+      "left": true
+    },
+    {
+      "ticks": 1,
+      "jump": true,
+      "left": true
+    },
+    {
+      "ticks": 18,
+      "left": true
+    },
+    {
+      "ticks": 5,
+      "left": true
+    },
+    {
+      "ticks": 9
+    },
+    {
+      "ticks": 15,
+      "down": true,
+      "note": "搭乘升降台靠近出口并进入"
+    },
+    {
+      "ticks": 23,
+      "down": true
+    }
+  ],
+  "require_complete": true,
+  "difficulty": 1,
+  "expected": {
+    "ticks": 2287,
+    "health": 55,
+    "score": 210
+  },
+  "note": "从第二关默认装备独立开始，只使用正常输入；固定种子 12345。"
+}

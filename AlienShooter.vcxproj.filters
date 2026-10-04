@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="as_java_re">
+      <UniqueIdentifier>{9399F605-DFD2-5707-981F-FDCD89E55DE2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty">
+      <UniqueIdentifier>{999A089D-1242-5865-8E00-E5B1F473FE81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\raylib">
+      <UniqueIdentifier>{9F70AA48-58C9-54B0-BC4C-E3E94463BAB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{C2A0DA00-3112-5937-B2CD-9FDE8842AF63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\as_java_re\assets.cpp">
+      <Filter>as_java_re</Filter>
+    </ClCompile>
+    <ClInclude Include="src\as_java_re\assets.h">
+      <Filter>as_java_re</Filter>
+    </ClInclude>
+    <ClCompile Include="src\as_java_re\audio.cpp">
+      <Filter>as_java_re</Filter>
+    </ClCompile>
+    <ClInclude Include="src\as_java_re\audio.h">
+      <Filter>as_java_re</Filter>
+    </ClInclude>
+    <ClCompile Include="src\as_java_re\cheat.cpp">
+      <Filter>as_java_re</Filter>
+    </ClCompile>
+    <ClInclude Include="src\as_java_re\cheat.h">
+      <Filter>as_java_re</Filter>
+    </ClInclude>
+    <ClCompile Include="src\as_java_re\game.cpp">
+      <Filter>as_java_re</Filter>
+    </ClCompile>
+    <ClInclude Include="src\as_java_re\game.h">
+      <Filter>as_java_re</Filter>
+    </ClInclude>
+    <ClCompile Include="src\as_java_re\main.cpp">
+      <Filter>as_java_re</Filter>
+    </ClCompile>
+    <ClInclude Include="src\as_java_re\version.h">
+      <Filter>as_java_re</Filter>
+    </ClInclude>
+    <ClCompile Include="src\as_java_re\midi.cpp">
+      <Filter>as_java_re</Filter>
+    </ClCompile>
+    <ClInclude Include="src\as_java_re\midi.h">
+      <Filter>as_java_re</Filter>
+    </ClInclude>
+    <ClCompile Include="src\as_java_re\platform.cpp">
+      <Filter>as_java_re</Filter>
+    </ClCompile>
+    <ClInclude Include="src\as_java_re\platform.h">
+      <Filter>as_java_re</Filter>
+    </ClInclude>
+    <ClCompile Include="src\as_java_re\renderer.cpp">
+      <Filter>as_java_re</Filter>
+    </ClCompile>
+    <ClInclude Include="src\as_java_re\renderer.h">
+      <Filter>as_java_re</Filter>
+    </ClInclude>
+    <ClCompile Include="src\as_java_re\save.cpp">
+      <Filter>as_java_re</Filter>
+    </ClCompile>
+    <ClInclude Include="src\as_java_re\save.h">
+      <Filter>as_java_re</Filter>
+    </ClInclude>
+    <ClCompile Include="src\as_java_re\windows_entry.cpp">
+      <Filter>as_java_re</Filter>
+    </ClCompile>
+    <ClCompile Include="src\as_java_re\world.cpp">
+      <Filter>as_java_re</Filter>
+    </ClCompile>
+    <ClInclude Include="src\as_java_re\world.h">
+      <Filter>as_java_re</Filter>
+    </ClInclude>
+    <ClCompile Include="src\3rdparty\raylib\src\raudio.c">
+      <Filter>3rdparty\raylib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\raylib\src\rcore.c">
+      <Filter>3rdparty\raylib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\raylib\src\rglfw.c">
+      <Filter>3rdparty\raylib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\raylib\src\rmodels.c">
+      <Filter>3rdparty\raylib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\raylib\src\rshapes.c">
+      <Filter>3rdparty\raylib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\raylib\src\rtext.c">
+      <Filter>3rdparty\raylib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\raylib\src\rtextures.c">
+      <Filter>3rdparty\raylib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdparty\raylib\src\utils.c">
+      <Filter>3rdparty\raylib</Filter>
+    </ClCompile>
+    <ClInclude Include="src\3rdparty\raylib\src\raylib.h">
+      <Filter>3rdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3rdparty\raylib\src\raymath.h">
+      <Filter>3rdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3rdparty\raylib\src\rlgl.h">
+      <Filter>3rdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3rdparty\fluidsynth\include\fluidsynth.h">
+      <Filter>3rdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3rdparty\json\include\nlohmann\json.hpp">
+      <Filter>3rdparty</Filter>
+    </ClInclude>
+    <ResourceCompile Include="resources\AlienShooter.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+    <None Include="resources\AlienShooter.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="resources\AlienShooter.manifest">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+</Project>

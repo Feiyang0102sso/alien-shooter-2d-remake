@@ -1,0 +1,374 @@
+{
+  "seed": 12345,
+  "description": "正常输入专项路线，不注入角色或关卡状态。",
+  "cases": [
+    {
+      "name": "ledge_gravity",
+      "level": 2,
+      "note": "跳跃顶点碰到台阶后继续完成当步重力",
+      "actions": [
+        {
+          "right": true,
+          "ticks": 2
+        },
+        {
+          "ticks": 16
+        },
+        {
+          "fire": true,
+          "ticks": 7
+        },
+        {
+          "right": true,
+          "ticks": 9
+        },
+        {
+          "fire": true,
+          "ticks": 8
+        },
+        {
+          "down": true,
+          "ticks": 1
+        },
+        {
+          "ticks": 8
+        },
+        {
+          "jump": true,
+          "ticks": 4
+        },
+        {
+          "down": true,
+          "ticks": 5
+        },
+        {
+          "right": true,
+          "ticks": 4
+        },
+        {
+          "fire": true,
+          "ticks": 45
+        },
+        {
+          "jump": true,
+          "ticks": 3
+        },
+        {
+          "fire": true,
+          "ticks": 15
+        },
+        {
+          "jump": true,
+          "ticks": 6
+        },
+        {
+          "right": true,
+          "ticks": 1
+        },
+        {
+          "ticks": 18
+        },
+        {
+          "fire": true,
+          "ticks": 17
+        },
+        {
+          "ticks": 12
+        },
+        {
+          "right": true,
+          "ticks": 16
+        },
+        {
+          "jump": true,
+          "ticks": 14
+        },
+        {
+          "ticks": 11
+        },
+        {
+          "down": true,
+          "ticks": 11
+        },
+        {
+          "right": true,
+          "ticks": 8
+        },
+        {
+          "left": true,
+          "ticks": 2
+        },
+        {
+          "down": true,
+          "ticks": 5
+        },
+        {
+          "right": true,
+          "ticks": 16
+        },
+        {
+          "left": true,
+          "ticks": 9
+        },
+        {
+          "jump": true,
+          "ticks": 10
+        },
+        {
+          "fire": true,
+          "ticks": 10
+        }
+      ]
+    },
+    {
+      "name": "look_down_release",
+      "level": 6,
+      "note": "松开 S 复位低头镜头",
+      "actions": [
+        {
+          "fire": true,
+          "ticks": 6
+        },
+        {
+          "jump": true,
+          "ticks": 17
+        },
+        {
+          "down": true,
+          "ticks": 10
+        },
+        {
+          "fire": true,
+          "ticks": 17
+        }
+      ]
+    },
+    {
+      "name": "lethal_fire",
+      "level": 7,
+      "note": "火焰致死后的敌人移动与动画",
+      "actions": [
+        {
+          "ticks": 4
+        },
+        {
+          "left": true,
+          "ticks": 1
+        },
+        {
+          "ticks": 16
+        },
+        {
+          "down": true,
+          "ticks": 10
+        },
+        {
+          "ticks": 15
+        },
+        {
+          "fire": true,
+          "ticks": 14
+        },
+        {
+          "right": true,
+          "ticks": 9
+        },
+        {
+          "left": true,
+          "ticks": 6
+        },
+        {
+          "ticks": 16
+        },
+        {
+          "left": true,
+          "ticks": 3
+        },
+        {
+          "fire": true,
+          "ticks": 14
+        },
+        {
+          "ticks": 3
+        },
+        {
+          "fire": true,
+          "ticks": 8
+        },
+        {
+          "left": true,
+          "ticks": 3
+        },
+        {
+          "jump": true,
+          "ticks": 15
+        },
+        {
+          "ticks": 4
+        },
+        {
+          "fire": true,
+          "ticks": 45
+        },
+        {
+          "down": true,
+          "ticks": 6
+        },
+        {
+          "fire": true,
+          "ticks": 15
+        },
+        {
+          "jump": true,
+          "ticks": 11
+        },
+        {
+          "down": true,
+          "ticks": 7
+        }
+      ]
+    },
+    {
+      "name": "platform_wall",
+      "level": 8,
+      "note": "竖直升降台载人时保留平台脚下网格行",
+      "actions": [
+        {
+          "right": true,
+          "ticks": 25
+        },
+        {
+          "jump": true,
+          "ticks": 12
+        },
+        {
+          "fire": true,
+          "ticks": 100
+        },
+        {
+          "left": true,
+          "ticks": 35
+        },
+        {
+          "fire": true,
+          "ticks": 100
+        },
+        {
+          "down": true,
+          "ticks": 10
+        }
+      ]
+    },
+    {
+      "name": "attack_jump",
+      "level": 8,
+      "note": "站姿射击可按 W 起跳取消，蹲姿与死亡输入按原条件处理",
+      "actions": [
+        {
+          "fire": true,
+          "ticks": 17
+        },
+        {
+          "jump": true,
+          "ticks": 10
+        },
+        {
+          "left": true,
+          "ticks": 12
+        },
+        {
+          "down": true,
+          "ticks": 16
+        },
+        {
+          "fire": true,
+          "ticks": 36
+        },
+        {
+          "left": true,
+          "ticks": 4
+        }
+      ]
+    },
+    {
+      "name": "platform_jump",
+      "level": 8,
+      "note": "离开升降台起跳后的首步碰撞",
+      "actions": [
+        {
+          "right": true,
+          "ticks": 6
+        },
+        {
+          "fire": true,
+          "ticks": 21
+        },
+        {
+          "left": true,
+          "ticks": 13
+        },
+        {
+          "fire": true,
+          "ticks": 6
+        },
+        {
+          "down": true,
+          "ticks": 2
+        },
+        {
+          "ticks": 5
+        },
+        {
+          "fire": true,
+          "ticks": 5
+        },
+        {
+          "jump": true,
+          "ticks": 1
+        },
+        {
+          "right": true,
+          "ticks": 13
+        },
+        {
+          "down": true,
+          "ticks": 7
+        },
+        {
+          "fire": true,
+          "ticks": 15
+        },
+        {
+          "ticks": 26
+        },
+        {
+          "fire": true,
+          "ticks": 8
+        },
+        {
+          "jump": true,
+          "ticks": 15
+        },
+        {
+          "down": true,
+          "ticks": 6
+        },
+        {
+          "jump": true,
+          "ticks": 2
+        },
+        {
+          "down": true,
+          "ticks": 12
+        },
+        {
+          "fire": true,
+          "ticks": 2
+        },
+        {
+          "ticks": 4
+        }
+      ]
+    }
+  ]
+}

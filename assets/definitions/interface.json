@@ -1,0 +1,330 @@
+{
+  "images": {
+    "menu_background": {
+      "texture": "textures/interface.png",
+      "region": [
+        567,
+        1,
+        240,
+        320
+      ]
+    },
+    "menu_overlay": {
+      "texture": "textures/interface.png",
+      "region": [
+        808,
+        1,
+        162,
+        74
+      ]
+    },
+    "text_background": {
+      "texture": "textures/interface.png",
+      "region": [
+        277,
+        1,
+        48,
+        67
+      ]
+    },
+    "loading_indicator": {
+      "texture": "textures/interface.png",
+      "region": [
+        159,
+        1,
+        117,
+        39
+      ]
+    },
+    "intro_logo": {
+      "texture": "textures/interface.png",
+      "region": [
+        51,
+        1,
+        107,
+        58
+      ]
+    },
+    "publisher_logo": {
+      "texture": "textures/interface.png",
+      "region": [
+        326,
+        1,
+        240,
+        320
+      ]
+    },
+    "game_icon": {
+      "texture": "textures/interface.png",
+      "region": [
+        1,
+        1,
+        24,
+        24
+      ]
+    },
+    "application_icon": {
+      "texture": "textures/interface.png",
+      "region": [
+        26,
+        1,
+        24,
+        24
+      ]
+    }
+  },
+  "help_icons": [
+    {
+      "id": 0,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          971,
+          1,
+          32,
+          18
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          1,
+          322,
+          31,
+          18
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          33,
+          322,
+          30,
+          16
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          64,
+          322,
+          32,
+          18
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          97,
+          322,
+          12,
+          24
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          110,
+          322,
+          20,
+          16
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          131,
+          322,
+          7,
+          15
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          139,
+          322,
+          16,
+          15
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          156,
+          322,
+          16,
+          15
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          173,
+          322,
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          190,
+          322,
+          16,
+          16
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          207,
+          322,
+          10,
+          13
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          218,
+          322,
+          11,
+          19
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          230,
+          322,
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          241,
+          322,
+          12,
+          11
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          254,
+          322,
+          12,
+          16
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          267,
+          322,
+          5,
+          14
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          273,
+          322,
+          13,
+          16
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          287,
+          322,
+          15,
+          16
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          808,
+          1,
+          162,
+          74
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "image": {
+        "texture": "textures/interface.png",
+        "region": [
+          51,
+          1,
+          107,
+          58
+        ]
+      }
+    }
+  ]
+}

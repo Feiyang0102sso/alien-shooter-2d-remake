@@ -1,0 +1,154 @@
+{
+  "nominal_tick_ms": 80,
+  "animations": [
+    {
+      "name": "player_unarmed_walk",
+      "frames": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "name": "player_machine_gun_walk",
+      "frames": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "name": "player_weapon_walk",
+      "frames": [
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "name": "player_unarmed_attack",
+      "frames": [
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "name": "player_machine_gun_attack",
+      "frames": [
+        19,
+        20
+      ]
+    },
+    {
+      "name": "player_flamethrower_attack",
+      "frames": [
+        23
+      ]
+    },
+    {
+      "name": "player_rocket_attack",
+      "frames": [
+        27,
+        28
+      ]
+    },
+    {
+      "name": "player_blaster_attack",
+      "frames": [
+        31,
+        32
+      ]
+    },
+    {
+      "name": "monster_1_walk",
+      "frames": [
+        36,
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "name": "monster_1_attack",
+      "frames": [
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "name": "monster_2_walk",
+      "frames": [
+        46,
+        47,
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "name": "monster_2_attack",
+      "frames": [
+        51,
+        52,
+        53,
+        54
+      ]
+    },
+    {
+      "name": "monster_3_walk",
+      "frames": [
+        56,
+        57,
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "name": "monster_3_attack",
+      "frames": [
+        61,
+        62,
+        63
+      ]
+    },
+    {
+      "name": "monster_4_walk",
+      "frames": [
+        66,
+        67,
+        68,
+        69,
+        70
+      ]
+    },
+    {
+      "name": "monster_4_attack",
+      "frames": [
+        71
+      ]
+    },
+    {
+      "name": "monster_5_walk",
+      "frames": [
+        76,
+        77,
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "name": "monster_5_attack",
+      "frames": [
+        81
+      ]
+    }
+  ]
+}

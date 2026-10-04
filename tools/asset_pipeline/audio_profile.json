@@ -1,0 +1,25 @@
+{
+  "status": "approved",
+  "approved_date": "2026-10-04",
+  "fluidsynth": {
+    "version": "2.6.1",
+    "url": "https://github.com/FluidSynth/fluidsynth/releases/download/v2.6.1/fluidsynth-v2.6.1-win10-x64-cpp11.zip"
+  },
+  "soundfont": {
+    "name": "GeneralUser GS",
+    "version": "2.0.3",
+    "url": "https://raw.githubusercontent.com/mrbumpy409/GeneralUser-GS/684543d5e5efaef08d02be50dcda8d552478fa60/GeneralUser-GS.sf2",
+    "license_url": "https://raw.githubusercontent.com/mrbumpy409/GeneralUser-GS/684543d5e5efaef08d02be50dcda8d552478fa60/documentation/LICENSE.txt"
+  },
+  "encoder": "FFmpeg 6.1.1, libvorbis quality 6",
+  "sample_rate": 44100,
+  "channels": 2,
+  "gain": 0.2,
+  "reverb": false,
+  "chorus": false,
+  "polyphony": 256,
+  "bank_mode": "gm",
+  "timing_source": "sample",
+  "tail_policy": "Keep full renderer output, including low-level release tails and trailing silence.",
+  "normalization": false
+}

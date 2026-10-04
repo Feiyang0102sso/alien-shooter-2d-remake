@@ -1,0 +1,18 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.0.0
+MinimumVisualStudioVersion = 17.0.0.0
+Project("{BC8A1FFA-BEE3-4634-8014-F334798102B3}") = "AlienShooter", "AlienShooter.vcxproj", "{7A1C8DD1-40A6-54EC-91E2-B8913C9767FE}"
+EndProject
+Global
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|x64 = Debug|x64
+        Release|x64 = Release|x64
+    EndGlobalSection
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        {7A1C8DD1-40A6-54EC-91E2-B8913C9767FE}.Debug|x64.ActiveCfg = Debug|x64
+        {7A1C8DD1-40A6-54EC-91E2-B8913C9767FE}.Debug|x64.Build.0 = Debug|x64
+        {7A1C8DD1-40A6-54EC-91E2-B8913C9767FE}.Release|x64.ActiveCfg = Release|x64
+        {7A1C8DD1-40A6-54EC-91E2-B8913C9767FE}.Release|x64.Build.0 = Release|x64
+    EndGlobalSection
+EndGlobal

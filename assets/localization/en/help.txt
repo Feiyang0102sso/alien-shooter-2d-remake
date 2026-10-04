@@ -1,0 +1,40 @@
+Help
+<align:center>* GAME *
+
+<align:left>The endless dark corridors of the military complex have become a lair of evil. Thousands of bloodthirsty monsters have overrun its offices, warehouses and laboratories.
+
+Your mission is simple: clear the base of monsters by any means necessary. Use explosives to destroy the teleporters through which the creatures enter.
+
+You will gain access to advanced weapons and equipment:
+
+<img:0> - Machine gun
+<img:1> - Flamethrower
+<img:2> - Rocket launcher
+<img:3> - Blaster
+<img:11> - Light armor reduces damage by 30%
+<img:12> - Improved armor reduces damage by 50%
+<img:15> - Machine gun ammo
+<img:16> - Flamethrower fuel
+<img:17> - Rockets
+<img:18> - Blaster ammo
+<img:13> - Medkit restores your health
+<img:5> - Explosives for teleporters
+<img:4> - Explosive placement site
+<img:14> - Money
+
+<align:center>* CONTROLS *
+<align:left>LEFT (4) - Move left
+RIGHT (6) - Move right
+UP (2) - Jump
+DOWN (8) - Look down
+(0) - Switch weapon
+SOFT1 (5) - Fire
+SOFT2 (#) - Open menu
+
+<align:center>* SCORE *
+<align:left>Earn points by killing monsters. The score depends on the monster type.
+<align:center>* * *
+
+<align:center>The invasion has begun!
+You have one chance!
+The fate of humanity is in your hands!

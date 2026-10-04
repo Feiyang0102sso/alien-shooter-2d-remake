@@ -1,0 +1,30 @@
+/** @file AlienShooter.rc
+ * @brief Define the Windows application icon and version metadata.
+ */
+#include <winver.h>
+#include "../src/as_java_re/version.h"
+
+1 ICON "AlienShooter.ico"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION ALIEN_VERSION_NUMBERS
+ PRODUCTVERSION ALIEN_VERSION_NUMBERS
+ FILEOS VOS_NT_WINDOWS32
+ FILETYPE VFT_APP
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", ALIEN_FILE_DESCRIPTION "\0"
+            VALUE "FileVersion", ALIEN_VERSION_STRING "\0"
+            VALUE "ProductName", ALIEN_PRODUCT_NAME "\0"
+            VALUE "ProductVersion", ALIEN_VERSION_STRING "\0"
+            VALUE "OriginalFilename", ALIEN_ORIGINAL_FILENAME "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END

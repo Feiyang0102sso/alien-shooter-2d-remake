@@ -1,0 +1,92 @@
+{
+  "sounds": [
+    {
+      "id": 0,
+      "file": "audio/ogg/sound_00.ogg",
+      "midi_source": "audio/midi/sound_00.mid"
+    },
+    {
+      "id": 1,
+      "file": "audio/ogg/sound_01.ogg",
+      "midi_source": "audio/midi/sound_01.mid"
+    },
+    {
+      "id": 10,
+      "file": "audio/ogg/sound_10.ogg",
+      "midi_source": "audio/midi/sound_10.mid"
+    },
+    {
+      "id": 11,
+      "file": "audio/ogg/sound_11.ogg",
+      "midi_source": "audio/midi/sound_11.mid"
+    },
+    {
+      "id": 12,
+      "file": "audio/ogg/sound_12.ogg",
+      "midi_source": "audio/midi/sound_12.mid"
+    },
+    {
+      "id": 13,
+      "file": "audio/ogg/sound_13.ogg",
+      "midi_source": "audio/midi/sound_13.mid"
+    },
+    {
+      "id": 14,
+      "file": "audio/ogg/sound_14.ogg",
+      "midi_source": "audio/midi/sound_14.mid"
+    },
+    {
+      "id": 15,
+      "file": "audio/ogg/sound_15.ogg",
+      "midi_source": "audio/midi/sound_15.mid"
+    },
+    {
+      "id": 2,
+      "file": "audio/ogg/sound_02.ogg",
+      "midi_source": "audio/midi/sound_02.mid"
+    },
+    {
+      "id": 3,
+      "file": "audio/ogg/sound_03.ogg",
+      "midi_source": "audio/midi/sound_03.mid"
+    },
+    {
+      "id": 4,
+      "file": "audio/ogg/sound_04.ogg",
+      "midi_source": "audio/midi/sound_04.mid"
+    },
+    {
+      "id": 5,
+      "file": "audio/ogg/sound_05.ogg",
+      "midi_source": "audio/midi/sound_05.mid"
+    },
+    {
+      "id": 6,
+      "file": "audio/ogg/sound_06.ogg",
+      "midi_source": "audio/midi/sound_06.mid"
+    },
+    {
+      "id": 7,
+      "file": "audio/ogg/sound_07.ogg",
+      "midi_source": "audio/midi/sound_07.mid"
+    },
+    {
+      "id": 8,
+      "file": "audio/ogg/sound_08.ogg",
+      "midi_source": "audio/midi/sound_08.mid"
+    },
+    {
+      "id": 9,
+      "file": "audio/ogg/sound_09.ogg",
+      "midi_source": "audio/midi/sound_09.mid"
+    },
+    {
+      "id": 16,
+      "file": "audio/ogg/main_menu.ogg",
+      "midi_source": "audio/midi/main_menu.mid"
+    }
+  ],
+  "max_active_sounds": 1,
+  "interruption": "pause_and_resume",
+  "loop_count": 1
+}

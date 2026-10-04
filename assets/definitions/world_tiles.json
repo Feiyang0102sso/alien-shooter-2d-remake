@@ -1,0 +1,7343 @@
+{
+  "tile_size": 16,
+  "themes": [
+    {
+      "id": 0,
+      "tiles": [
+        {
+          "id": 0,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 2,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 3,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 4,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 5,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 6,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 7,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 8,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 9,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              1,
+              1,
+              51,
+              28
+            ]
+          }
+        },
+        {
+          "id": 10,
+          "offset": [
+            0,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              53,
+              1,
+              32,
+              18
+            ]
+          }
+        },
+        {
+          "id": 11,
+          "offset": [
+            0,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              86,
+              1,
+              31,
+              18
+            ]
+          }
+        },
+        {
+          "id": 12,
+          "offset": [
+            0,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              118,
+              1,
+              30,
+              16
+            ]
+          }
+        },
+        {
+          "id": 13,
+          "offset": [
+            0,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              149,
+              1,
+              32,
+              18
+            ]
+          }
+        },
+        {
+          "id": 14,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 15,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 16,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 17,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 18,
+          "offset": [
+            4,
+            -48
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              182,
+              1,
+              12,
+              24
+            ]
+          }
+        },
+        {
+          "id": 19,
+          "offset": [
+            0,
+            -22
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              195,
+              1,
+              20,
+              16
+            ]
+          }
+        },
+        {
+          "id": 20,
+          "offset": [
+            16,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              216,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 21,
+          "offset": [
+            0,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              233,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 22,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 23,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 24,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 25,
+          "offset": [
+            0,
+            -48
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              250,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 26,
+          "offset": [
+            16,
+            -48
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              267,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 27,
+          "offset": [
+            0,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              284,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 28,
+          "offset": [
+            16,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              301,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 29,
+          "offset": [
+            0,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              318,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 30,
+          "offset": [
+            16,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              335,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 31,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 32,
+          "offset": [
+            0,
+            -57
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              352,
+              1,
+              16,
+              13
+            ]
+          }
+        },
+        {
+          "id": 33,
+          "offset": [
+            16,
+            -56
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              369,
+              1,
+              16,
+              13
+            ]
+          }
+        },
+        {
+          "id": 34,
+          "offset": [
+            0,
+            -43
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              386,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 35,
+          "offset": [
+            16,
+            -43
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              403,
+              1,
+              13,
+              16
+            ]
+          }
+        },
+        {
+          "id": 36,
+          "offset": [
+            3,
+            -27
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              417,
+              1,
+              13,
+              16
+            ]
+          }
+        },
+        {
+          "id": 37,
+          "offset": [
+            16,
+            -27
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              431,
+              1,
+              12,
+              16
+            ]
+          }
+        },
+        {
+          "id": 38,
+          "offset": [
+            0,
+            -45
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              444,
+              1,
+              16,
+              11
+            ]
+          }
+        },
+        {
+          "id": 39,
+          "offset": [
+            16,
+            -46
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              461,
+              1,
+              17,
+              12
+            ]
+          }
+        },
+        {
+          "id": 40,
+          "offset": [
+            0,
+            -34
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              479,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 41,
+          "offset": [
+            16,
+            -34
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              496,
+              1,
+              22,
+              16
+            ]
+          }
+        },
+        {
+          "id": 42,
+          "offset": [
+            0,
+            -18
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              519,
+              1,
+              16,
+              7
+            ]
+          }
+        },
+        {
+          "id": 43,
+          "offset": [
+            16,
+            -18
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              536,
+              1,
+              16,
+              7
+            ]
+          }
+        },
+        {
+          "id": 44,
+          "offset": [
+            32,
+            -18
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              553,
+              1,
+              7,
+              7
+            ]
+          }
+        },
+        {
+          "id": 45,
+          "offset": [
+            0,
+            10
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              561,
+              1,
+              16,
+              6
+            ]
+          }
+        },
+        {
+          "id": 46,
+          "offset": [
+            0,
+            10
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              578,
+              1,
+              16,
+              6
+            ]
+          }
+        },
+        {
+          "id": 47,
+          "offset": [
+            36,
+            -31
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              595,
+              1,
+              6,
+              9
+            ]
+          }
+        },
+        {
+          "id": 48,
+          "offset": [
+            36,
+            -31
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              602,
+              1,
+              6,
+              9
+            ]
+          }
+        },
+        {
+          "id": 49,
+          "offset": [
+            36,
+            -31
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              609,
+              1,
+              8,
+              12
+            ]
+          }
+        },
+        {
+          "id": 50,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              618,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 51,
+          "offset": [
+            3,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              635,
+              1,
+              11,
+              13
+            ]
+          }
+        },
+        {
+          "id": 52,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              647,
+              1,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "id": 53,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 54,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 55,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 56,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              666,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 57,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              683,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 58,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              700,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 59,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 60,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              717,
+              1,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "id": 61,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              728,
+              1,
+              6,
+              21
+            ]
+          }
+        },
+        {
+          "id": 62,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              735,
+              1,
+              21,
+              7
+            ]
+          }
+        },
+        {
+          "id": 63,
+          "offset": [
+            16,
+            -28
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              757,
+              1,
+              36,
+              20
+            ]
+          }
+        },
+        {
+          "id": 64,
+          "offset": [
+            24,
+            -26
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              794,
+              1,
+              20,
+              10
+            ]
+          }
+        },
+        {
+          "id": 65,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 66,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 67,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 68,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 69,
+          "offset": [
+            6,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              815,
+              1,
+              6,
+              11
+            ]
+          }
+        },
+        {
+          "id": 70,
+          "offset": [
+            14,
+            -53
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              822,
+              1,
+              14,
+              16
+            ]
+          }
+        },
+        {
+          "id": 71,
+          "offset": [
+            -4,
+            -21
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              837,
+              1,
+              16,
+              14
+            ]
+          }
+        },
+        {
+          "id": 72,
+          "offset": [
+            12,
+            -37
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              854,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 73,
+          "offset": [
+            12,
+            -21
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              871,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 74,
+          "offset": [
+            18,
+            -52
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              888,
+              1,
+              13,
+              20
+            ]
+          }
+        },
+        {
+          "id": 75,
+          "offset": [
+            17,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              902,
+              1,
+              14,
+              20
+            ]
+          }
+        },
+        {
+          "id": 76,
+          "offset": [
+            -4,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              917,
+              1,
+              20,
+              12
+            ]
+          }
+        },
+        {
+          "id": 77,
+          "offset": [
+            -3,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              938,
+              1,
+              19,
+              11
+            ]
+          }
+        },
+        {
+          "id": 78,
+          "offset": [
+            -4,
+            -1
+          ],
+          "image": {
+            "texture": "textures/characters.png",
+            "region": [
+              380,
+              66,
+              20,
+              11
+            ]
+          }
+        },
+        {
+          "id": 79,
+          "offset": [
+            0,
+            -5
+          ],
+          "image": {
+            "texture": "textures/characters.png",
+            "region": [
+              363,
+              66,
+              16,
+              21
+            ]
+          }
+        },
+        {
+          "id": 80,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/characters.png",
+            "region": [
+              349,
+              66,
+              13,
+              15
+            ]
+          }
+        },
+        {
+          "id": 81,
+          "offset": [
+            4,
+            -38
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              958,
+              1,
+              7,
+              15
+            ]
+          }
+        },
+        {
+          "id": 82,
+          "offset": [
+            0,
+            -38
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              966,
+              1,
+              16,
+              15
+            ]
+          }
+        },
+        {
+          "id": 83,
+          "offset": [
+            0,
+            -38
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              983,
+              1,
+              16,
+              15
+            ]
+          }
+        },
+        {
+          "id": 84,
+          "offset": [
+            3,
+            -48
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              1000,
+              1,
+              10,
+              16
+            ]
+          }
+        },
+        {
+          "id": 85,
+          "offset": [
+            0,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              1011,
+              1,
+              12,
+              16
+            ]
+          }
+        },
+        {
+          "id": 86,
+          "offset": [
+            0,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              1,
+              30,
+              11,
+              6
+            ]
+          }
+        },
+        {
+          "id": 87,
+          "offset": [
+            0,
+            -37
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              13,
+              30,
+              18,
+              13
+            ]
+          }
+        },
+        {
+          "id": 88,
+          "offset": [
+            0,
+            -24
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              32,
+              30,
+              18,
+              16
+            ]
+          }
+        },
+        {
+          "id": 89,
+          "offset": [
+            0,
+            -37
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              51,
+              30,
+              18,
+              13
+            ]
+          }
+        },
+        {
+          "id": 90,
+          "offset": [
+            0,
+            -24
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              70,
+              30,
+              18,
+              16
+            ]
+          }
+        },
+        {
+          "id": 91,
+          "offset": [
+            2,
+            -48
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              89,
+              30,
+              13,
+              16
+            ]
+          }
+        },
+        {
+          "id": 92,
+          "offset": [
+            2,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              103,
+              30,
+              13,
+              16
+            ]
+          }
+        },
+        {
+          "id": 93,
+          "offset": [
+            1,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              117,
+              30,
+              16,
+              9
+            ]
+          }
+        },
+        {
+          "id": 94,
+          "offset": [
+            -7,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              134,
+              30,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "id": 95,
+          "offset": [
+            17,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              143,
+              30,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "id": 96,
+          "offset": [
+            2,
+            -20
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              152,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 97,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              169,
+              30,
+              9,
+              6
+            ]
+          }
+        },
+        {
+          "id": 98,
+          "offset": [
+            0,
+            -30
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              179,
+              30,
+              16,
+              11
+            ]
+          }
+        },
+        {
+          "id": 99,
+          "offset": [
+            16,
+            -31
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              196,
+              30,
+              12,
+              12
+            ]
+          }
+        },
+        {
+          "id": 100,
+          "offset": [
+            0,
+            -19
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              209,
+              30,
+              16,
+              9
+            ]
+          }
+        },
+        {
+          "id": 101,
+          "offset": [
+            16,
+            -19
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              226,
+              30,
+              12,
+              8
+            ]
+          }
+        },
+        {
+          "id": 102,
+          "offset": [
+            105,
+            45
+          ],
+          "children": [
+            105,
+            45
+          ]
+        },
+        {
+          "id": 103,
+          "offset": [
+            105,
+            46
+          ],
+          "children": [
+            105,
+            46
+          ]
+        },
+        {
+          "id": 104,
+          "offset": [
+            105,
+            51
+          ],
+          "children": [
+            105,
+            51
+          ]
+        },
+        {
+          "id": 105,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              239,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 106,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              256,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 107,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              273,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 108,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              290,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 109,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              307,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 110,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              324,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 111,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              341,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 112,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              358,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 113,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              375,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 114,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              392,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 115,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              409,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 116,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              426,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 117,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              443,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 118,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              460,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 119,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              477,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 120,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              494,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 121,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              511,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 122,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              528,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 123,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              545,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 124,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              562,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 125,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              579,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 126,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              596,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 127,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              613,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 128,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              630,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 129,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              647,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 130,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 131,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              664,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 132,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              681,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 133,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              698,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 134,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              715,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 135,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              732,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 136,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              749,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 137,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              766,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 138,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              783,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 139,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              800,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 140,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              817,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 141,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              834,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 142,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              851,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 143,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              868,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 144,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 145,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              885,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 146,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              902,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 147,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              919,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 148,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              936,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 149,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              953,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 150,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              970,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 151,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              987,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 152,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              1004,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 153,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              1,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 154,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              18,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 155,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              35,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 156,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              52,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 157,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              69,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 158,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              86,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 159,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              103,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 160,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              120,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 161,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              137,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 162,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              154,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 163,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              171,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 164,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              188,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 165,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              205,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 166,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              222,
+              47,
+              16,
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "tiles": [
+        {
+          "id": 0,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 2,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 3,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 4,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 5,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 6,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 7,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 8,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 9,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              1,
+              1,
+              51,
+              28
+            ]
+          }
+        },
+        {
+          "id": 10,
+          "offset": [
+            0,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              53,
+              1,
+              32,
+              18
+            ]
+          }
+        },
+        {
+          "id": 11,
+          "offset": [
+            0,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              86,
+              1,
+              31,
+              18
+            ]
+          }
+        },
+        {
+          "id": 12,
+          "offset": [
+            0,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              118,
+              1,
+              30,
+              16
+            ]
+          }
+        },
+        {
+          "id": 13,
+          "offset": [
+            0,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              149,
+              1,
+              32,
+              18
+            ]
+          }
+        },
+        {
+          "id": 14,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 15,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 16,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 17,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 18,
+          "offset": [
+            4,
+            -48
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              182,
+              1,
+              12,
+              24
+            ]
+          }
+        },
+        {
+          "id": 19,
+          "offset": [
+            0,
+            -22
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              195,
+              1,
+              20,
+              16
+            ]
+          }
+        },
+        {
+          "id": 20,
+          "offset": [
+            16,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              216,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 21,
+          "offset": [
+            0,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              233,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 22,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 23,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 24,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 25,
+          "offset": [
+            0,
+            -48
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              250,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 26,
+          "offset": [
+            16,
+            -48
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              267,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 27,
+          "offset": [
+            0,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              284,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 28,
+          "offset": [
+            16,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              301,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 29,
+          "offset": [
+            0,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              318,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 30,
+          "offset": [
+            16,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              335,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 31,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 32,
+          "offset": [
+            0,
+            -57
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              352,
+              1,
+              16,
+              13
+            ]
+          }
+        },
+        {
+          "id": 33,
+          "offset": [
+            16,
+            -56
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              369,
+              1,
+              16,
+              13
+            ]
+          }
+        },
+        {
+          "id": 34,
+          "offset": [
+            0,
+            -43
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              386,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 35,
+          "offset": [
+            16,
+            -43
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              403,
+              1,
+              13,
+              16
+            ]
+          }
+        },
+        {
+          "id": 36,
+          "offset": [
+            3,
+            -27
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              417,
+              1,
+              13,
+              16
+            ]
+          }
+        },
+        {
+          "id": 37,
+          "offset": [
+            16,
+            -27
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              431,
+              1,
+              12,
+              16
+            ]
+          }
+        },
+        {
+          "id": 38,
+          "offset": [
+            0,
+            -45
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              444,
+              1,
+              16,
+              11
+            ]
+          }
+        },
+        {
+          "id": 39,
+          "offset": [
+            16,
+            -46
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              461,
+              1,
+              17,
+              12
+            ]
+          }
+        },
+        {
+          "id": 40,
+          "offset": [
+            0,
+            -34
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              479,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 41,
+          "offset": [
+            16,
+            -34
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              496,
+              1,
+              22,
+              16
+            ]
+          }
+        },
+        {
+          "id": 42,
+          "offset": [
+            0,
+            -18
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              519,
+              1,
+              16,
+              7
+            ]
+          }
+        },
+        {
+          "id": 43,
+          "offset": [
+            16,
+            -18
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              536,
+              1,
+              16,
+              7
+            ]
+          }
+        },
+        {
+          "id": 44,
+          "offset": [
+            32,
+            -18
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              553,
+              1,
+              7,
+              7
+            ]
+          }
+        },
+        {
+          "id": 45,
+          "offset": [
+            0,
+            10
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              561,
+              1,
+              16,
+              6
+            ]
+          }
+        },
+        {
+          "id": 46,
+          "offset": [
+            0,
+            10
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              578,
+              1,
+              16,
+              6
+            ]
+          }
+        },
+        {
+          "id": 47,
+          "offset": [
+            36,
+            -31
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              595,
+              1,
+              6,
+              9
+            ]
+          }
+        },
+        {
+          "id": 48,
+          "offset": [
+            36,
+            -31
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              602,
+              1,
+              6,
+              9
+            ]
+          }
+        },
+        {
+          "id": 49,
+          "offset": [
+            36,
+            -31
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              609,
+              1,
+              8,
+              12
+            ]
+          }
+        },
+        {
+          "id": 50,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              618,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 51,
+          "offset": [
+            3,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              635,
+              1,
+              11,
+              13
+            ]
+          }
+        },
+        {
+          "id": 52,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              647,
+              1,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "id": 53,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 54,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 55,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 56,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              666,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 57,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              683,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 58,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              700,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 59,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 60,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              717,
+              1,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "id": 61,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              728,
+              1,
+              6,
+              21
+            ]
+          }
+        },
+        {
+          "id": 62,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              735,
+              1,
+              21,
+              7
+            ]
+          }
+        },
+        {
+          "id": 63,
+          "offset": [
+            16,
+            -28
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              757,
+              1,
+              36,
+              20
+            ]
+          }
+        },
+        {
+          "id": 64,
+          "offset": [
+            24,
+            -26
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              794,
+              1,
+              20,
+              10
+            ]
+          }
+        },
+        {
+          "id": 65,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 66,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 67,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 68,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 69,
+          "offset": [
+            6,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              815,
+              1,
+              6,
+              11
+            ]
+          }
+        },
+        {
+          "id": 70,
+          "offset": [
+            14,
+            -53
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              822,
+              1,
+              14,
+              16
+            ]
+          }
+        },
+        {
+          "id": 71,
+          "offset": [
+            -4,
+            -21
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              837,
+              1,
+              16,
+              14
+            ]
+          }
+        },
+        {
+          "id": 72,
+          "offset": [
+            12,
+            -37
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              854,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 73,
+          "offset": [
+            12,
+            -21
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              871,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 74,
+          "offset": [
+            18,
+            -52
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              888,
+              1,
+              13,
+              20
+            ]
+          }
+        },
+        {
+          "id": 75,
+          "offset": [
+            17,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              902,
+              1,
+              14,
+              20
+            ]
+          }
+        },
+        {
+          "id": 76,
+          "offset": [
+            -4,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              917,
+              1,
+              20,
+              12
+            ]
+          }
+        },
+        {
+          "id": 77,
+          "offset": [
+            -3,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              938,
+              1,
+              19,
+              11
+            ]
+          }
+        },
+        {
+          "id": 78,
+          "offset": [
+            -4,
+            -1
+          ],
+          "image": {
+            "texture": "textures/characters.png",
+            "region": [
+              380,
+              66,
+              20,
+              11
+            ]
+          }
+        },
+        {
+          "id": 79,
+          "offset": [
+            0,
+            -5
+          ],
+          "image": {
+            "texture": "textures/characters.png",
+            "region": [
+              363,
+              66,
+              16,
+              21
+            ]
+          }
+        },
+        {
+          "id": 80,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/characters.png",
+            "region": [
+              349,
+              66,
+              13,
+              15
+            ]
+          }
+        },
+        {
+          "id": 81,
+          "offset": [
+            4,
+            -38
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              958,
+              1,
+              7,
+              15
+            ]
+          }
+        },
+        {
+          "id": 82,
+          "offset": [
+            0,
+            -38
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              966,
+              1,
+              16,
+              15
+            ]
+          }
+        },
+        {
+          "id": 83,
+          "offset": [
+            0,
+            -38
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              983,
+              1,
+              16,
+              15
+            ]
+          }
+        },
+        {
+          "id": 84,
+          "offset": [
+            3,
+            -48
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              1000,
+              1,
+              10,
+              16
+            ]
+          }
+        },
+        {
+          "id": 85,
+          "offset": [
+            0,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              1011,
+              1,
+              12,
+              16
+            ]
+          }
+        },
+        {
+          "id": 86,
+          "offset": [
+            0,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              1,
+              30,
+              11,
+              6
+            ]
+          }
+        },
+        {
+          "id": 87,
+          "offset": [
+            0,
+            -37
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              13,
+              30,
+              18,
+              13
+            ]
+          }
+        },
+        {
+          "id": 88,
+          "offset": [
+            0,
+            -24
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              32,
+              30,
+              18,
+              16
+            ]
+          }
+        },
+        {
+          "id": 89,
+          "offset": [
+            0,
+            -37
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              51,
+              30,
+              18,
+              13
+            ]
+          }
+        },
+        {
+          "id": 90,
+          "offset": [
+            0,
+            -24
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              70,
+              30,
+              18,
+              16
+            ]
+          }
+        },
+        {
+          "id": 91,
+          "offset": [
+            2,
+            -48
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              89,
+              30,
+              13,
+              16
+            ]
+          }
+        },
+        {
+          "id": 92,
+          "offset": [
+            2,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              103,
+              30,
+              13,
+              16
+            ]
+          }
+        },
+        {
+          "id": 93,
+          "offset": [
+            1,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              117,
+              30,
+              16,
+              9
+            ]
+          }
+        },
+        {
+          "id": 94,
+          "offset": [
+            -7,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              134,
+              30,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "id": 95,
+          "offset": [
+            17,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              143,
+              30,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "id": 96,
+          "offset": [
+            2,
+            -20
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              152,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 97,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              169,
+              30,
+              9,
+              6
+            ]
+          }
+        },
+        {
+          "id": 98,
+          "offset": [
+            0,
+            -30
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              179,
+              30,
+              16,
+              11
+            ]
+          }
+        },
+        {
+          "id": 99,
+          "offset": [
+            16,
+            -31
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              196,
+              30,
+              12,
+              12
+            ]
+          }
+        },
+        {
+          "id": 100,
+          "offset": [
+            0,
+            -19
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              209,
+              30,
+              16,
+              9
+            ]
+          }
+        },
+        {
+          "id": 101,
+          "offset": [
+            16,
+            -19
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              226,
+              30,
+              12,
+              8
+            ]
+          }
+        },
+        {
+          "id": 102,
+          "offset": [
+            105,
+            45
+          ],
+          "children": [
+            105,
+            45
+          ]
+        },
+        {
+          "id": 103,
+          "offset": [
+            105,
+            46
+          ],
+          "children": [
+            105,
+            46
+          ]
+        },
+        {
+          "id": 104,
+          "offset": [
+            105,
+            51
+          ],
+          "children": [
+            105,
+            51
+          ]
+        },
+        {
+          "id": 105,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              239,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 106,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              256,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 107,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              273,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 108,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              290,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 109,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              307,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 110,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              324,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 111,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              341,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 112,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              358,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 113,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              375,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 114,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              392,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 115,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              409,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 116,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              426,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 117,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              443,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 118,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              460,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 119,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              477,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 120,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              494,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 121,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              511,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 122,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              528,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 123,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              545,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 124,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              562,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 125,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              579,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 126,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              596,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 127,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              613,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 128,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              630,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 129,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              647,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 130,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 131,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              664,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 132,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              681,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 133,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              698,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 134,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              715,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 135,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              732,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 136,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              749,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 137,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              766,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 138,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              783,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 139,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              800,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 140,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              817,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 141,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              834,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 142,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              851,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 143,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              868,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 144,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 145,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              885,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 146,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              902,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 147,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              919,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 148,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              936,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 149,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              953,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 150,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              970,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 151,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              987,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 152,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              1004,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 153,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              1,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 154,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              18,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 155,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              35,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 156,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              52,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 157,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              69,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 158,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              86,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 159,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              103,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 160,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              239,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 161,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              256,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 162,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              273,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 163,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              290,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 164,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              307,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 165,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              324,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 166,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              341,
+              47,
+              16,
+              16
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "tiles": [
+        {
+          "id": 0,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 2,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 3,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 4,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 5,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 6,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 7,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 8,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 9,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              1,
+              1,
+              51,
+              28
+            ]
+          }
+        },
+        {
+          "id": 10,
+          "offset": [
+            0,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              53,
+              1,
+              32,
+              18
+            ]
+          }
+        },
+        {
+          "id": 11,
+          "offset": [
+            0,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              86,
+              1,
+              31,
+              18
+            ]
+          }
+        },
+        {
+          "id": 12,
+          "offset": [
+            0,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              118,
+              1,
+              30,
+              16
+            ]
+          }
+        },
+        {
+          "id": 13,
+          "offset": [
+            0,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              149,
+              1,
+              32,
+              18
+            ]
+          }
+        },
+        {
+          "id": 14,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 15,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 16,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 17,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 18,
+          "offset": [
+            4,
+            -48
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              182,
+              1,
+              12,
+              24
+            ]
+          }
+        },
+        {
+          "id": 19,
+          "offset": [
+            0,
+            -22
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              195,
+              1,
+              20,
+              16
+            ]
+          }
+        },
+        {
+          "id": 20,
+          "offset": [
+            16,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              216,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 21,
+          "offset": [
+            0,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              233,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 22,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 23,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 24,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 25,
+          "offset": [
+            0,
+            -48
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              250,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 26,
+          "offset": [
+            16,
+            -48
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              267,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 27,
+          "offset": [
+            0,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              284,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 28,
+          "offset": [
+            16,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              301,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 29,
+          "offset": [
+            0,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              318,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 30,
+          "offset": [
+            16,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              335,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 31,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 32,
+          "offset": [
+            0,
+            -57
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              352,
+              1,
+              16,
+              13
+            ]
+          }
+        },
+        {
+          "id": 33,
+          "offset": [
+            16,
+            -56
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              369,
+              1,
+              16,
+              13
+            ]
+          }
+        },
+        {
+          "id": 34,
+          "offset": [
+            0,
+            -43
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              386,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 35,
+          "offset": [
+            16,
+            -43
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              403,
+              1,
+              13,
+              16
+            ]
+          }
+        },
+        {
+          "id": 36,
+          "offset": [
+            3,
+            -27
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              417,
+              1,
+              13,
+              16
+            ]
+          }
+        },
+        {
+          "id": 37,
+          "offset": [
+            16,
+            -27
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              431,
+              1,
+              12,
+              16
+            ]
+          }
+        },
+        {
+          "id": 38,
+          "offset": [
+            0,
+            -45
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              444,
+              1,
+              16,
+              11
+            ]
+          }
+        },
+        {
+          "id": 39,
+          "offset": [
+            16,
+            -46
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              461,
+              1,
+              17,
+              12
+            ]
+          }
+        },
+        {
+          "id": 40,
+          "offset": [
+            0,
+            -34
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              479,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 41,
+          "offset": [
+            16,
+            -34
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              496,
+              1,
+              22,
+              16
+            ]
+          }
+        },
+        {
+          "id": 42,
+          "offset": [
+            0,
+            -18
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              519,
+              1,
+              16,
+              7
+            ]
+          }
+        },
+        {
+          "id": 43,
+          "offset": [
+            16,
+            -18
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              536,
+              1,
+              16,
+              7
+            ]
+          }
+        },
+        {
+          "id": 44,
+          "offset": [
+            32,
+            -18
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              553,
+              1,
+              7,
+              7
+            ]
+          }
+        },
+        {
+          "id": 45,
+          "offset": [
+            0,
+            10
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              561,
+              1,
+              16,
+              6
+            ]
+          }
+        },
+        {
+          "id": 46,
+          "offset": [
+            0,
+            10
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              578,
+              1,
+              16,
+              6
+            ]
+          }
+        },
+        {
+          "id": 47,
+          "offset": [
+            36,
+            -31
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              595,
+              1,
+              6,
+              9
+            ]
+          }
+        },
+        {
+          "id": 48,
+          "offset": [
+            36,
+            -31
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              602,
+              1,
+              6,
+              9
+            ]
+          }
+        },
+        {
+          "id": 49,
+          "offset": [
+            36,
+            -31
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              609,
+              1,
+              8,
+              12
+            ]
+          }
+        },
+        {
+          "id": 50,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              618,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 51,
+          "offset": [
+            3,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              635,
+              1,
+              11,
+              13
+            ]
+          }
+        },
+        {
+          "id": 52,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              647,
+              1,
+              18,
+              19
+            ]
+          }
+        },
+        {
+          "id": 53,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 54,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 55,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 56,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              666,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 57,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              683,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 58,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              700,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 59,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 60,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              717,
+              1,
+              10,
+              11
+            ]
+          }
+        },
+        {
+          "id": 61,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              728,
+              1,
+              6,
+              21
+            ]
+          }
+        },
+        {
+          "id": 62,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              735,
+              1,
+              21,
+              7
+            ]
+          }
+        },
+        {
+          "id": 63,
+          "offset": [
+            16,
+            -28
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              757,
+              1,
+              36,
+              20
+            ]
+          }
+        },
+        {
+          "id": 64,
+          "offset": [
+            24,
+            -26
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              794,
+              1,
+              20,
+              10
+            ]
+          }
+        },
+        {
+          "id": 65,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 66,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 67,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 68,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 69,
+          "offset": [
+            6,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              815,
+              1,
+              6,
+              11
+            ]
+          }
+        },
+        {
+          "id": 70,
+          "offset": [
+            14,
+            -53
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              822,
+              1,
+              14,
+              16
+            ]
+          }
+        },
+        {
+          "id": 71,
+          "offset": [
+            -4,
+            -21
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              837,
+              1,
+              16,
+              14
+            ]
+          }
+        },
+        {
+          "id": 72,
+          "offset": [
+            12,
+            -37
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              854,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 73,
+          "offset": [
+            12,
+            -21
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              871,
+              1,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 74,
+          "offset": [
+            18,
+            -52
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              888,
+              1,
+              13,
+              20
+            ]
+          }
+        },
+        {
+          "id": 75,
+          "offset": [
+            17,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              902,
+              1,
+              14,
+              20
+            ]
+          }
+        },
+        {
+          "id": 76,
+          "offset": [
+            -4,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              917,
+              1,
+              20,
+              12
+            ]
+          }
+        },
+        {
+          "id": 77,
+          "offset": [
+            -3,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              938,
+              1,
+              19,
+              11
+            ]
+          }
+        },
+        {
+          "id": 78,
+          "offset": [
+            -4,
+            -1
+          ],
+          "image": {
+            "texture": "textures/characters.png",
+            "region": [
+              380,
+              66,
+              20,
+              11
+            ]
+          }
+        },
+        {
+          "id": 79,
+          "offset": [
+            0,
+            -5
+          ],
+          "image": {
+            "texture": "textures/characters.png",
+            "region": [
+              363,
+              66,
+              16,
+              21
+            ]
+          }
+        },
+        {
+          "id": 80,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/characters.png",
+            "region": [
+              349,
+              66,
+              13,
+              15
+            ]
+          }
+        },
+        {
+          "id": 81,
+          "offset": [
+            4,
+            -38
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              958,
+              1,
+              7,
+              15
+            ]
+          }
+        },
+        {
+          "id": 82,
+          "offset": [
+            0,
+            -38
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              966,
+              1,
+              16,
+              15
+            ]
+          }
+        },
+        {
+          "id": 83,
+          "offset": [
+            0,
+            -38
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              983,
+              1,
+              16,
+              15
+            ]
+          }
+        },
+        {
+          "id": 84,
+          "offset": [
+            3,
+            -48
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              1000,
+              1,
+              10,
+              16
+            ]
+          }
+        },
+        {
+          "id": 85,
+          "offset": [
+            0,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              1011,
+              1,
+              12,
+              16
+            ]
+          }
+        },
+        {
+          "id": 86,
+          "offset": [
+            0,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              1,
+              30,
+              11,
+              6
+            ]
+          }
+        },
+        {
+          "id": 87,
+          "offset": [
+            0,
+            -37
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              13,
+              30,
+              18,
+              13
+            ]
+          }
+        },
+        {
+          "id": 88,
+          "offset": [
+            0,
+            -24
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              32,
+              30,
+              18,
+              16
+            ]
+          }
+        },
+        {
+          "id": 89,
+          "offset": [
+            0,
+            -37
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              51,
+              30,
+              18,
+              13
+            ]
+          }
+        },
+        {
+          "id": 90,
+          "offset": [
+            0,
+            -24
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              70,
+              30,
+              18,
+              16
+            ]
+          }
+        },
+        {
+          "id": 91,
+          "offset": [
+            2,
+            -48
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              89,
+              30,
+              13,
+              16
+            ]
+          }
+        },
+        {
+          "id": 92,
+          "offset": [
+            2,
+            -32
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              103,
+              30,
+              13,
+              16
+            ]
+          }
+        },
+        {
+          "id": 93,
+          "offset": [
+            1,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              117,
+              30,
+              16,
+              9
+            ]
+          }
+        },
+        {
+          "id": 94,
+          "offset": [
+            -7,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              134,
+              30,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "id": 95,
+          "offset": [
+            17,
+            -16
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              143,
+              30,
+              8,
+              9
+            ]
+          }
+        },
+        {
+          "id": 96,
+          "offset": [
+            2,
+            -20
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              152,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 97,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              169,
+              30,
+              9,
+              6
+            ]
+          }
+        },
+        {
+          "id": 98,
+          "offset": [
+            0,
+            -30
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              179,
+              30,
+              16,
+              11
+            ]
+          }
+        },
+        {
+          "id": 99,
+          "offset": [
+            16,
+            -31
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              196,
+              30,
+              12,
+              12
+            ]
+          }
+        },
+        {
+          "id": 100,
+          "offset": [
+            0,
+            -19
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              209,
+              30,
+              16,
+              9
+            ]
+          }
+        },
+        {
+          "id": 101,
+          "offset": [
+            16,
+            -19
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              226,
+              30,
+              12,
+              8
+            ]
+          }
+        },
+        {
+          "id": 102,
+          "offset": [
+            105,
+            45
+          ],
+          "children": [
+            105,
+            45
+          ]
+        },
+        {
+          "id": 103,
+          "offset": [
+            105,
+            46
+          ],
+          "children": [
+            105,
+            46
+          ]
+        },
+        {
+          "id": 104,
+          "offset": [
+            105,
+            51
+          ],
+          "children": [
+            105,
+            51
+          ]
+        },
+        {
+          "id": 105,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              239,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 106,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              256,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 107,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              273,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 108,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              290,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 109,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              307,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 110,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              324,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 111,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              341,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 112,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              358,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 113,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              375,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 114,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              392,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 115,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              409,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 116,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              426,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 117,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              443,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 118,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              460,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 119,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              477,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 120,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              494,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 121,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              511,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 122,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              528,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 123,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              545,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 124,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              562,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 125,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              579,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 126,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              596,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 127,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              613,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 128,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              630,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 129,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              647,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 130,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 131,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              664,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 132,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              681,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 133,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              698,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 134,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              715,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 135,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              732,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 136,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              749,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 137,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              766,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 138,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              783,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 139,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              800,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 140,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              817,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 141,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              834,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 142,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              851,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 143,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              868,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 144,
+          "offset": [
+            0,
+            0
+          ],
+          "image": null
+        },
+        {
+          "id": 145,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              885,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 146,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              902,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 147,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              919,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 148,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              936,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 149,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              953,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 150,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              970,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 151,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              987,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 152,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              1004,
+              30,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 153,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              1,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 154,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              18,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 155,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              35,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 156,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              52,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 157,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              69,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 158,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              86,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 159,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              103,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 160,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              358,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 161,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              375,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 162,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              392,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 163,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              409,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 164,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              426,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 165,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              443,
+              47,
+              16,
+              16
+            ]
+          }
+        },
+        {
+          "id": 166,
+          "offset": [
+            0,
+            0
+          ],
+          "image": {
+            "texture": "textures/world.png",
+            "region": [
+              460,
+              47,
+              16,
+              16
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1306 @@
+{
+  "texture": "fonts/pixel_green.png",
+  "lowercase_maps_to_uppercase": true,
+  "glyphs": [
+    {
+      "id": 0,
+      "character": " ",
+      "region": [
+        6,
+        18,
+        6,
+        1
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 1,
+      "character": "!",
+      "region": [
+        72,
+        12,
+        2,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 3
+    },
+    {
+      "id": 2,
+      "character": "\"",
+      "region": [
+        56,
+        21,
+        6,
+        2
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 5,
+      "advance": 7
+    },
+    {
+      "id": 3,
+      "character": "#",
+      "region": [
+        74,
+        12,
+        7,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 8
+    },
+    {
+      "id": 4,
+      "character": "$",
+      "region": [
+        81,
+        12,
+        6,
+        7
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 5,
+      "character": "%",
+      "region": [
+        100,
+        12,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 6,
+      "character": "&",
+      "region": [
+        93,
+        12,
+        7,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 8
+    },
+    {
+      "id": 7,
+      "character": "'",
+      "region": [
+        56,
+        21,
+        3,
+        2
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 5,
+      "advance": 4
+    },
+    {
+      "id": 8,
+      "character": "(",
+      "region": [
+        63,
+        12,
+        3,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 4
+    },
+    {
+      "id": 9,
+      "character": ")",
+      "region": [
+        61,
+        12,
+        3,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 4
+    },
+    {
+      "id": 10,
+      "character": "*",
+      "region": [
+        19,
+        18,
+        6,
+        5
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 1,
+      "advance": 7
+    },
+    {
+      "id": 11,
+      "character": "+",
+      "region": [
+        62,
+        18,
+        6,
+        5
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 1,
+      "advance": 7
+    },
+    {
+      "id": 12,
+      "character": ",",
+      "region": [
+        56,
+        21,
+        3,
+        2
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": -1,
+      "advance": 4
+    },
+    {
+      "id": 13,
+      "character": "-",
+      "region": [
+        71,
+        11,
+        6,
+        1
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 3,
+      "advance": 7
+    },
+    {
+      "id": 14,
+      "character": ".",
+      "region": [
+        104,
+        16,
+        2,
+        2
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": -1,
+      "advance": 3
+    },
+    {
+      "id": 15,
+      "character": "/",
+      "region": [
+        49,
+        13,
+        4,
+        7
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 5
+    },
+    {
+      "id": 16,
+      "character": "0",
+      "region": [
+        0,
+        10,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 17,
+      "character": "1",
+      "region": [
+        6,
+        12,
+        3,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 4
+    },
+    {
+      "id": 18,
+      "character": "2",
+      "region": [
+        9,
+        12,
+        5,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 6
+    },
+    {
+      "id": 19,
+      "character": "3",
+      "region": [
+        95,
+        6,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 20,
+      "character": "4",
+      "region": [
+        0,
+        4,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 21,
+      "character": "5",
+      "region": [
+        8,
+        17,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 22,
+      "character": "6",
+      "region": [
+        20,
+        12,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 23,
+      "character": "7",
+      "region": [
+        26,
+        11,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 24,
+      "character": "8",
+      "region": [
+        14,
+        13,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 25,
+      "character": "9",
+      "region": [
+        0,
+        15,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 26,
+      "character": ":",
+      "region": [
+        75,
+        16,
+        2,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 3
+    },
+    {
+      "id": 27,
+      "character": ";",
+      "region": [
+        103,
+        16,
+        3,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 4
+    },
+    {
+      "id": 28,
+      "character": "<",
+      "region": [
+        25,
+        18,
+        4,
+        5
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 1,
+      "advance": 5
+    },
+    {
+      "id": 29,
+      "character": "=",
+      "region": [
+        56,
+        17,
+        6,
+        3
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 2,
+      "advance": 7
+    },
+    {
+      "id": 30,
+      "character": ">",
+      "region": [
+        28,
+        18,
+        4,
+        5
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 1,
+      "advance": 5
+    },
+    {
+      "id": 31,
+      "character": "?",
+      "region": [
+        66,
+        12,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 32,
+      "character": "@",
+      "region": [
+        87,
+        12,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 33,
+      "character": "A",
+      "region": [
+        0,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 34,
+      "character": "B",
+      "region": [
+        12,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 35,
+      "character": "C",
+      "region": [
+        89,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 36,
+      "character": "D",
+      "region": [
+        24,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 37,
+      "character": "E",
+      "region": [
+        30,
+        0,
+        5,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 6
+    },
+    {
+      "id": 38,
+      "character": "F",
+      "region": [
+        54,
+        6,
+        5,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 6
+    },
+    {
+      "id": 39,
+      "character": "G",
+      "region": [
+        59,
+        6,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 40,
+      "character": "H",
+      "region": [
+        71,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 41,
+      "character": "I",
+      "region": [
+        71,
+        6,
+        2,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 3
+    },
+    {
+      "id": 42,
+      "character": "J",
+      "region": [
+        65,
+        6,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 43,
+      "character": "K",
+      "region": [
+        54,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 44,
+      "character": "L",
+      "region": [
+        71,
+        6,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 45,
+      "character": "M",
+      "region": [
+        64,
+        0,
+        7,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 8
+    },
+    {
+      "id": 46,
+      "character": "N",
+      "region": [
+        77,
+        6,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 47,
+      "character": "O",
+      "region": [
+        0,
+        10,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 48,
+      "character": "P",
+      "region": [
+        83,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 49,
+      "character": "Q",
+      "region": [
+        83,
+        6,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 50,
+      "character": "R",
+      "region": [
+        89,
+        6,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 51,
+      "character": "S",
+      "region": [
+        106,
+        17,
+        8,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 9
+    },
+    {
+      "id": 52,
+      "character": "T",
+      "region": [
+        95,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 53,
+      "character": "U",
+      "region": [
+        101,
+        6,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 54,
+      "character": "V",
+      "region": [
+        107,
+        6,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 55,
+      "character": "W",
+      "region": [
+        113,
+        6,
+        7,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 8
+    },
+    {
+      "id": 56,
+      "character": "X",
+      "region": [
+        115,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 57,
+      "character": "Y",
+      "region": [
+        101,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 58,
+      "character": "Z",
+      "region": [
+        108,
+        12,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 59,
+      "character": "[",
+      "region": [
+        58,
+        12,
+        4,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 5
+    },
+    {
+      "id": 60,
+      "character": "\\",
+      "region": [
+        52,
+        13,
+        4,
+        7
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 5
+    },
+    {
+      "id": 61,
+      "character": "]",
+      "region": [
+        56,
+        12,
+        4,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 5
+    },
+    {
+      "id": 62,
+      "character": "^",
+      "region": [
+        39,
+        19,
+        5,
+        4
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 4,
+      "advance": 6
+    },
+    {
+      "id": 63,
+      "character": "_",
+      "region": [
+        71,
+        11,
+        6,
+        1
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 64,
+      "character": "А",
+      "region": [
+        0,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 65,
+      "character": "Б",
+      "region": [
+        6,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 66,
+      "character": "В",
+      "region": [
+        12,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 67,
+      "character": "Г",
+      "region": [
+        18,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 68,
+      "character": "Д",
+      "region": [
+        24,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 69,
+      "character": "Е",
+      "region": [
+        30,
+        0,
+        5,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 6
+    },
+    {
+      "id": 70,
+      "character": "Ж",
+      "region": [
+        35,
+        0,
+        7,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 8
+    },
+    {
+      "id": 71,
+      "character": "З",
+      "region": [
+        95,
+        6,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 72,
+      "character": "И",
+      "region": [
+        42,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 73,
+      "character": "Й",
+      "region": [
+        48,
+        0,
+        6,
+        8
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 74,
+      "character": "К",
+      "region": [
+        54,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 75,
+      "character": "Л",
+      "region": [
+        60,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 76,
+      "character": "М",
+      "region": [
+        64,
+        0,
+        7,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 8
+    },
+    {
+      "id": 77,
+      "character": "Н",
+      "region": [
+        71,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 78,
+      "character": "О",
+      "region": [
+        0,
+        10,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 79,
+      "character": "П",
+      "region": [
+        77,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 80,
+      "character": "Р",
+      "region": [
+        83,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 81,
+      "character": "С",
+      "region": [
+        89,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 82,
+      "character": "Т",
+      "region": [
+        95,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 83,
+      "character": "У",
+      "region": [
+        101,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 84,
+      "character": "Ф",
+      "region": [
+        107,
+        0,
+        8,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 9
+    },
+    {
+      "id": 85,
+      "character": "Х",
+      "region": [
+        115,
+        0,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 86,
+      "character": "Ц",
+      "region": [
+        114,
+        12,
+        6,
+        7
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": -1,
+      "advance": 7
+    },
+    {
+      "id": 87,
+      "character": "Ч",
+      "region": [
+        0,
+        4,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 88,
+      "character": "Ш",
+      "region": [
+        6,
+        6,
+        7,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 8
+    },
+    {
+      "id": 89,
+      "character": "Щ",
+      "region": [
+        13,
+        6,
+        7,
+        7
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": -1,
+      "advance": 8
+    },
+    {
+      "id": 90,
+      "character": "Ъ",
+      "region": [
+        20,
+        6,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 91,
+      "character": "Ы",
+      "region": [
+        21,
+        6,
+        7,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 8
+    },
+    {
+      "id": 92,
+      "character": "Ь",
+      "region": [
+        28,
+        6,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 93,
+      "character": "Э",
+      "region": [
+        34,
+        6,
+        5,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 6
+    },
+    {
+      "id": 94,
+      "character": "Ю",
+      "region": [
+        39,
+        6,
+        8,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 9
+    },
+    {
+      "id": 95,
+      "character": "Я",
+      "region": [
+        48,
+        7,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 96,
+      "character": "↑",
+      "region": [
+        33,
+        12,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 97,
+      "character": "↓",
+      "region": [
+        33,
+        16,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 98,
+      "character": "←",
+      "region": [
+        39,
+        13,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    },
+    {
+      "id": 99,
+      "character": "→",
+      "region": [
+        43,
+        13,
+        6,
+        6
+      ],
+      "offset_x": 0,
+      "baseline_offset_y": 0,
+      "advance": 7
+    }
+  ]
+}

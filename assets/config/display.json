@@ -1,0 +1,10 @@
+{
+  "logical_width": 240,
+  "logical_height": 320,
+  "default_scale": 3,
+  "window_width": 720,
+  "window_height": 960,
+  "texture_filter": "nearest",
+  "aspect_ratio": "3:4",
+  "fit_small_display": "choose largest fitting integer scale"
+}

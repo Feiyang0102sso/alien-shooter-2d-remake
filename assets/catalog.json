@@ -1,0 +1,35 @@
+{
+  "format_version": 2,
+  "display": "config/display.json",
+  "font": "fonts/pixel_green.json",
+  "definitions": {
+    "character_animations": "definitions/character_animations.json",
+    "character_frames": "definitions/character_frames.json",
+    "character_parts": "definitions/character_parts.json",
+    "entity_parameters": "definitions/entity_parameters.json",
+    "interface": "definitions/interface.json",
+    "menu_layouts": "definitions/menu_layouts.json",
+    "player_poses": "definitions/player_poses.json",
+    "projectile_parameters": "definitions/projectile_parameters.json",
+    "visual_effects": "definitions/visual_effects.json",
+    "world_tiles": "definitions/world_tiles.json"
+  },
+  "levels": [
+    "levels/level_01.json",
+    "levels/level_02.json",
+    "levels/level_03.json",
+    "levels/level_04.json",
+    "levels/level_05.json",
+    "levels/level_06.json",
+    "levels/level_07.json",
+    "levels/level_08.json"
+  ],
+  "audio": "audio/sounds.json",
+  "language": {
+    "code": "en",
+    "interface": "localization/en/interface.json",
+    "about": "localization/en/about.txt",
+    "help": "localization/en/help.txt",
+    "page_format": "rich-text-v1"
+  }
+}

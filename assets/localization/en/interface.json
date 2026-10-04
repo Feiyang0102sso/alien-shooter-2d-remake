@@ -1,0 +1,138 @@
+{
+  "language": "en",
+  "rows": [
+    [
+      "ENABLE",
+      "SOUND?",
+      "YES",
+      "NO",
+      "LEVEL ",
+      "RESTARTING...",
+      "PLEASE WAIT...",
+      "EXIT"
+    ],
+    [
+      "SELECT",
+      "BACK",
+      "NEW GAME",
+      "CONTINUE",
+      "SELECT LEVEL",
+      "SETTINGS",
+      "HELP",
+      "ABOUT",
+      "EXIT",
+      "MENU",
+      "SELECT LEVEL",
+      "DIFFICULTY",
+      "EASY",
+      "NORMAL",
+      "HARD",
+      "SOUND ON",
+      "SOUND OFF",
+      "VIBRATION ON",
+      "VIBRATION OFF",
+      "LEVEL 1",
+      "LEVEL 2",
+      "LEVEL 3",
+      "LEVEL 4",
+      "LEVEL 5",
+      "LEVEL 6",
+      "LEVEL 7",
+      "LEVEL 8",
+      "BACK"
+    ],
+    [
+      "",
+      "",
+      "CONTINUE",
+      "RESTART",
+      "MENU",
+      "EXIT",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "TERMINAL ",
+      "  -ACTIVATED-",
+      "GENERATOR:",
+      "  -RUNNING-",
+      "SECTOR EXIT:",
+      "  -OPEN-"
+    ],
+    [
+      "FIND",
+      "A PLACE",
+      "TO PLANT",
+      "THE DYNAMITE"
+    ],
+    [
+      "PRESS",
+      "\"DOWN\" OR \"8\"",
+      "TO TRAVEL",
+      "THROUGH THE TERMINAL"
+    ],
+    [
+      "PRESS \"0\"",
+      "TO SWITCH",
+      "YOUR CURRENT",
+      "WEAPON"
+    ],
+    [
+      "YOU PICKED UP",
+      "AMMO",
+      "FOR YOUR WEAPON"
+    ],
+    [
+      "PLANT",
+      "DYNAMITE",
+      "TO DESTROY",
+      "THE SOURCE"
+    ],
+    [
+      "ARMOR",
+      "REDUCES",
+      "INCOMING",
+      "DAMAGE"
+    ],
+    [
+      "ARMOR AND HELMET",
+      "REDUCE",
+      "INCOMING",
+      "DAMAGE"
+    ],
+    [
+      "AREA CLEARED!",
+      "PROCEED",
+      "TO THE EXIT"
+    ],
+    [
+      "",
+      "YOU LOST!",
+      "START THE LEVEL",
+      "AGAIN...",
+      ""
+    ],
+    [
+      "",
+      "",
+      "LEVEL",
+      "COMPLETE!!!",
+      "",
+      ""
+    ],
+    [
+      "",
+      "AREA NOT CLEARED!",
+      "EXIT UNAVAILABLE!",
+      ""
+    ],
+    [
+      "",
+      " ::CONGRATULATIONS!::",
+      "::GAME COMPLETE!::",
+      ""
+    ]
+  ]
+}

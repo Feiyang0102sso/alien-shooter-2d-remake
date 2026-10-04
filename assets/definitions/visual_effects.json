@@ -1,0 +1,45 @@
+{
+  "generator": {
+    "light_colors_rgb_hex": [
+      "800000",
+      "B00000",
+      "FF0000"
+    ],
+    "active_light_colors_rgb_hex": [
+      "008000",
+      "00B000",
+      "00FF00"
+    ],
+    "spark_colors_rgb_hex": [
+      "00CCFF",
+      "0080FF"
+    ],
+    "spark_random_bits": 3
+  },
+  "shadows": {
+    "color_rgb": [
+      48,
+      48,
+      48
+    ],
+    "sizes": [
+      [
+        8,
+        4
+      ],
+      [
+        10,
+        4
+      ],
+      [
+        15,
+        4
+      ]
+    ]
+  },
+  "screen_shake": {
+    "axis": "y",
+    "damping_per_tick": 1,
+    "alternate_sign": true
+  }
+}
