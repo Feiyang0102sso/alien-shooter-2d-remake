@@ -8,6 +8,26 @@
 
 开场后出现声音询问，按 **Y / Enter** 开启，按 **N / Esc** 关闭，也可点击左右下角 YES / NO。在菜单中用 W/S 或方向键选择，Enter 确认；鼠标左键也可点击菜单项。
 
+## 窗口配置
+
+首次启动会在 EXE 旁生成 `config.cfg`。编辑后重启游戏生效：
+
+```ini
+; Game window title
+Title=Alien Shooter 2D
+
+; Base screen width before scaling
+DefaultScreenX=240
+
+; Base screen height before scaling
+DefaultScreenY=320
+
+; Initial integer scale
+Scalar=3
+```
+
+窗口初始尺寸为基准宽高乘以 `Scalar`，默认 `720×960`；屏幕放不下时自动降低整数倍率。游戏画布固定为 `240×320`，窗口最小尺寸也是 `240×320`。配置支持 `;` 注释，缺少文件时自动生成，缺少字段时采用默认值；尺寸和倍率必须为正整数。重新构建不会覆盖 EXE 旁已有的 cfg。
+
 ## 操作
 
 | 输入 | 动作 |
@@ -37,10 +57,12 @@
 
 ## 存档与日志
 
-- 存档：`%LOCALAPPDATA%\AlienShooterRemake\progress.json`
+- 存档：EXE 旁的 `save\progress.json`
 - 上一份有效备份：同目录 `progress.bak`
 - 当前运行日志：同目录 `logs\latest.log`
 - 损坏主存档：首次恢复时保留为 `progress.corrupt.json`
+
+旧的 `%LOCALAPPDATA%\AlienShooterRemake` 存档不会自动迁移，需要时将旧存档复制到 EXE 旁的 `save/`。调试参数 `--save-dir` 可覆盖默认目录。
 
 声音设备不可用时仍可静音运行，原因记录在日志。若程序启动失败，查看错误对话框给出的目录。没有声音时，先在设置中检查 SOUND ON，再检查日志中的 `MIDI ready` 或 `Audio disabled`。
 

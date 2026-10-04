@@ -34,6 +34,7 @@ build.bat Release run
 | `src/as_java_re/save.*` | JSON 存档、有效备份、临时文件提交 | 原版选项与最高关卡起点存档，使用 Windows 文件格式替代 RMS |
 | `src/as_java_re/platform.*`、`windows_entry.cpp` | Unicode 路径、日志和 Windows 入口 | 桌面适配，不改变玩法 |
 | `src/as_java_re/main.cpp` | 参数、窗口、240×320 渲染目标与整数倍显示 | 原 240×320 画布 |
+| `src/as_java_re/config.*` | EXE 旁的 cfg、字段名与默认值常量、窗口标题和初始尺寸 | 桌面配置 |
 
 没有通用 ECS 或额外玩法框架。World 只依赖 Assets，不依赖窗口和音频；Renderer 读取世界，Game 消费世界产生的声音编号与消息。敌人数组、物件和弹体保留可直接对应原数组的字段，便于对照。
 

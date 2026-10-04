@@ -97,6 +97,8 @@
     <ClInclude Include="src\as_java_re\audio.h" />
     <ClCompile Include="src\as_java_re\cheat.cpp" />
     <ClInclude Include="src\as_java_re\cheat.h" />
+    <ClCompile Include="src\as_java_re\config.cpp" />
+    <ClInclude Include="src\as_java_re\config.h" />
     <ClCompile Include="src\as_java_re\game.cpp" />
     <ClInclude Include="src\as_java_re\game.h" />
     <ClCompile Include="src\as_java_re\main.cpp" />

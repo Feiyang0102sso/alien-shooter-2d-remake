@@ -72,7 +72,9 @@ tools/                Python 素材及原字节码验证工具
 docs/                 开发、验证、玩法和阶段总结
 ```
 
-存档在 `%LOCALAPPDATA%\AlienShooterRemake\progress.json`，日志在同目录 `logs/latest.log`。完成关卡后保存下一关起点；第一关未过关时 CONTINUE 不可用。损坏主存档可从有效备份恢复。
+窗口配置读取 EXE 旁的 `config.cfg`，由 `src/as_java_re/config.cpp/.h` 管理，字段名和默认值统一定义在 `config.h` 的常量中。`DefaultScreenX/Y` 为窗口基准尺寸，乘以 `Scalar` 得到初始窗口尺寸；默认 `240×320 × 3 = 720×960`，小屏自动降低倍率，游戏逻辑画布保持 `240×320`。支持 `;` 行尾注释，修改后重启生效。启动时缺少 cfg 会按常量生成默认文件，重新构建不会覆盖已有设置。
+
+存档在 EXE 旁的 `save/progress.json`，日志在 `save/logs/latest.log`，与启动时的工作目录无关。调试参数 `--save-dir` 仍可指定其他目录。旧的 `%LOCALAPPDATA%\AlienShooterRemake` 存档不会自动迁移；需要继续旧进度时，可将旧存档复制到新的 `save/`。完成关卡后保存下一关起点；第一关未过关时 CONTINUE 不可用。损坏主存档可从有效备份恢复。
 
 ## 素材流水线
 

@@ -2,6 +2,7 @@
  * @brief Run the desktop window and fixed-resolution game canvas.
  */
 #include "game.h"
+#include "config.h"
 #include "platform.h"
 #include "version.h"
 #include <algorithm>
@@ -49,19 +50,27 @@ int main(int argc, char** argv) {
         if (options.save.empty()) { options.save = alien::defaultSaveDirectory(); }
         if (!alien::initializeLog(options.save / "logs")) { std::cerr << "Session log unavailable.\n"; }
         std::cout << ALIEN_PRODUCT_NAME " " ALIEN_VERSION_STRING " started. Seed=" << options.seed << '\n';
+        const auto config = alien::loadConfig(executable / alien::config::FileName);
         alien::Assets assets(options.assets);
         assets.load();
         unsigned int flags = FLAG_WINDOW_RESIZABLE | FLAG_VSYNC_HINT;
         if (options.hidden) { flags |= FLAG_WINDOW_HIDDEN; }
         SetConfigFlags(flags);
-        InitWindow(720, 960, "Alien Shooter - NET Lizard / C++17");
+        InitWindow(config.defaultScreenX * config.scalar, config.defaultScreenY * config.scalar, config.title.c_str());
         if (!IsWindowReady()) { throw std::runtime_error("Cannot initialize game window."); }
         SetExitKey(KEY_NULL);
         SetWindowMinSize(alien::ScreenWidth, alien::ScreenHeight);
         const int monitor = GetCurrentMonitor();
-        int scale = std::min(3, (GetMonitorHeight(monitor) - 80) / alien::ScreenHeight);
-        scale = std::max(1, scale);
-        SetWindowSize(alien::ScreenWidth * scale, alien::ScreenHeight * scale);
+        // Keep the initial window within the monitor while preserving integer scaling.
+        constexpr int WindowMargin = 80;
+        const int fittingScaleX = (GetMonitorWidth(monitor) - WindowMargin) / config.defaultScreenX;
+        const int fittingScaleY = (GetMonitorHeight(monitor) - WindowMargin) / config.defaultScreenY;
+        const int initialScale = std::max(1, std::min({config.scalar, fittingScaleX, fittingScaleY}));
+        const int windowWidth = std::max(alien::ScreenWidth, config.defaultScreenX * initialScale);
+        const int windowHeight = std::max(alien::ScreenHeight, config.defaultScreenY * initialScale);
+        SetWindowSize(windowWidth, windowHeight);
+        std::cout << "Window configured: " << config.title << ", " << windowWidth << 'x' << windowHeight
+                  << ", scalar=" << initialScale << '\n';
         SetTargetFPS(60);
         auto target = LoadRenderTexture(alien::ScreenWidth, alien::ScreenHeight);
         SetTextureFilter(target.texture, TEXTURE_FILTER_POINT);
@@ -76,7 +85,7 @@ int main(int argc, char** argv) {
             if (options.screen == "pause" && options.level > 0) { game.showScreen(alien::Screen::Pause); }
             int frame = 0;
             while (!WindowShouldClose() && !game.exiting()) {
-                scale = std::max(1, std::min(GetScreenWidth() / alien::ScreenWidth, GetScreenHeight() / alien::ScreenHeight));
+                const int scale = std::max(1, std::min(GetScreenWidth() / alien::ScreenWidth, GetScreenHeight() / alien::ScreenHeight));
                 const int offsetX = (GetScreenWidth() - alien::ScreenWidth * scale) / 2;
                 const int offsetY = (GetScreenHeight() - alien::ScreenHeight * scale) / 2;
                 const auto rawMouse = GetMousePosition();
@@ -109,7 +118,8 @@ int main(int argc, char** argv) {
         std::cout << "Game closed normally.\n";
         return 0;
     } catch (const std::exception& error) {
-        std::cerr << "Fatal: " << error.what() << '\n';
+        // The startup log uses stdout even when the desktop process has no stderr handle.
+        std::cout << "Fatal: " << error.what() << '\n';
         if (IsWindowReady()) { CloseWindow(); }
         if (!options.hidden) {
             alien::showErrorDialog(std::string("The game could not start or continue.\n\n") + error.what()

@@ -33,6 +33,12 @@
     <ClInclude Include="src\as_java_re\cheat.h">
       <Filter>as_java_re</Filter>
     </ClInclude>
+    <ClCompile Include="src\as_java_re\config.cpp">
+      <Filter>as_java_re</Filter>
+    </ClCompile>
+    <ClInclude Include="src\as_java_re\config.h">
+      <Filter>as_java_re</Filter>
+    </ClInclude>
     <ClCompile Include="src\as_java_re\game.cpp">
       <Filter>as_java_re</Filter>
     </ClCompile>

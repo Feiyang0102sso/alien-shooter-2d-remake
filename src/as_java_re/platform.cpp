@@ -4,7 +4,6 @@
 #include "platform.h"
 #include <Windows.h>
 #include <cstdio>
-#include <cstdlib>
 #include <io.h>
 #include <stdexcept>
 
@@ -18,14 +17,6 @@ std::filesystem::path executableDirectory() {
 }
 
 std::filesystem::path defaultSaveDirectory() {
-    wchar_t* value = nullptr;
-    std::size_t length = 0;
-    _wdupenv_s(&value, &length, L"LOCALAPPDATA");
-    if (value) {
-        const auto directory = std::filesystem::path(value) / "AlienShooterRemake";
-        std::free(value);
-        return directory;
-    }
     return executableDirectory() / "save";
 }
 
