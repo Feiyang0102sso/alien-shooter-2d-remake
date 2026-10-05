@@ -22,6 +22,8 @@ inline constexpr float MaxFrameSeconds = 0.25f;
 inline constexpr float CameraTransitStepSeconds = 0.05f;
 inline constexpr float DeathParticleStepSeconds = 0.08f;
 inline constexpr float DeathWipeStepSeconds = 0.1f;
+// Render-only smoothing between ticks; per-tick moves longer than this are teleports and snap.
+inline constexpr int InterpolationMaxStep = 64;
 // Initial and test random seed of the original Java LCG.
 inline constexpr unsigned long long DefaultRandomSeed = 12345;
 // java.util.Random linear congruential generator.
@@ -583,6 +585,7 @@ inline constexpr char TitleKey[] = "Title";
 inline constexpr char ScreenXKey[] = "DefaultScreenX";
 inline constexpr char ScreenYKey[] = "DefaultScreenY";
 inline constexpr char ScalarKey[] = "Scalar";
+inline constexpr char MaxFpsKey[] = "MaxFps";
 
 inline constexpr char DefaultTitle[] = "Alien Shooter 2D";
 inline constexpr int DefaultScreenX = 240;
@@ -590,7 +593,8 @@ inline constexpr int DefaultScreenY = 320;
 inline constexpr int DefaultScalar = 3;
 // Keep the initial window this far inside the monitor.
 inline constexpr int WindowMargin = 80;
-inline constexpr int TargetFps = 60;
+// Desktop frame rate limit; world logic still advances every TickSeconds.
+inline constexpr int DefaultMaxFps = 120;
 }
 
 // Save files beside the executable.

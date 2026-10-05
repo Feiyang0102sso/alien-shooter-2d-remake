@@ -30,6 +30,7 @@ void World::load(int levelNumber, int difficulty, const Inventory* carry) {
     compositeTiles = {};
     nextFloorTile_ = tile_id::CompositeFirst; nextWallTile_ = tile_id::CompositeLast;
     player = Actor{};
+    previousCameraX = NoPreviousPosition;
     player.x = level.playerCellX * TileSize + assets_.entities[0].left;
     player.y = level.height * TileSize - level.playerCellY * TileSize;
     playerFootRowOverride_ = -1;

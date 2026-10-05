@@ -33,7 +33,12 @@ public:
               const std::vector<bool>& enabled, bool overlay = false, int phase = 0, int spread = 0) const;
     void message(const std::vector<std::string>& lines, bool failure = false, float age = 1000.0f) const;
     int richPage(const std::string& contents, int scroll) const;
+    // Fraction of the next tick already elapsed; 1 draws the current tick exactly (tests, menus).
+    void setBlend(float blend) { blend_ = blend; }
 private:
+    int blended(int previous, int current) const;
+    int viewCameraX(const World& world) const;
+    int viewCameraBottom(const World& world) const;
     void object(const Object& object, const World& world) const;
     void objectLayers(const ObjectVisual& visual, const Object& object, int theme, int x, int y, int baseline) const;
     void generatorEffects(const Object& object, const World& world, int x, int y) const;
@@ -43,5 +48,6 @@ private:
     void hud(const World& world, bool showHealth) const;
     const Assets& assets_;
     std::map<std::string, Texture2D> textures_;
+    float blend_ = 1.0f;
 };
 }

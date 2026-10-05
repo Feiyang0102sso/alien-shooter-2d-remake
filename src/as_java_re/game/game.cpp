@@ -348,6 +348,12 @@ void Game::draw() {
         if (screen_ == Screen::Pause) { halfWidth = layout::PauseSpreadHalfWidth; }
         spread = halfWidth - static_cast<int>(selectionTime_ / flow::MenuAnimationStepSeconds) * (halfWidth / flow::SelectionSpreadSteps);
     }
+    // Smooth movement between 80ms ticks only while the world clock runs; other screens show the tick as is.
+    float blend = 1.0f;
+    if (screen_ == Screen::Playing && world_.message.empty() && !world_.inCameraTransit()) {
+        blend = std::min(accumulator_ / TickSeconds, 1.0f);
+    }
+    renderer_.setBlend(blend);
     switch (screen_) {
     case Screen::Intro:
         ClearBackground(WHITE);

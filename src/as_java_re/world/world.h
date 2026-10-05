@@ -7,12 +7,16 @@
 #include <array>
 #include <cstdint>
 #include <deque>
+#include <limits>
 
 namespace alien {
 struct Input {
     bool left = false, right = false, jump = false, down = false, fire = false;
     int weapon = -1, cycleWeapon = 0;
 };
+// Render-only marker: no position from the previous tick, so draw without interpolation.
+inline constexpr int NoPreviousPosition = std::numeric_limits<int>::min();
+
 struct Actor {
     int type = 0, x = 0, y = 0, health = rules::MaxHealth, direction = 1;
     int velocityY = 0, supportY = -1, frame = 0, state = 0;
@@ -20,6 +24,8 @@ struct Actor {
     int source = -1; // Generator parameter slot at spawn time, not an index into objects.
     int spawnTime = -10000;
     int behavior = 0;
+    // Render-only position before the latest tick; never read by world logic.
+    int previousX = NoPreviousPosition, previousY = 0;
     bool alive = true;
 };
 struct Object {
@@ -30,6 +36,7 @@ struct Object {
     int animationFrame = 0, doorOffset = 0;
     int visualFrame = 0, visualCounter = 0, lightFloor = 0;
     std::array<int, 4> lightArcs{};
+    int previousX = NoPreviousPosition, previousY = 0;
     bool active = true;
 };
 struct Projectile {
@@ -38,6 +45,7 @@ struct Projectile {
     int originalDirection = 0, radius = rules::ExplosionRadius, variant = 0;
     // 0: player; 1: enemy; 2: player explosion that hit an enemy, excluding self damage.
     int owner = 0;
+    int previousX = NoPreviousPosition, previousY = 0;
     bool alive = true;
 };
 struct Inventory {
@@ -80,6 +88,8 @@ public:
     std::vector<int> sounds;
     std::vector<std::string> message;
     int cameraX = 0, cameraBottom = 0, timeMs = 0, ticks = 0;
+    // Render-only camera before the latest tick.
+    int previousCameraX = NoPreviousPosition, previousCameraBottom = 0;
     int crouch = 0, shake = 0, healthFlash = 0, airState = 0, playerLight = 0;
     int drawOffsetY = 0;
     int flashOuterColor = -1, flashInnerColor = -1, ammoPanelY = 0;
@@ -109,6 +119,7 @@ private:
     int updateObjects();
     void updateProjectiles();
     void updateCamera(bool lookingDown);
+    void rememberPositions();
     void startAnimation(Actor& actor, int state);
     bool advanceAnimation(Actor& actor);
     void firePlayer();

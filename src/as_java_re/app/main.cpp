@@ -73,7 +73,11 @@ int main(int argc, char** argv) {
         SetWindowSize(windowWidth, windowHeight);
         std::cout << "Window configured: " << config.title << ", " << windowWidth << 'x' << windowHeight
                   << ", scalar=" << initialScale << '\n';
-        SetTargetFPS(alien::config::TargetFps);
+        // VSync already caps at the monitor rate; above MaxFps it would fight the limiter and halve the rate.
+        const int refreshRate = GetMonitorRefreshRate(monitor);
+        if (refreshRate > config.maxFps) { ClearWindowState(FLAG_VSYNC_HINT); }
+        SetTargetFPS(config.maxFps);
+        std::cout << "Frame rate: limit=" << config.maxFps << ", monitor=" << refreshRate << "Hz\n";
         auto target = LoadRenderTexture(alien::ScreenWidth, alien::ScreenHeight);
         SetTextureFilter(target.texture, TEXTURE_FILTER_POINT);
         {

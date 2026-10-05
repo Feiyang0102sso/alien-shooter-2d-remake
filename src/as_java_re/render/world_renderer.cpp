@@ -4,6 +4,8 @@
 #include "render/renderer.h"
 #include "render/pixel.h"
 #include <algorithm>
+#include <cmath>
+#include <cstdlib>
 #include <iomanip>
 #include <sstream>
 
@@ -18,11 +20,32 @@ bool contains(const std::vector<int>& values, int value) {
     return std::find(values.begin(), values.end(), value) != values.end();
 }
 }
+int Renderer::blended(int previous, int current) const {
+    if (previous == NoPreviousPosition || blend_ >= 1.0f) { return current; }
+    const int step = current - previous;
+    // Teleports, respawns and camera transits snap instead of sliding across the screen.
+    if (std::abs(step) > InterpolationMaxStep) { return current; }
+    return previous + static_cast<int>(std::lround(step * blend_));
+}
+int Renderer::viewCameraX(const World& world) const {
+    return blended(world.previousCameraX, world.cameraX);
+}
+int Renderer::viewCameraBottom(const World& world) const {
+    if (world.previousCameraX == NoPreviousPosition) { return world.cameraBottom; }
+    return blended(world.previousCameraBottom, world.cameraBottom);
+}
+
 void Renderer::actor(const Actor& actor, const World& world) const {
     if (!actor.alive) { return; }
     if (actor.direction == 0 && (actor.behavior & 1) == 0) { return; }
     auto slots = assets_.frames.at(actor.frame);
-    int y = ScreenHeight - actor.y + world.cameraBottom + world.drawOffsetY;
+    const int cameraX = viewCameraX(world);
+    int actorX = actor.x, actorY = actor.y;
+    if (actor.previousX != NoPreviousPosition) {
+        actorX = blended(actor.previousX, actor.x);
+        actorY = blended(actor.previousY, actor.y);
+    }
+    int y = ScreenHeight - actorY + viewCameraBottom(world) + world.drawOffsetY;
     if (actor.type == rules::PlayerType) {
         // Heavy weapons replace parts of the standing and walking frames.
         for (const auto& pose : assets_.weaponFrames) {
@@ -39,9 +62,9 @@ void Renderer::actor(const Actor& actor, const World& world) const {
             }
         }
     }
-    for (int id : slots) { part(id, actor.x - world.cameraX, y, actor.direction); }
-    if (actor.type == rules::PlayerType && world.playerLight != 0) { part(world.playerLight, actor.x - world.cameraX, y, actor.direction); }
-    if (actor.type == assets_.weaponActorType) { part(assets_.weaponPartBase + actor.shotType, actor.x - world.cameraX, y, actor.direction); }
+    for (int id : slots) { part(id, actorX - cameraX, y, actor.direction); }
+    if (actor.type == rules::PlayerType && world.playerLight != 0) { part(world.playerLight, actorX - cameraX, y, actor.direction); }
+    if (actor.type == assets_.weaponActorType) { part(assets_.weaponPartBase + actor.shotType, actorX - cameraX, y, actor.direction); }
 }
 
 void Renderer::objectLayers(const ObjectVisual& visual, const Object& object, int theme, int x, int y, int baseline) const {
@@ -113,12 +136,18 @@ void Renderer::terminalEffects(const Object& object, int theme, int x, int y) co
 void Renderer::object(const Object& object, const World& world) const {
     if (!object.active || !assets_.hasParameters(object.type)) { return; }
     const auto& p = assets_.entities.at(object.type);
-    if (object.x + p.right < world.cameraX - rules::VisibilityMargin || object.x - p.left > world.cameraX + ScreenWidth + rules::VisibilityMargin
-        || object.y + p.top < world.cameraBottom || object.y - p.bottom > world.cameraBottom + ScreenHeight) { return; }
-    const int x = object.x - world.cameraX - p.left;
-    const int y = ScreenHeight - object.y + world.cameraBottom + world.drawOffsetY;
+    const int cameraX = viewCameraX(world), cameraBottom = viewCameraBottom(world);
+    int objectX = object.x, objectY = object.y;
+    if (object.previousX != NoPreviousPosition) {
+        objectX = blended(object.previousX, object.x);
+        objectY = blended(object.previousY, object.y);
+    }
+    if (objectX + p.right < cameraX - rules::VisibilityMargin || objectX - p.left > cameraX + ScreenWidth + rules::VisibilityMargin
+        || objectY + p.top < cameraBottom || objectY - p.bottom > cameraBottom + ScreenHeight) { return; }
+    const int x = objectX - cameraX - p.left;
+    const int y = ScreenHeight - objectY + cameraBottom + world.drawOffsetY;
     const int theme = world.level.theme;
-    const int baseline = y + object.y - object.baselineY;
+    const int baseline = y + objectY - object.baselineY;
     const auto visual = assets_.objectVisuals.find(object.type);
     if (visual != assets_.objectVisuals.end()) { objectLayers(visual->second, object, theme, x, y, baseline); }
     switch (object.type) {
@@ -134,8 +163,13 @@ void Renderer::object(const Object& object, const World& world) const {
 }
 
 void Renderer::projectile(const Projectile& projectile, const World& world) const {
-    const int x = projectile.x - world.cameraX;
-    const int y = ScreenHeight - projectile.y + world.cameraBottom;
+    int projectileX = projectile.x, projectileY = projectile.y;
+    if (projectile.previousX != NoPreviousPosition) {
+        projectileX = blended(projectile.previousX, projectile.x);
+        projectileY = blended(projectile.previousY, projectile.y);
+    }
+    const int x = projectileX - viewCameraX(world);
+    const int y = ScreenHeight - projectileY + viewCameraBottom(world);
     const int margin = layout::ProjectileCullMargin;
     if (x + margin < 0 || x - margin > ScreenWidth || y + margin < 0 || y - margin > ScreenHeight) { return; }
     const auto& visual = assets_.projectileVisuals.at(projectile.type);
@@ -216,14 +250,15 @@ void Renderer::deathWipe(const World& world) const {
 }
 void Renderer::world(const World& world, bool collisionDebug, bool showHealth) const {
     // Do not clear the original canvas; shaken edges retain the preceding frame's pixels.
-    const int firstRow = std::max(0, world.cameraBottom / TileSize);
-    const int lastRow = std::min(world.level.height - 1, (world.cameraBottom + ScreenHeight) / TileSize + 1);
-    const int firstColumn = std::max(0, world.cameraX / TileSize);
-    const int lastColumn = std::min(world.level.width - 1, (world.cameraX + ScreenWidth) / TileSize + 1);
+    const int cameraX = viewCameraX(world), cameraBottom = viewCameraBottom(world);
+    const int firstRow = std::max(0, cameraBottom / TileSize);
+    const int lastRow = std::min(world.level.height - 1, (cameraBottom + ScreenHeight) / TileSize + 1);
+    const int firstColumn = std::max(0, cameraX / TileSize);
+    const int lastColumn = std::min(world.level.width - 1, (cameraX + ScreenWidth) / TileSize + 1);
     for (int row = lastRow; row >= firstRow; --row) {
         for (int column = firstColumn; column <= lastColumn; ++column) {
-            const int x = column * TileSize - world.cameraX;
-            const int y = ScreenHeight - (row + 1) * TileSize + world.cameraBottom + world.drawOffsetY;
+            const int x = column * TileSize - cameraX;
+            const int y = ScreenHeight - (row + 1) * TileSize + cameraBottom + world.drawOffsetY;
             const int id = world.level.tiles[row][column];
             if (id >= tile_id::CompositeFirst) {
                 const auto& composition = world.compositeTiles[id];

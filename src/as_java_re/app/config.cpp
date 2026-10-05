@@ -38,7 +38,9 @@ void writeDefaultConfig(const std::filesystem::path& path) {
            << "; Base screen height before scaling\n"
            << config::ScreenYKey << '=' << config::DefaultScreenY << "\n\n"
            << "; Initial integer scale\n"
-           << config::ScalarKey << '=' << config::DefaultScalar << '\n';
+           << config::ScalarKey << '=' << config::DefaultScalar << "\n\n"
+           << "; Frame rate limit; game logic still runs at the original 80ms tick\n"
+           << config::MaxFpsKey << '=' << config::DefaultMaxFps << '\n';
     stream.close();
     if (!stream) {
         throw std::runtime_error("Cannot create config: " + path.u8string());
@@ -93,6 +95,8 @@ Config loadConfig(const std::filesystem::path& path) {
             config.defaultScreenY = positiveInteger(value, location);
         } else if (key == config::ScalarKey) {
             config.scalar = positiveInteger(value, location);
+        } else if (key == config::MaxFpsKey) {
+            config.maxFps = positiveInteger(value, location);
         } else {
             throw std::runtime_error(location + "Unknown setting: " + key);
         }

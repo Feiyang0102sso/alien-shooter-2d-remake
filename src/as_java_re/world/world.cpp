@@ -96,8 +96,17 @@ bool World::advanceCameraTransition(bool downHeld) {
     }
     return finished;
 }
+void World::rememberPositions() {
+    // Snapshot for render interpolation; objects spawned during the tick keep NoPreviousPosition.
+    previousCameraX = cameraX; previousCameraBottom = cameraBottom;
+    player.previousX = player.x; player.previousY = player.y;
+    for (auto& enemy : enemies) { enemy.previousX = enemy.x; enemy.previousY = enemy.y; }
+    for (auto& object : objects) { object.previousX = object.x; object.previousY = object.y; }
+    for (auto& projectile : projectiles) { projectile.previousX = projectile.x; projectile.previousY = projectile.y; }
+}
 void World::tick(const Input& input) {
     sounds.clear();
+    rememberPositions();
     if (dead || complete || !message.empty()) { return; }
     if (!input.down) { lookingDown_ = false; }
     timeMs += TickMilliseconds; ++ticks;

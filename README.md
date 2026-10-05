@@ -44,7 +44,7 @@ build.bat Release run
 ## 实现与验证
 
 - C++17、raylib 5.5、nlohmann/json 3.12.0、原生 Visual Studio / MSBuild。
-- 原 240×320 画布，最近邻整数缩放，80ms 离散世界更新；保留原对象/动画/碰撞数值和地图变化。
+- 原 240×320 画布，最近邻整数缩放，80ms 离散世界更新；保留原对象/动画/碰撞数值和地图变化。渲染时在两次 tick 之间对摄像机、角色、物件和弹体位置做线性插值（仅影响显示，逻辑不变；瞬移超过 64px 直接跳转）。
 - 直接解析全部 17 首原 MIDI，用 FluidSynth 2.6.1 / GeneralUser GS 2.0.3 按采样计数调度，保留打断、冻结和续播；运行时不使用 OGG 尾音计时。
 - 运行时音色库已按这 17 个 MIDI 裁剪至 5,167,308 字节（约 5.17 MB），比原版 32.3 MB 减少约 84%；保留所用采样与音色参数，裁剪前后合成输出逐样本一致。复现方法见 [开发说明](docs/development.md)。
 - Debug / Release 当前均通过 13 组原生回归测试，包含原字节码动作/战斗/机关/难度/死亡样本、前两关完整路线与输入边界逐步对照、MIDI 合成、存档、八关流程及 CHGOD 秘籍。
@@ -79,7 +79,7 @@ tools/                Python 素材及原字节码验证工具
 docs/                 开发、验证、玩法和阶段总结
 ```
 
-窗口配置读取 EXE 旁的 `config.cfg`，由 `src/as_java_re/app/config.cpp/.h` 管理，字段名和默认值统一定义在 `core/constants.h` 的 `config` 命名空间中。`DefaultScreenX/Y` 为窗口基准尺寸，乘以 `Scalar` 得到初始窗口尺寸；默认 `240×320 × 3 = 720×960`，小屏自动降低倍率，游戏逻辑画布保持 `240×320`。支持 `;` 行尾注释，修改后重启生效。启动时缺少 cfg 会按常量生成默认文件，重新构建不会覆盖已有设置。
+窗口配置读取 EXE 旁的 `config.cfg`，由 `src/as_java_re/app/config.cpp/.h` 管理，字段名和默认值统一定义在 `core/constants.h` 的 `config` 命名空间中。`DefaultScreenX/Y` 为窗口基准尺寸，乘以 `Scalar` 得到初始窗口尺寸；默认 `240×320 × 3 = 720×960`，小屏自动降低倍率，游戏逻辑画布保持 `240×320`。`MaxFps` 为帧率上限（默认 120）；显示器刷新率高于该值时关闭 VSync，交给限帧器控制。支持 `;` 行尾注释，修改后重启生效。启动时缺少 cfg 会按常量生成默认文件，重新构建不会覆盖已有设置。
 
 存档在 EXE 旁的 `save/progress.json`，日志在 `save/logs/latest.log`，与启动时的工作目录无关。调试参数 `--save-dir` 仍可指定其他目录。旧的 `%LOCALAPPDATA%\AlienShooterRemake` 存档不会自动迁移；需要继续旧进度时，可将旧存档复制到新的 `save/`。完成关卡后保存下一关起点；第一关未过关时 CONTINUE 不可用。损坏主存档可从有效备份恢复。
 
