@@ -63,10 +63,19 @@ int main(int argc, char** argv) {
         require(settings.title == "测试 Alien = Shooter", "Title or UTF-8 parsing failed.");
         require(settings.defaultScreenX == 300 && settings.defaultScreenY == 400 && settings.scalar == 2,
                 "Custom dimensions or scale were ignored.");
+        // Newer keys are appended once; the user's own lines stay byte-for-byte at the start.
         std::ifstream preserved(path, std::ios::binary);
         const std::string contents{std::istreambuf_iterator<char>(preserved), std::istreambuf_iterator<char>()};
-        require(contents == custom, "Loading changed the user's config.");
         preserved.close();
+        require(contents.compare(0, custom.size(), custom) == 0, "Loading changed the user's config lines.");
+        require(contents.find("MaxFps=120") != std::string::npos && contents.find("ModernControls=1") != std::string::npos
+                && contents.find("FallProtect=1") != std::string::npos,
+                "Missing config keys were not appended.");
+        alien::loadConfig(path);
+        std::ifstream reloaded(path, std::ios::binary);
+        const std::string again{std::istreambuf_iterator<char>(reloaded), std::istreambuf_iterator<char>()};
+        reloaded.close();
+        require(again == contents, "A complete config was changed on reload.");
 
         writeConfig(path, "Scalar=1\n");
         const auto partial = alien::loadConfig(path);
@@ -74,7 +83,7 @@ int main(int argc, char** argv) {
                 && partial.defaultScreenY == 320 && partial.scalar == 1, "Missing-key defaults failed.");
         for (const std::string invalid : {"Scalar=0", "Scalar=-1", "Scalar=1.5", "Scalar=3oops",
                  "Scalar=9999999999999", "DefaultScreenX=0", "DefaultScreenY=-3", "Title= ; empty",
-                 "Scalr=2", "Scalar", "DefaultScreenX=2147483647\nScalar=2"}) {
+                 "Scalr=2", "Scalar", "DefaultScreenX=2147483647\nScalar=2", "MaxFps=0", "ModernControls=2", "FallProtect=2"}) {
             expectInvalid(path, invalid);
         }
 

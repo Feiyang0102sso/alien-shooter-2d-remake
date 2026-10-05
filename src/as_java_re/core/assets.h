@@ -59,6 +59,7 @@ struct Animation {
 struct CrouchPose {
     std::vector<int> frames;
     int slot = 0, part = 0, height = 0;
+    int standingPart = 0; // Standing legs; heavy attack frames use it too.
 };
 // Insert the armor part after the torso part.
 struct ArmorPose {

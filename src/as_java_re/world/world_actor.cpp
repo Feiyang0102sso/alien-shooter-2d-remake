@@ -4,6 +4,7 @@
 #include "world/world.h"
 #include "world/geometry.h"
 #include <algorithm>
+#include <iostream>
 
 namespace alien {
 namespace {
@@ -170,9 +171,22 @@ void World::gravity(Actor& actor) {
     if (actor.y < 0 && isPlayer) { damagePlayer(rules::FatalDamage); }
 }
 void World::applyFallDamage() {
-    if (player.velocityY < rules::FatalFallSpeed) { damagePlayer(rules::FatalDamage); }
+    int damage = 0;
+    if (player.velocityY < rules::FatalFallSpeed) { damage = rules::FatalDamage; }
     else if (player.velocityY < rules::DamagingFallSpeed) {
-        damagePlayer(rules::FallDamageBase - rules::FallDamagePerSpeed * (player.velocityY - rules::DamagingFallSpeed));
+        damage = rules::FallDamageBase - rules::FallDamagePerSpeed * (player.velocityY - rules::DamagingFallSpeed);
     }
+    if (damage <= 0) { return; }
+    if (fallProtect) {
+        // One landing costs at most a share of current health (rounded down), so a fall alone never kills.
+        const int limit = player.health * rules::FallProtectPercent / 100;
+        if (damage > limit) {
+            std::cout << "Fall protect: damage " << damage << " capped to " << limit << '\n';
+            damage = limit;
+        }
+        if (damage <= 0) { return; }
+    }
+    // Armor reduction in damagePlayer applies after the cap.
+    damagePlayer(damage);
 }
 }

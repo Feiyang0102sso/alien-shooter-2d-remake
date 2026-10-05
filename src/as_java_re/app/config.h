@@ -15,6 +15,8 @@ struct Config {
     int defaultScreenY = config::DefaultScreenY;
     int scalar = config::DefaultScalar;
     int maxFps = config::DefaultMaxFps;
+    bool modernControls = config::DefaultModernControls;
+    bool fallProtect = config::DefaultFallProtect;
 };
 
 // Create missing files from defaults; missing keys use defaults and invalid values report an error.

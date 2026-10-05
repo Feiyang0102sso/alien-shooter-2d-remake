@@ -29,8 +29,10 @@ void World::firePlayer() {
     int height = rules::MuzzleHeight + bob_;
     int vertical = 0;
     const int weapon = inventory.weapon;
-    if (weapon == rules::Pistol) { height = rules::PistolMuzzleHeight + bob_ - crouch; vertical = rules::PistolAim; }
+    if (weapon == rules::Pistol) { height = rules::PistolMuzzleHeight + bob_; vertical = rules::PistolAim; }
     if (weapon == rules::Flamethrower) { height = rules::FlamethrowerMuzzleHeight + bob_ * 2; vertical = rules::FlamethrowerAim; }
+    // Crouching lowers the muzzle; original rules only fire crouched with the pistol, so other weapons see 0.
+    height -= crouch;
     sounds.push_back(sound::WeaponFire[weapon]);
     addProjectile(weapon, player.x + player.direction * rules::MuzzleOffsetX, player.y + height, player.direction, vertical, false);
     if (bob_ < 0) { bob_ = rules::RecoilBobFrames; }
@@ -79,9 +81,18 @@ void World::updatePlayer(const Input& input) {
 void World::applyPlayerInput(const Input& input) {
     if (input.weapon >= 0) { selectWeapon(input.weapon); }
     if (input.cycleWeapon != 0) { cycleWeapon(input.cycleWeapon); }
-    if (input.jump) {
+    bool jump = input.jump;
+    if (modernControls) {
+        // Keep an early press for a few ticks so landing jumps without frame-perfect timing.
+        if (input.jump) { jumpBuffer_ = rules::JumpBufferTicks; }
+        else if (jumpBuffer_ > 0) { jump = true; --jumpBuffer_; }
+    }
+    if (jump) {
         if (dead) { return; }
+        // Airborne retries are harmless: firing, walking and crouching all require the ground.
         if (airState != rules::AirGrounded && airState != rules::AirLanding) { return; }
+        // On the ground the press is used once, either standing up or jumping.
+        jumpBuffer_ = 0;
         if (crouch != 0) {
             if (player.state == rules::StateIdle) { crouch = 0; }
         }
@@ -94,7 +105,8 @@ void World::applyPlayerInput(const Input& input) {
         if (dead) { return; }
         if (player.state == rules::StateAttack || airState != rules::AirGrounded) { return; }
         if (timeMs - player.attackStarted > assets_.projectiles[inventory.weapon].cooldownMs) {
-            if (inventory.weapon > rules::Pistol) { crouch = 0; }
+            // The original stands up before heavy fire; modern controls keep the crouch for every weapon.
+            if (inventory.weapon > rules::Pistol && !modernControls) { crouch = 0; }
             startAnimation(player, rules::StateAttack); player.attackStarted = timeMs;
         }
     } else if (input.left != input.right) {

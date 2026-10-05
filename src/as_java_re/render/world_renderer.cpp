@@ -52,7 +52,9 @@ void Renderer::actor(const Actor& actor, const World& world) const {
             if (pose.weapon == world.inventory.weapon && pose.frame == actor.frame) { slots = pose.slots; break; }
         }
         const auto& crouch = assets_.crouch;
-        if (world.crouch > 0 && contains(crouch.frames, actor.frame)) { slots[crouch.slot] = crouch.part; }
+        // Heavy attack frames share the standing legs, so crouched heavy fire swaps them the same way.
+        const bool crouchFrame = contains(crouch.frames, actor.frame) || slots[crouch.slot] == crouch.standingPart;
+        if (world.crouch > 0 && crouchFrame) { slots[crouch.slot] = crouch.part; }
         y += world.crouch;
         const auto& armor = assets_.armor;
         const bool armorFrame = actor.frame >= armor.firstFrame && actor.frame <= armor.lastFrame;

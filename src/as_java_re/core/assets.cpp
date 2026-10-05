@@ -214,6 +214,7 @@ void Assets::loadDefinitions(const Json& catalog) {
     crouch.frames = crouchData.at("frame_ids").get<std::vector<int>>();
     crouch.slot = crouchData.at("slot");
     crouch.part = crouchData.at("crouching_part");
+    crouch.standingPart = crouchData.at("standing_part");
     crouch.height = -crouchData.at("height_delta").get<int>();
     const auto& armorData = poses.at("armor");
     armor.firstFrame = armorData.at("frame_range").at(0);

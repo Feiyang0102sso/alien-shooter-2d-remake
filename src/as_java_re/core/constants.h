@@ -219,6 +219,8 @@ inline constexpr int DamagingFallSpeed = -20;
 inline constexpr int FallDamageBase = 5;
 inline constexpr int FallDamagePerSpeed = 10;
 inline constexpr int FatalDamage = 100;
+// FallProtect option: one landing removes at most this percent of current health.
+inline constexpr int FallProtectPercent = 35;
 
 // Player movement and firing.
 inline constexpr int StepUpTolerance = 2;      // Highest ledge an actor walks onto.
@@ -237,6 +239,9 @@ inline constexpr int PlatformBoardVelocity = 1;
 inline constexpr int PlatformProbeBelow = 1;   // Rows probed ahead of moving platforms.
 inline constexpr int PlatformProbeAbove = 4;
 inline constexpr int PlatformProbeAhead = 1;
+// Modern controls: desktop assists, off in World by default so original traces stay exact.
+inline constexpr int JumpBufferTicks = 3;      // An early W press retries for 3 ticks (240ms).
+inline constexpr int LiftExitTolerance = 8;    // Walking off a lift lands on floor within 8px of the feet.
 
 // Enemies.
 inline constexpr int MaxEnemies = 29;
@@ -586,6 +591,8 @@ inline constexpr char ScreenXKey[] = "DefaultScreenX";
 inline constexpr char ScreenYKey[] = "DefaultScreenY";
 inline constexpr char ScalarKey[] = "Scalar";
 inline constexpr char MaxFpsKey[] = "MaxFps";
+inline constexpr char ModernControlsKey[] = "ModernControls";
+inline constexpr char FallProtectKey[] = "FallProtect";
 
 inline constexpr char DefaultTitle[] = "Alien Shooter 2D";
 inline constexpr int DefaultScreenX = 240;
@@ -595,6 +602,10 @@ inline constexpr int DefaultScalar = 3;
 inline constexpr int WindowMargin = 80;
 // Desktop frame rate limit; world logic still advances every TickSeconds.
 inline constexpr int DefaultMaxFps = 120;
+// Jump buffer, lift assists and crouched heavy fire; 0 restores the original rules.
+inline constexpr bool DefaultModernControls = true;
+// Caps fall damage at rules::FallProtectPercent of current health; 0 restores original fall damage.
+inline constexpr bool DefaultFallProtect = true;
 }
 
 // Save files beside the executable.

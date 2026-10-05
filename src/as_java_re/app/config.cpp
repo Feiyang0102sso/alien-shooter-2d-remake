@@ -6,7 +6,9 @@
 #include <fstream>
 #include <iostream>
 #include <limits>
+#include <set>
 #include <stdexcept>
+#include <vector>
 
 namespace alien {
 namespace {
@@ -28,22 +30,93 @@ int positiveInteger(const std::string& text, const std::string& location) {
     return value;
 }
 
+// Switches are written as 0 or 1.
+bool switchValue(const std::string& text, const std::string& location) {
+    if (text == "0") {
+        return false;
+    }
+    if (text == "1") {
+        return true;
+    }
+    throw std::runtime_error(location + "Expected 0 or 1.");
+}
+
+// One editable setting as written to the file: comment lines, key and default value.
+struct ConfigEntry {
+    std::vector<std::string> comment;
+    std::string key;
+    std::string defaultValue;
+};
+
+// Every setting in file order; new files and missing keys use the same text.
+std::vector<ConfigEntry> configEntries() {
+    return {
+        {{"Game window title"}, config::TitleKey, config::DefaultTitle},
+        {{"Base screen width before scaling"}, config::ScreenXKey, std::to_string(config::DefaultScreenX)},
+        {{"Base screen height before scaling"}, config::ScreenYKey, std::to_string(config::DefaultScreenY)},
+        {{"Initial integer scale"}, config::ScalarKey, std::to_string(config::DefaultScalar)},
+        {{"Frame rate limit; game logic still runs at the original 80ms tick"}, config::MaxFpsKey,
+         std::to_string(config::DefaultMaxFps)},
+        {{"Desktop control assists. 1: on, 0: original controls",
+          "  - Jump buffer: W pressed up to " + std::to_string(rules::JumpBufferTicks * TickMilliseconds)
+              + "ms before landing still jumps",
+          "  - Lift exit: walking off a lift lands on floor within " + std::to_string(rules::LiftExitTolerance)
+              + "px of the feet",
+          "  - Lift jump: a rising jump keeps air steering instead of snapping back onto the lift",
+          "  - Crouched fire: every weapon fires crouched with a lower muzzle (original: pistol only)"},
+         config::ModernControlsKey, std::to_string(static_cast<int>(config::DefaultModernControls))},
+        {{"Fall protection. 1: one fall costs at most " + std::to_string(rules::FallProtectPercent)
+              + "% of current health, 0: original fall damage",
+          "  Falling out of the map still kills"},
+         config::FallProtectKey, std::to_string(static_cast<int>(config::DefaultFallProtect))},
+    };
+}
+
+void writeEntry(std::ofstream& stream, const ConfigEntry& entry) {
+    for (const auto& line : entry.comment) {
+        stream << "; " << line << '\n';
+    }
+    stream << entry.key << '=' << entry.defaultValue << '\n';
+}
+
 // Generate the editable file from the same constants used for missing keys.
 void writeDefaultConfig(const std::filesystem::path& path) {
     std::ofstream stream(path);
-    stream << "; Game window title\n"
-           << config::TitleKey << '=' << config::DefaultTitle << "\n\n"
-           << "; Base screen width before scaling\n"
-           << config::ScreenXKey << '=' << config::DefaultScreenX << "\n\n"
-           << "; Base screen height before scaling\n"
-           << config::ScreenYKey << '=' << config::DefaultScreenY << "\n\n"
-           << "; Initial integer scale\n"
-           << config::ScalarKey << '=' << config::DefaultScalar << "\n\n"
-           << "; Frame rate limit; game logic still runs at the original 80ms tick\n"
-           << config::MaxFpsKey << '=' << config::DefaultMaxFps << '\n';
+    bool first = true;
+    for (const auto& entry : configEntries()) {
+        if (!first) {
+            stream << '\n';
+        }
+        writeEntry(stream, entry);
+        first = false;
+    }
     stream.close();
     if (!stream) {
         throw std::runtime_error("Cannot create config: " + path.u8string());
+    }
+}
+
+// Append settings added by newer versions; existing lines and user values stay untouched.
+void appendMissingEntries(const std::filesystem::path& path, const std::set<std::string>& presentKeys) {
+    std::vector<ConfigEntry> missing;
+    for (const auto& entry : configEntries()) {
+        if (presentKeys.count(entry.key) == 0) {
+            missing.push_back(entry);
+        }
+    }
+    if (missing.empty()) {
+        return;
+    }
+    std::ofstream stream(path, std::ios::app);
+    for (const auto& entry : missing) {
+        // The leading newline also ends a last line written without one.
+        stream << '\n';
+        writeEntry(stream, entry);
+        std::cout << "Config key added: " << entry.key << '=' << entry.defaultValue << '\n';
+    }
+    stream.close();
+    if (!stream) {
+        throw std::runtime_error("Cannot update config: " + path.u8string());
     }
 }
 }
@@ -62,6 +135,7 @@ Config loadConfig(const std::filesystem::path& path) {
 
     std::string line;
     int lineNumber = 0;
+    std::set<std::string> presentKeys;
     while (std::getline(stream, line)) {
         ++lineNumber;
         // Windows text editors may prefix a UTF-8 file with a byte-order mark.
@@ -97,9 +171,14 @@ Config loadConfig(const std::filesystem::path& path) {
             config.scalar = positiveInteger(value, location);
         } else if (key == config::MaxFpsKey) {
             config.maxFps = positiveInteger(value, location);
+        } else if (key == config::ModernControlsKey) {
+            config.modernControls = switchValue(value, location);
+        } else if (key == config::FallProtectKey) {
+            config.fallProtect = switchValue(value, location);
         } else {
             throw std::runtime_error(location + "Unknown setting: " + key);
         }
+        presentKeys.insert(key);
     }
     if (!stream.eof()) {
         throw std::runtime_error("Cannot read config: " + path.u8string());
@@ -109,6 +188,9 @@ Config loadConfig(const std::filesystem::path& path) {
     if (config.defaultScreenX > maximumBase || config.defaultScreenY > maximumBase) {
         throw std::runtime_error("Config window dimensions overflow: " + path.u8string());
     }
+    // Only a valid file is extended, after the read stream is closed.
+    stream.close();
+    appendMissingEntries(path, presentKeys);
     std::cout << "Config loaded: " << path.u8string() << '\n';
     return config;
 }

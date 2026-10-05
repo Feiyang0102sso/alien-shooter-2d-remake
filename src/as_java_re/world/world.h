@@ -96,6 +96,10 @@ public:
     bool scoreVisible = false, explosiveVisible = false;
     bool cleared = false, complete = false, power = false, lightsOn = false, dead = false;
     bool deathWipeActive = false;
+    // Desktop assists (jump buffer, lift exit, lift pass-through, crouched heavy fire); false keeps the original rules.
+    bool modernControls = false;
+    // Cap fall damage at a share of current health; false keeps the original fall damage.
+    bool fallProtect = false;
     std::array<int, ScreenWidth / rules::DeathWipeColumnWidth> deathColumns{};
     std::array<std::array<int, 2>, tile_id::IdLimit> compositeTiles{};
 private:
@@ -120,6 +124,7 @@ private:
     void updateProjectiles();
     void updateCamera(bool lookingDown);
     void rememberPositions();
+    bool stepOffPlatform();
     void startAnimation(Actor& actor, int state);
     bool advanceAnimation(Actor& actor);
     void firePlayer();
@@ -165,6 +170,7 @@ private:
     bool explosiveBlink_ = false;
     bool lookingDown_ = false, cameraTransit_ = false;
     int deathParticleSteps_ = 0;
+    int jumpBuffer_ = 0;
     bool deathWipeDone_ = false;
 };
 }

@@ -4,6 +4,8 @@
 #include "world/world.h"
 #include "world/geometry.h"
 #include <algorithm>
+#include <cstdlib>
+#include <iostream>
 
 namespace alien {
 namespace {
@@ -147,9 +149,11 @@ int World::updateObjects() {
         }
         if (object.type == object_type::VerticalPlatform || object.type == object_type::HorizontalPlatform) {
             const auto& p = assets_.entities[object.type];
-            const bool onPlatform = intersects(object.x, object.x + p.right, object.y, object.y + p.top,
-                                               player.x - rules::PlatformFootReach, player.x + rules::PlatformFootReach,
-                                               playerBounds_[2], player.y + rules::PlatformFootHeight);
+            bool onPlatform = intersects(object.x, object.x + p.right, object.y, object.y + p.top,
+                                         player.x - rules::PlatformFootReach, player.x + rules::PlatformFootReach,
+                                         playerBounds_[2], player.y + rules::PlatformFootHeight);
+            // Original rules ground a rising jump that still overlaps the lift, cancelling air steering.
+            if (modernControls && airState == rules::AirJumping && player.velocityY > 0) { onPlatform = false; }
             if (onPlatform) {
                 airState = rules::AirGrounded;
                 if (riding_ != index && player.velocityY <= 0) {
@@ -160,7 +164,9 @@ int World::updateObjects() {
                 }
             } else if (riding_ == index) {
                 riding_ = -1; player.supportY = -1; player.velocityY = 0;
-                airState = rules::AirFalling; startAnimation(player, rules::StateAir);
+                if (!modernControls || !stepOffPlatform()) {
+                    airState = rules::AirFalling; startAnimation(player, rules::StateAir);
+                }
             }
             const int nextX = object.x + p.speedX * object.direction;
             const int nextY = object.y + p.speedY * object.direction;
@@ -235,6 +241,36 @@ int World::updateObjects() {
         if (object.type == object_type::FloorFlame) { if (--object.health <= 0) { object.active = false; } }
     }
     return activeSourceCount;
+}
+
+bool World::stepOffPlatform() {
+    // The fixed 10px walk step can leave the centre over the gap beside a lift; use the whole foot span instead.
+    const int feetRow = player.y / TileSize;
+    const int leftColumn = std::max(0, (player.x - rules::PlayerHalfWidth) / TileSize);
+    const int rightColumn = std::min(level.width - 1, (player.x + rules::PlayerHalfWidth) / TileSize);
+    int bestColumn = -1, bestSurface = 0, bestDistance = 0;
+    for (int column = leftColumn; column <= rightColumn; ++column) {
+        for (int row = std::max(0, feetRow - 1); row <= feetRow + 1; ++row) {
+            const int height = collisionAt(column, row);
+            if (height <= 0) { continue; }
+            // Skip solid wall cells; the cell above the surface must be open.
+            if (collisionAt(column, row + 1) > 0) { continue; }
+            const int surface = row * TileSize + height;
+            if (std::abs(surface - player.y) > rules::LiftExitTolerance) { continue; }
+            const int distance = std::abs(column * TileSize + TileSize / 2 - player.x);
+            if (bestColumn < 0 || distance < bestDistance) {
+                bestColumn = column; bestSurface = surface; bestDistance = distance;
+            }
+        }
+    }
+    if (bestColumn < 0) { return false; }
+    // Move the centre onto the chosen column so later walk and gravity checks see solid ground.
+    player.x = std::clamp(player.x, bestColumn * TileSize, bestColumn * TileSize + TileSize - 1);
+    player.y = bestSurface; player.supportY = bestSurface; player.velocityY = 0;
+    playerFootRowOverride_ = -1;
+    airState = rules::AirGrounded;
+    std::cout << "Lift exit assist: landed at " << player.x << ',' << player.y << '\n';
+    return true;
 }
 
 Object& World::spawnObject(int type, int x, int y) {

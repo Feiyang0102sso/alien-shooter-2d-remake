@@ -82,6 +82,9 @@ int main(int argc, char** argv) {
         SetTextureFilter(target.texture, TEXTURE_FILTER_POINT);
         {
             alien::Game game(assets, options.save, options.silent, options.seed);
+            game.world().modernControls = config.modernControls;
+            game.world().fallProtect = config.fallProtect;
+            std::cout << "Modern controls: " << config.modernControls << ", fall protect: " << config.fallProtect << '\n';
             if (options.level > 0) { game.startLevel(options.level); }
             if (options.screen == "menu") { game.showScreen(alien::Screen::Main); }
             if (options.screen == "help") { game.showScreen(alien::Screen::Help); }
