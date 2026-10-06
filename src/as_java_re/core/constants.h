@@ -593,11 +593,13 @@ inline constexpr char ScalarKey[] = "Scalar";
 inline constexpr char MaxFpsKey[] = "MaxFps";
 inline constexpr char ModernControlsKey[] = "ModernControls";
 inline constexpr char FallProtectKey[] = "FallProtect";
+inline constexpr char FireBindingKey[] = "FireKey";
+inline constexpr char JumpBindingKey[] = "JumpKey";
 
 inline constexpr char DefaultTitle[] = "Alien Shooter 2D";
 inline constexpr int DefaultScreenX = 240;
 inline constexpr int DefaultScreenY = 320;
-inline constexpr int DefaultScalar = 3;
+inline constexpr int DefaultScalar = 4;
 // Keep the initial window this far inside the monitor.
 inline constexpr int WindowMargin = 80;
 // Desktop frame rate limit; world logic still advances every TickSeconds.
@@ -606,6 +608,12 @@ inline constexpr int DefaultMaxFps = 120;
 inline constexpr bool DefaultModernControls = true;
 // Caps fall damage at rules::FallProtectPercent of current health; 0 restores original fall damage.
 inline constexpr bool DefaultFallProtect = true;
+// Key bindings accept one letter a-z or SpacebarName; the left mouse button always fires too.
+inline constexpr char DefaultFireKey[] = "j";
+inline constexpr char DefaultJumpKey[] = "w";
+inline constexpr char SpacebarName[] = "spacebar";
+// Letters already used by movement and weapon switching cannot be rebound.
+inline constexpr char ReservedKeys[] = "adsqe";
 }
 
 // Save files beside the executable.

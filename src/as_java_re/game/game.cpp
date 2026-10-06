@@ -8,11 +8,30 @@
 #include <iostream>
 
 namespace alien {
+namespace {
+// Help-page label of a bound key: SPACEBAR or the uppercase letter.
+std::string keyLabel(int key) {
+    if (key == KEY_SPACE) {
+        return "SPACEBAR";
+    }
+    // raylib letter key codes equal their uppercase ASCII values.
+    return std::string(1, static_cast<char>(key));
+}
+
+void replaceAll(std::string& text, const std::string& placeholder, const std::string& value) {
+    std::size_t position = text.find(placeholder);
+    while (position != std::string::npos) {
+        text.replace(position, placeholder.size(), value);
+        position = text.find(placeholder, position + value.size());
+    }
+}
+}
+
 Game::Game(const Assets& assets, std::filesystem::path saveDirectory, bool silent, std::uint64_t seed)
     : assets_(assets), renderer_(assets), world_(assets), saveStore_(assets, std::move(saveDirectory)) {
     world_.seedRandom(seed);
     // The asset pipeline already writes desktop control labels into the help page.
-    help_ = assets_.helpText;
+    setKeyBindings(fireKey_, jumpKey_);
     about_ = assets_.aboutText;
     progress_ = saveStore_.load();
     difficulty_ = progress_.difficulty; sound_ = progress_.sound;
@@ -174,6 +193,15 @@ void Game::menuInput(const Controls& controls) {
     }
 }
 
+void Game::setKeyBindings(int fireKey, int jumpKey) {
+    fireKey_ = fireKey;
+    jumpKey_ = jumpKey;
+    // help.txt marks the configurable keys with {FIRE} and {JUMP}.
+    help_ = assets_.helpText;
+    replaceAll(help_, "{FIRE}", keyLabel(fireKey_));
+    replaceAll(help_, "{JUMP}", keyLabel(jumpKey_));
+}
+
 void Game::update(float elapsed, Vector2 mouse, bool focused) {
     Controls controls;
     for (int character = GetCharPressed(); character != 0; character = GetCharPressed()) {
@@ -194,8 +222,9 @@ void Game::update(float elapsed, Vector2 mouse, bool focused) {
     controls.player.left = IsKeyDown(KEY_A) || IsKeyDown(KEY_LEFT);
     controls.player.right = IsKeyDown(KEY_D) || IsKeyDown(KEY_RIGHT);
     controls.player.down = IsKeyDown(KEY_S) || IsKeyDown(KEY_DOWN);
-    controls.player.fire = IsMouseButtonDown(MOUSE_BUTTON_LEFT);
-    controls.player.jump = controls.up;
+    controls.player.fire = IsMouseButtonDown(MOUSE_BUTTON_LEFT) || IsKeyDown(fireKey_);
+    controls.fireKeyPressed = IsKeyPressed(fireKey_);
+    controls.player.jump = IsKeyPressed(jumpKey_);
     if (IsKeyPressed(KEY_Q)) { controls.player.cycleWeapon = -1; }
     if (IsKeyPressed(KEY_E)) { controls.player.cycleWeapon = 1; }
     // Keys 1-4 select the four guns; 5 selects the pistol.
@@ -213,7 +242,7 @@ void Game::queuePlayerInput(const Controls& controls) {
     pending_.right = controls.player.right;
     pending_.down = controls.player.down;
     // The original delays released keys; retain desktop clicks until the next logical tick.
-    pending_.fire = pending_.fire || controls.leftClick;
+    pending_.fire = pending_.fire || controls.leftClick || controls.fireKeyPressed;
     pending_.jump = pending_.jump || controls.player.jump;
     if (controls.player.cycleWeapon != 0) { pending_.cycleWeapon = controls.player.cycleWeapon; }
     if (controls.player.weapon >= 0) { pending_.weapon = controls.player.weapon; }
@@ -311,7 +340,7 @@ void Game::update(float elapsed, const Controls& controls, bool focused) {
     if (!world_.message.empty()) {
         messageTime_ += elapsed;
         if (messageTime_ >= messageDuration(world_.message)
-            && (confirm || controls.up || controls.down || controls.player.left || controls.player.right)) {
+            && (confirm || controls.up || controls.player.jump || controls.down || controls.player.left || controls.player.right)) {
             world_.dismissMessage(); messageTime_ = 0;
         }
         accumulator_ = 0; return;

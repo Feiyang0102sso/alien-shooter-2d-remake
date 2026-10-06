@@ -48,9 +48,12 @@ int main(int argc, char** argv) {
         const auto defaults = alien::loadConfig(path);
         require(std::filesystem::exists(path), "Default config was not created.");
         require(defaults.title == "Alien Shooter 2D", "Wrong default title.");
-        require(defaults.defaultScreenX == 240 && defaults.defaultScreenY == 320 && defaults.scalar == 3,
+        require(defaults.defaultScreenX == 240 && defaults.defaultScreenY == 320 && defaults.scalar == 4,
                 "Wrong default window settings.");
+        require(defaults.fireKey == KEY_J && defaults.jumpKey == KEY_W, "Wrong default key bindings.");
         const auto generated = alien::loadConfig(path);
+        require(generated.fireKey == defaults.fireKey && generated.jumpKey == defaults.jumpKey,
+                "Generated key bindings do not match defaults.");
         require(generated.title == defaults.title && generated.scalar == defaults.scalar,
                 "Generated config does not match defaults.");
 
@@ -69,7 +72,8 @@ int main(int argc, char** argv) {
         preserved.close();
         require(contents.compare(0, custom.size(), custom) == 0, "Loading changed the user's config lines.");
         require(contents.find("MaxFps=120") != std::string::npos && contents.find("ModernControls=1") != std::string::npos
-                && contents.find("FallProtect=1") != std::string::npos,
+                && contents.find("FallProtect=1") != std::string::npos
+                && contents.find("FireKey=j") != std::string::npos && contents.find("JumpKey=w") != std::string::npos,
                 "Missing config keys were not appended.");
         alien::loadConfig(path);
         std::ifstream reloaded(path, std::ios::binary);
@@ -81,9 +85,16 @@ int main(int argc, char** argv) {
         const auto partial = alien::loadConfig(path);
         require(partial.title == defaults.title && partial.defaultScreenX == 240
                 && partial.defaultScreenY == 320 && partial.scalar == 1, "Missing-key defaults failed.");
+
+        // Key names are case-insensitive; spacebar is the only non-letter key.
+        writeConfig(path, "FireKey = K\nJumpKey = SpaceBar\n");
+        const auto rebound = alien::loadConfig(path);
+        require(rebound.fireKey == KEY_K && rebound.jumpKey == KEY_SPACE, "Custom key bindings were ignored.");
         for (const std::string invalid : {"Scalar=0", "Scalar=-1", "Scalar=1.5", "Scalar=3oops",
                  "Scalar=9999999999999", "DefaultScreenX=0", "DefaultScreenY=-3", "Title= ; empty",
-                 "Scalr=2", "Scalar", "DefaultScreenX=2147483647\nScalar=2", "MaxFps=0", "ModernControls=2", "FallProtect=2"}) {
+                 "Scalr=2", "Scalar", "DefaultScreenX=2147483647\nScalar=2", "MaxFps=0", "ModernControls=2", "FallProtect=2",
+                 "FireKey=", "FireKey=1", "FireKey=jk", "FireKey=space", "JumpKey=a", "FireKey=E",
+                 "FireKey=w", "FireKey=spacebar\nJumpKey=spacebar"}) {
             expectInvalid(path, invalid);
         }
 

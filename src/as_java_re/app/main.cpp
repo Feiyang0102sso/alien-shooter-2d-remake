@@ -85,6 +85,8 @@ int main(int argc, char** argv) {
             game.world().modernControls = config.modernControls;
             game.world().fallProtect = config.fallProtect;
             std::cout << "Modern controls: " << config.modernControls << ", fall protect: " << config.fallProtect << '\n';
+            game.setKeyBindings(config.fireKey, config.jumpKey);
+            std::cout << "Key bindings: fire=" << config.fireKey << ", jump=" << config.jumpKey << '\n';
             if (options.level > 0) { game.startLevel(options.level); }
             if (options.screen == "menu") { game.showScreen(alien::Screen::Main); }
             if (options.screen == "help") { game.showScreen(alien::Screen::Help); }

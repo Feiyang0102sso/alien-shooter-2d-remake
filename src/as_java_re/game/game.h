@@ -14,6 +14,8 @@ enum class Screen { Intro, SoundPrompt, Main, Difficulty, Levels, Settings, Help
 struct Controls {
     // player.fire is the held state; leftClick is this desktop frame's press edge.
     Input player;
+    // Fire key press edge; queued like leftClick but never clicks menus.
+    bool fireKeyPressed = false;
     Vector2 mouse{-1, -1};
     bool confirm = false, cancel = false, up = false, down = false;
     bool leftClick = false, rightClick = false, yes = false, no = false;
@@ -31,6 +33,8 @@ public:
     void draw();
     void startLevel(int level, bool carry = false);
     void showScreen(Screen screen);
+    // Apply the config's raylib key codes and show them on the help page.
+    void setKeyBindings(int fireKey, int jumpKey);
     bool exiting() const { return exit_; }
     World& world() { return world_; }
     Screen screen() const { return screen_; }
@@ -60,6 +64,9 @@ private:
     Input pending_;
     float accumulator_ = 0, introTime_ = 0, messageTime_ = 0, scrollRemainder_ = 0;
     float menuTime_ = 0, selectionTime_ = 1, soundPromptTime_ = 0;
+    // Same defaults as Config; main replaces them with the loaded settings.
+    int fireKey_ = KEY_J;
+    int jumpKey_ = KEY_W;
     int selection_ = 0, mainSelection_ = 0, difficulty_ = rules::DefaultDifficulty, scroll_ = 0, maxScroll_ = 0;
     bool exit_ = false, sound_ = true, collisionDebug_ = false;
 };

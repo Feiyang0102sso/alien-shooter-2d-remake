@@ -2,6 +2,7 @@
  * @brief Read key=value settings with whitespace and semicolon comments.
  */
 #include "app/config.h"
+#include <cctype>
 #include <charconv>
 #include <fstream>
 #include <iostream>
@@ -41,6 +42,25 @@ bool switchValue(const std::string& text, const std::string& location) {
     throw std::runtime_error(location + "Expected 0 or 1.");
 }
 
+// Key bindings are one letter a-z or "spacebar", case-insensitive; returns the raylib key code.
+int keyBinding(const std::string& text, const std::string& location) {
+    std::string name;
+    for (const char character : text) {
+        name.push_back(static_cast<char>(std::tolower(static_cast<unsigned char>(character))));
+    }
+    if (name == config::SpacebarName) {
+        return KEY_SPACE;
+    }
+    if (name.size() != 1 || name[0] < 'a' || name[0] > 'z') {
+        throw std::runtime_error(location + "Expected a letter a-z or " + config::SpacebarName + ".");
+    }
+    if (std::string(config::ReservedKeys).find(name[0]) != std::string::npos) {
+        throw std::runtime_error(location + "Key is already used for movement or weapon switching.");
+    }
+    // raylib letter key codes are consecutive from KEY_A.
+    return KEY_A + (name[0] - 'a');
+}
+
 // One editable setting as written to the file: comment lines, key and default value.
 struct ConfigEntry {
     std::vector<std::string> comment;
@@ -58,7 +78,7 @@ std::vector<ConfigEntry> configEntries() {
         {{"Frame rate limit; game logic still runs at the original 80ms tick"}, config::MaxFpsKey,
          std::to_string(config::DefaultMaxFps)},
         {{"Desktop control assists. 1: on, 0: original controls",
-          "  - Jump buffer: W pressed up to " + std::to_string(rules::JumpBufferTicks * TickMilliseconds)
+          "  - Jump buffer: jump pressed up to " + std::to_string(rules::JumpBufferTicks * TickMilliseconds)
               + "ms before landing still jumps",
           "  - Lift exit: walking off a lift lands on floor within " + std::to_string(rules::LiftExitTolerance)
               + "px of the feet",
@@ -69,6 +89,13 @@ std::vector<ConfigEntry> configEntries() {
               + "% of current health, 0: original fall damage",
           "  Falling out of the map still kills"},
          config::FallProtectKey, std::to_string(static_cast<int>(config::DefaultFallProtect))},
+        {{"Extra fire key; the left mouse button always fires",
+          "  Accepts one letter a-z or " + std::string(config::SpacebarName) + ", except "
+              + config::ReservedKeys + " (movement and weapon switching)"},
+         config::FireBindingKey, config::DefaultFireKey},
+        {{"Jump key; same values as " + std::string(config::FireBindingKey) + ", e.g. "
+              + config::JumpBindingKey + "=" + config::SpacebarName},
+         config::JumpBindingKey, config::DefaultJumpKey},
     };
 }
 
@@ -175,6 +202,10 @@ Config loadConfig(const std::filesystem::path& path) {
             config.modernControls = switchValue(value, location);
         } else if (key == config::FallProtectKey) {
             config.fallProtect = switchValue(value, location);
+        } else if (key == config::FireBindingKey) {
+            config.fireKey = keyBinding(value, location);
+        } else if (key == config::JumpBindingKey) {
+            config.jumpKey = keyBinding(value, location);
         } else {
             throw std::runtime_error(location + "Unknown setting: " + key);
         }
@@ -187,6 +218,9 @@ Config loadConfig(const std::filesystem::path& path) {
     const int maximumBase = std::numeric_limits<int>::max() / config.scalar;
     if (config.defaultScreenX > maximumBase || config.defaultScreenY > maximumBase) {
         throw std::runtime_error("Config window dimensions overflow: " + path.u8string());
+    }
+    if (config.fireKey == config.jumpKey) {
+        throw std::runtime_error("Config FireKey and JumpKey must differ: " + path.u8string());
     }
     // Only a valid file is extended, after the read stream is closed.
     stream.close();

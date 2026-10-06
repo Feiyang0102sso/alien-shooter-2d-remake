@@ -4,6 +4,7 @@
 #pragma once
 #include "core/constants.h"
 #include <filesystem>
+#include <raylib.h>
 #include <string>
 
 namespace alien {
@@ -17,6 +18,9 @@ struct Config {
     int maxFps = config::DefaultMaxFps;
     bool modernControls = config::DefaultModernControls;
     bool fallProtect = config::DefaultFallProtect;
+    // raylib key codes of config::DefaultFireKey and config::DefaultJumpKey.
+    int fireKey = KEY_J;
+    int jumpKey = KEY_W;
 };
 
 // Create missing files from defaults; missing keys use defaults and invalid values report an error.

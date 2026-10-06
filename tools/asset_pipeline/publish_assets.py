@@ -110,13 +110,14 @@ DESKTOP_MESSAGES = {
     "terminal_travel": ["PRESS S", "TO TRAVEL", "THROUGH THE TERMINAL"],
     "switch_weapon": ["Q / E OR 1-5", "TO SWITCH", "YOUR CURRENT WEAPON"],
 }
+# {JUMP} and {FIRE} are replaced at runtime with the keys bound in config.cfg.
 DESKTOP_HELP_CONTROLS = [
     ("LEFT (4) - Move left", "A - Move left"),
     ("RIGHT (6) - Move right", "D - Move right"),
-    ("UP (2) - Jump", "W - Jump / Stand up"),
+    ("UP (2) - Jump", "{JUMP} - Jump / Stand up"),
     ("DOWN (8) - Look down", "S - Crouch / Look down / Terminal"),
     ("(0) - Switch weapon", "Q / E - Switch weapon\n1-4 - Select gun\n5 - Pistol"),
-    ("SOFT1 (5) - Fire", "LEFT MOUSE - Fire"),
+    ("SOFT1 (5) - Fire", "LEFT MOUSE / {FIRE} - Fire"),
     ("SOFT2 (#) - Open menu", "ESC - Open menu"),
 ]
 

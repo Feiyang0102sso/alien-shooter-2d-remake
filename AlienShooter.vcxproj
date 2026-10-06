@@ -199,10 +199,8 @@
     <ItemGroup>
       <GameAsset Include="$(ProjectRoot)assets\**\*" Exclude="$(ProjectRoot)assets\audio\ogg\**\*" />
       <SynthAsset Include="$(ProjectRoot)src\3rdparty\generaluser\GeneralUser-GS.sf2;$(ProjectRoot)src\3rdparty\generaluser\LICENSE.txt" />
-      <GameDocument Include="$(ProjectRoot)docs\player-guide.md" />
     </ItemGroup>
     <Copy SourceFiles="@(GameAsset)" DestinationFiles="@(GameAsset-&gt;'$(OutDir)assets\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
     <Copy SourceFiles="@(SynthAsset)" DestinationFolder="$(OutDir)assets\audio\synth" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="@(GameDocument)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
   </Target>
 </Project>

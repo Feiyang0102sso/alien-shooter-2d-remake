@@ -4,7 +4,9 @@
 #include <winver.h>
 #include "../src/as_java_re/version.h"
 
-1 ICON "AlienShooter.ico"
+// GLFW registers its window class with the icon named GLFW_ICON (win32_window.c), so the same name gives the
+// title bar and taskbar the game icon; Explorer shows it for the EXE file too.
+GLFW_ICON ICON "AlienShooter.ico"
 
 VS_VERSION_INFO VERSIONINFO
  FILEVERSION ALIEN_VERSION_NUMBERS
